@@ -1,0 +1,380 @@
+.goucai {
+	min-height: 100vh;
+	background: #F4F4F4;
+	font-size: 0.8rem;
+	font-family: Helvetica Neue, Helvetica, sans-serif;
+	/* overflow-y: scroll; */
+}
+
+html {
+	background: #F4F4F4 !important;
+}
+
+header {
+	position: fixed;
+}
+
+.mint-tabbar {
+	position: fixed;
+}
+
+.aui-tab {
+	width: 100%;
+	padding: 0 16%;
+	position: fixed;
+	top: 0rem;
+	left: 0;
+	z-index: 6;
+	margin-top: 2.25rem;
+	padding-top: 0.55rem;
+	padding-bottom: 0.75rem;
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.aui-tab-item {
+	height: 1.8rem;
+	line-height: 1.8rem;
+	font-size: 0.7rem;
+	color: #03A9F4;
+	border: 1px solid #03A9F4;
+}
+
+.aui-tab-item:nth-child(1) {
+	border-radius: 0.9rem 0 0 0.9rem;
+}
+
+.aui-tab-item:nth-child(3) {
+	border-radius: 0 0.9rem 0.9rem 0;
+}
+.swiperbox{
+	position: fixed;
+	top: 9.05rem;
+}
+.frame1_con {
+	margin: 0rem 0 2.75rem 0;
+	background: white;
+	font-size: 0;
+	position: fixed;
+	top: 12.55rem;
+	bottom: 0;
+	overflow-y: scroll;
+}
+
+#frame1_con2,
+#frame1_con3 {
+	/* display: none; */
+}
+
+.frame1_con ul {
+	overflow: hidden;
+	margin: 0.5rem 0;
+	padding: 0 2.5%;
+}
+
+.frame1_con ul li {
+	width: 33.3%;
+	display: inline-block;
+	height: 6.25rem;
+	background: white;
+	padding: 0.775rem 2.5% 0.625rem 2.5%;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+}
+
+.frame1_con ul li.active {
+	/* background: url(../assets/goucai/jrkj.png) no-repeat 97% 0%/15% auto #fff; */
+}
+
+/* .frame1_con ul li:nth-of-type(odd){
+  float: left;
+}
+.frame1_con ul li:nth-of-type(even){
+  float: right;
+  margin-right: 0.1rem;
+} */
+/* .frame1_con ul li .flr{
+  width: 30%;
+  float: left;
+} */
+.frame1_con ul li .flr img {
+	width: 2.6rem;
+	height: 2.6rem;
+	margin: 0 auto;
+}
+
+.frame1_con ul li .frg {
+	margin-top: 0.45rem;
+}
+
+ .frg div {
+	font-size: 0;
+	height: 1.05rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+}
+ .frg  span {
+	font-size: 0.75rem;
+	height: 1.05rem;
+	color: #333;
+}
+
+.frame1_con ul li .frg p {
+	font-size: 0.6rem;
+	color: #FF607C;
+	line-height: 0.825rem;
+}
+
+.frame1_con ul li .frg p.p1 {
+	line-height: 0.8rem;
+
+}
+
+.mainBox {
+	height: 3.2rem;
+	margin-top: 5.35rem;
+	position: relative;
+	z-index: 5;
+}
+
+.mainBox1 {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 3.2rem;
+	background: white;
+	margin-top: 5.35rem;
+	padding: 0 4%;
+	padding-top: 0.77rem;
+}
+
+.mainBox div {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.mainLeft {
+	width: 8.4%;
+}
+
+.mainLeft p {
+	font-size: 0.6rem;
+	line-height: 0.825rem;
+	color: #676666;
+}
+
+.mainCenter {
+	overflow: hidden;
+	height: 1.3rem;
+	text-align: center;
+	/* max-width: 65%; */
+	/* margin-top: 0.2rem; */
+}
+
+.ws1 {
+	width: 72%;
+}
+
+.ws2 {
+	width: 61%;
+}
+
+.ws2 .redball_left span {
+	margin-right: 0.1rem;
+}
+
+.ws3 {
+	width: 65%;
+	line-height: 1.6rem;
+	height: 1.6rem;
+	vertical-align: middle;
+}
+
+.mainRight {
+	float: right;
+	margin-top: 0.2rem;
+}
+
+.mainRight span {
+	font-size: 0.7rem;
+	line-height: 1rem;
+	color: #333333;
+	width: 1.25rem;
+}
+
+.mainRight img {
+	display: inline-block;
+	width: 0.35rem;
+	height: 0.225rem;
+}
+
+.mainRight .active_img {
+	transform: rotate(180deg);
+}
+
+.mainTc {
+	padding-top: 1rem;
+	background: white;
+	position: fixed;
+	width: 100%;
+	transition: 0.5s;
+	/* height: 8rem; */
+	overflow: hidden;
+	top: 8.55rem;
+
+}
+
+.active1 {
+	/* 	height: 0; */
+	/* padding: 0; */
+	top: -6.5rem;
+	transition: 0.5s;
+	overflow: hidden;
+
+}
+
+.mainTc .box1 {
+	padding: 0 4%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+.mainTc .btn1 {
+	background: #F5FAFF;
+	width: 31.5%;
+	margin-bottom: 0.375rem;
+	border-radius: 0;
+	line-height: 2rem;
+	height: 2rem;
+}
+
+.mainTc .btn1:nth-child(11) {
+	margin: 0 34.2% 0 0;
+}
+
+.btn1:active {
+	background: #e5e5e5;
+	color: #333;
+}
+
+.mainTc .btn2 {
+	height: 2.2rem;
+	line-height: 2.2rem;
+	background: #F4F4F4;
+	font-size: 0.6rem;
+	width: 100%;
+	border-radius: 0;
+	color: #646464;
+	margin-top: 0.625rem;
+}
+
+.box2 {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	top: 0;
+	right: 0;
+	background: black;
+	opacity: 0.5;
+	z-index: 1000;
+}
+
+.msta {
+	position: relative;
+	z-index: 1001;
+}
+
+.redball_left span {
+	height: 1.1rem;
+	width: 1.1rem;
+	line-height: 1.1rem;
+	border-radius: 50%;
+	background-color: #F82A5B;
+	margin-top: 0.2rem;
+	margin-right: 0.2rem;
+	color: #fff;
+	font-size: 0.6rem;
+	text-align: center;
+	display: inline-block;
+}
+
+.redball_left .blue_ball {
+	background-color: #03A9F4;
+
+}
+
+.input_button .redball_left span {
+	width: 0.6rem;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	background-color: rgb(55, 209, 111);
+	border-radius: 0.2rem;
+	color: #fff;
+	font-size: 0.6rem;
+	text-align: center;
+	margin-top: 0.1rem;
+	margin-right: 0.15rem;
+	display: inline-block;
+}
+
+.input_button .redball_left span:last-child {
+	margin-right: 0;
+}
+
+.sports .input_button {
+	border: 1px solid rgb(55, 209, 111);
+	border-radius: 0.4rem;
+	color: #828282;
+	text-align: center;
+	width: 90%;
+	height: 1.4rem;
+	line-height: 1.4rem;
+	font-size: 0.6rem;
+	margin-top: 0.1rem;
+	outline: 0px;
+	-webkit-appearance: none;
+}
+
+.input_button span {
+	font-size: 0.75rem;
+	color: #676767;
+	line-height: 1.05rem;
+}
+
+.input_button .score {
+	margin: 0 0.2rem;
+	color: #F82A5B;
+}
+
+.frame1_con .imgHeader {
+	width: 100%;
+}
+
+.frame1_con .imgGou {
+	width: 0.7rem;
+	height: 0.75rem;
+	margin-right: 0.1rem;
+}
+
+.imgHg {
+	width: 2.375rem;
+	height: 1rem;
+	position: absolute;
+	top: -0.45rem;
+	left: 2.675rem;
+	z-index: 1;
+}
+
+.imgHg1 {
+	left: 3rem;
+}
+
+.aui-active .imgHg {
+	display: none;
+}

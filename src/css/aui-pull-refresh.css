@@ -1,0 +1,102 @@
+.aui-refresh-content {
+	position: relative;
+	/*top: 2.2rem;*/
+	-webkit-overflow-scrolling: touch;
+	-webkit-transform: translate3d(0, 0, 0);
+	      	transform: translate3d(0, 0, 0);
+}
+.aui-refresh-load {
+	width: 100%;
+	height: 2.2rem;
+	position: absolute;
+	top: -2.2rem;
+	left: 0;
+	padding: 0.75rem 0;
+}
+.aui-refresh-pull-arrow {
+	width: 1.8rem;
+	height:1.8rem;
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	visibility: visible;
+	margin-left: -0.9rem;
+	margin-top: -0.6rem;
+	background: no-repeat center;
+	background-size: auto 100%;
+	z-index: 10;
+	-webkit-transform: rotate(0deg) translate3d(0, 0, 0);
+	      	transform: rotate(0deg) translate3d(0, 0, 0);
+	-webkit-transition-duration: 300ms;
+	      	transition-duration: 300ms;
+			text-align: center;
+			font-size: 0;
+			line-height: 0;
+	text-align: center;
+}
+.aui-refresh-pull-arrow img{
+	display: inline-block;
+	width: auto;
+	height: 100%;
+}
+.aui-refresh-content.aui-refresh-pull-down .aui-refresh-pull-arrow {
+	transform: scale(0,0);
+}
+.aui-refresh-content.aui-refresh-pull-up .aui-refresh-pull-arrow {
+	-webkit-transform: rotate(0deg) translate3d(0,0,0);
+          	transform: rotate(0deg) translate3d(0,0,0);
+}
+.aui-refresh-pull-down .aui-refresh-pull-arrow{
+	width: 1.8rem;
+	height:1.8rem;
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	visibility: visible;
+	margin-left: -0.9rem;
+	margin-top: -0.6rem;
+	background: no-repeat center;
+	background-image:url(../../static/refresh/pull_arrow_up.png);
+	background-size: auto 100%;
+}
+.aui-refresh-pull-up .aui-refresh-pull-arrow{
+	width: 1.8rem;
+	height:1.8rem;
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	visibility: visible;
+	margin-left: -0.9rem;
+	margin-top: -0.6rem;
+	background: no-repeat center;
+	background-image:url(../../static/refresh/pull_arrow_up.png);
+	background-size: auto 100%;
+}
+.aui-refreshing .aui-refresh-pull-arrow{
+	/*-webkit-animation: rotate 1s 0s linear infinite;*/
+	/* background-image:url(../../static/refresh/pull_arrow_logdeing.gif); */
+	/* background-size: auto 100%; */
+        	/*animation: rotate 1s 0s linear infinite;*/
+			background: none;
+			width: 1.8rem;
+			height:1.8rem;
+			position: absolute;
+			left: 50%;
+			top: 30%;
+			visibility: visible;
+			margin-left: -0.9rem;
+			margin-top: -0.6rem;
+}
+.aui-refreshing-complete .aui-refresh-pull-arrow{
+	background: no-repeat center;
+	background-image:url(../assets/shuaxin/complete.png);
+	width: 100%;
+	height: 2.2rem;
+	background-size:100%  100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	visibility: visible;
+	margin-left: 0rem;
+	margin-top: 0rem;
+}

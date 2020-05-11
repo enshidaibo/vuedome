@@ -1,0 +1,921 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	min-height: 100%;
+}
+
+body {
+	background: #ffffff;
+}
+
+.hover {
+	opacity: .8;
+}
+
+.flex-wrap {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.flex-con {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+}
+
+.flex-vertical {
+	-webkit-box-orient: vertical;
+	-webkit-flex-flow: column;
+	flex-flow: column;
+}
+
+.border-t,
+.border-b {
+	position: relative;
+}
+
+.border-t:before,
+.border-b:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #ddd;
+	right: 0;
+	height: 1px;
+	-webkit-transform: scaleY(0.5);
+	transform: scaleY(0.5);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.border-b:after {
+	top: auto;
+	bottom: 0;
+}
+
+#wrap {
+	height: 100%;
+}
+
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+	margin: 0;
+	padding: 0;
+}
+
+div,
+ul,
+li,
+	{
+	box-sizing: border-box;
+}
+
+fieldset,
+img,
+input,
+button {
+	border: none;
+	padding: 0;
+	margin: 0;
+	outline-style: none;
+	/*去掉input 获取焦点后的外框环绕*/
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+
+/*去掉原样式中的小黑点*/
+
+input {
+	padding-top: 0;
+	padding-bottom: 0;
+	font-family: "SimSun", "宋体";
+}
+
+select,
+input {
+	vertical-align: middle;
+}
+
+
+/*输入字居中显示*/
+
+select,
+input,
+textarea {
+	font-size: 12px;
+	margin: 0;
+}
+
+
+/**/
+
+textarea {
+	resize: none;
+	/*去掉右下角*/
+}
+
+
+/*防止拖动*/
+
+img {
+	border: 0;
+	vertical-align: middle;
+	/*  去掉图片底部默认的3像素空白缝隙*/
+}
+
+table {
+	border-collapse: collapse;
+	/*合并外连线*/
+}
+
+body {
+	/* font: .6rem/150% Arial, Verdana, "\5b8b\4f53"; */
+	/*unitedCode的写法，宋体的写法*/
+	/*background: #fff;*/
+}
+
+.clearfix:before,
+.clearfix:after {
+	/*清除浮动，最好最标准的写法*/
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+	visibility: hidden;
+	/*保留位置*/
+}
+
+.clearfix {
+	*zoom: 1;
+	/*IE/7/6*/
+	/*兼容IE6下的写法*/
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 100%;
+}
+
+s,
+i,
+em {
+	font-style: normal;
+	/*将原有的样式去掉*/
+	text-decoration: none;
+	/*去掉下划线，但也可以去掉中划线(贯穿线)*/
+}
+
+
+/*公共类*/
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.tal {
+	text-align: left;
+}
+
+.tac {
+	text-align: center;
+}
+
+.tar {
+	text-align: right;
+}
+
+.hide {
+	display: none;
+}
+
+.dis-no {
+	display: none;
+}
+
+.fs-8 {
+	font-size: .4rem;
+}
+
+.fs-10 {
+	font-size: .5rem;
+}
+
+.fs-11 {
+	font-size: .55rem;
+}
+
+.fs-12 {
+	font-size: .6rem;
+}
+
+.fs-13 {
+	font-size: .65rem;/*26px*/
+}
+
+.fs-14 {
+	font-size: .7rem;
+}
+
+.fs-15 {
+	font-size: .75rem;
+}
+
+.fs-16 {
+	font-size: .8rem;
+}
+
+.fs-17 {
+	font-size: .85rem;
+}
+
+.fs-18 {
+	font-size: .9rem;
+}
+
+.fs-19 {
+	font-size: .95rem;
+}
+
+.fs-20 {
+	font-size: 1rem;
+}
+
+.fs-21 {
+	font-size: 1.05rem;
+}
+
+.fs-22 {
+	font-size: 1.1rem;
+}
+
+.fs-23 {
+	font-size: 1.15rem;
+}
+
+.fs-24 {
+	font-size: 1.2rem;
+}
+
+.fs-25 {
+	font-size: 1.25rem;
+}
+
+.fs-26 {
+	font-size: 1.3rem;
+}
+
+.fs-28 {
+	font-size: 1.4rem;
+}
+
+.fs-30 {
+	font-size: 1.5rem;
+}
+
+.fs-32 {
+	font-size: 1.6rem;
+}
+
+.fs-34 {
+	font-size: 1.7rem;
+}
+
+.fs-36 {
+	font-size: 1.8rem;
+}
+
+.fs-38 {
+	font-size: 1.4rem;
+}
+
+.fs-40 {
+	font-size: 2rem;
+}
+
+.fs-42 {
+	font-size: 2.1rem;
+}
+
+.fs-we {
+	font-weight: bold;
+}
+
+.flex-box {
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+/*头部*/
+
+.header_box {
+	width: 100%;
+	height: 1.95rem;
+	line-height: 1.95rem;
+	background: #43a4f1;
+}
+
+.return {
+	width: 20%;
+	position: relative;
+}
+
+/* .return span {
+    display: inline-block;
+    width: .4rem;
+    height: .7rem;
+    position: absolute;
+    top: .3rem;
+    left: 20%;
+    background: url('../image/mqc/back_left.png') 0 0 no-repeat;
+    background-size: 100% 100%;
+} */
+
+/* .header {
+    width: 60%;
+    text-align: center;
+    height: 1.95rem;
+    font-size: 0.5rem;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.95rem;
+} */
+
+.subhead {
+	width: 20%;
+}
+
+header {
+	background-color: #43a4f1;
+	color: #fff;
+}
+
+header ul li {
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	display: none;
+	color: #fff;
+	position: relative;
+	font-size: 18px;
+}
+
+header ul li.active {
+	display: block;
+}
+
+/* #footer {
+    background-color: #f2f2f2;
+} */
+
+/* #footer ul li {
+    padding-top: 36px;
+    padding-bottom: 4px;
+    background: url() no-repeat center 2px;
+    background-size: auto 30px;
+    text-align: center;
+}
+
+#footer ul li.active {
+    color: #5fa3eb;
+} */
+
+/* #footer ul li:nth-child(1) {
+      background-image: url(../../images/mqc/backIcon01.png);
+}
+
+#footer ul li:nth-child(2) {
+      background-image: url(../../images/mqc/backIcon06.png);
+}
+
+#footer ul li:nth-child(3) {
+    background-image: url(../../images/mqc/backIcon03.png);
+}
+
+#footer ul li:nth-child(4) {
+    background-image: url(../../images/mqc/backIcon04.png);
+}
+#footer ul li:nth-child(5) {
+    background-image: url(../../images/mqc/backIcon05.png);
+}
+
+
+#footer ul li:nth-child(1).active {
+  background-image: url(../../images/mqc/backIcon01_c.png);
+}
+
+#footer ul li:nth-child(2).active {
+    background-image: url(../../images/mqc/backIcon06_c.png);
+}
+
+#footer ul li:nth-child(3).active {
+    background-image: url(../../images/mqc/backIcon03_c.png);
+}
+
+#footer ul li:nth-child(4).active {
+  background-image: url(../../images/mqc/backIcon04_c.png);
+}
+#footer ul li:nth-child(5).active {
+    background-image: url(../../images/mqc/backIcon05_c.png);
+} */
+
+.flex-con {
+	overflow: auto
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.w-95 {
+	width: 95%;
+}
+
+.w-90 {
+	width: 90%;
+}
+
+.w-85 {
+	width: 85%;
+}
+
+.w-80 {
+	width: 80%;
+}
+
+.w-75 {
+	width: 75%;
+}
+
+.w-70 {
+	width: 70%;
+}
+
+.w-65 {
+	width: 65%;
+}
+
+.w-60 {
+	width: 60%;
+}
+
+.w-55 {
+	width: 55%;
+}
+
+.w-50 {
+	width: 50%;
+}
+
+.w-45 {
+	width: 45%;
+}
+
+.w-40 {
+	width: 40%;
+}
+
+.w-35 {
+	width: 35%;
+}
+
+.w-30 {
+	width: 30%;
+}
+
+.w-25 {
+	width: 25%;
+}
+
+.w-20 {
+	width: 20%;
+}
+
+.w-15 {
+	width: 15%;
+}
+
+.w-10 {
+	width: 10%;
+}
+
+.bg-w {
+	background-color: #fff;
+}
+
+.c-w {
+	color: #fff;
+}
+
+.c-b {
+	color: black
+}
+
+.mr-0 {
+	margin: 0 auto;
+}
+
+.dis-bl {
+	display: block;
+}
+
+.dis-in-bl {
+	display: inline-block;
+}
+
+/*内边距*/
+.pd-5 {
+	padding: 5px;
+}
+
+.pd-t-5 {
+	padding-top: 5px;
+}
+
+.pd-l-5 {
+	padding-left: 5px;
+}
+
+.pd-b-5 {
+	padding-bottom: 5px;
+}
+
+.pd-r-5 {
+	padding-right: 5px;
+}
+
+.pd-10 {
+	padding: 10px;
+}
+
+.pd-t-10 {
+	padding-top: 10px;
+}
+
+.pd-l-10 {
+	padding-left: 10px;
+}
+
+.pd-b-10 {
+	padding-bottom: 10px;
+}
+
+.pd-r-10 {
+	padding-right: 10px;
+}
+
+.pd-20 {
+	padding: 20px;
+}
+
+.pd-t-20 {
+	padding-top: 20px;
+}
+
+.pd-l-20 {
+	padding-left: 20px;
+}
+
+.pd-b-20 {
+	padding-bottom: 20px;
+}
+
+.pd-r-20 {
+	padding-right: 20px;
+}
+
+/*外边距*/
+.mr-5 {
+	margin: 5px;
+}
+
+.mr-t-5 {
+	margin-top: 5px;
+}
+
+.mr-l-5 {
+	margin-left: 5px;
+}
+
+.mr-b-5 {
+	margin-bottom: 5px;
+}
+
+.mr-r-5 {
+	margin-right: 5px;
+}
+
+.mr-10 {
+	margin: 10px;
+}
+
+.mr-t-10 {
+	margin-top: 10px;
+}
+
+.mr-l-10 {
+	margin-left: 10px;
+}
+
+.mr-b-10 {
+	margin-bottom: 10px;
+}
+
+.mr-r-10 {
+	margin-right: 10px;
+}
+
+.mr-20 {
+	margin: 20px;
+}
+
+.mr-t-20 {
+	margin-top: 20px;
+}
+
+.mr-l-20 {
+	margin-left: 20px;
+}
+
+.mr-b-20 {
+	margin-bottom: 20px;
+}
+
+.mr-r-20 {
+	margin-right: 20px;
+}
+
+/*字体颜色*/
+.c-9b {
+	color: #9b9b9b;
+}
+
+/*边框*/
+.bd-b-10-f4 {
+	border-bottom: 10px solid #f4f4f4;
+}
+
+.bd-b-1 {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.bd-t-1 {
+	border-top: 1px solid #e5e5e5;
+}
+
+.text-hide-1 {
+	text-overflow: ellipsis;
+	word-space: nowrap;
+	-webkit-line-clamp: 1;
+	/* 设置超出多少行隐藏 */
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	/* 设置 display 为 -webkit-box 或者 -webkit-inline-box 时为隐藏状态 */
+	/* display: -webkit-inline-box; */
+}
+
+.text-hide-2 {
+	text-overflow: ellipsis;
+	word-space: nowrap;
+	-webkit-line-clamp: 2;
+	/* 设置超出多少行隐藏 */
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	/* 设置 display 为 -webkit-box 或者 -webkit-inline-box 时为隐藏状态 */
+	/* display: -webkit-inline-box; */
+}
+
+.text-hide-3 {
+	text-overflow: ellipsis;
+	word-space: nowrap;
+	-webkit-line-clamp: 3;
+	/* 设置超出多少行隐藏 */
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	/* 设置 display 为 -webkit-box 或者 -webkit-inline-box 时为隐藏状态 */
+	/* display: -webkit-inline-box; */
+}
+
+.c-re {
+	color:#F82A5B;
+}
+
+.c-bl {
+	color: #5FA3EB;
+}
+
+.c-fl {
+	color: #FDC10A;
+}
+
+.v-mid {
+	vertical-align: middle;
+	;
+}
+
+.v-bon {
+	vertical-align: bottom;
+}
+
+.text-line-b {
+	text-decoration: underline;
+}
+
+/*定位*/
+.pos-re {
+	position: relative;
+}
+
+.pos-fi {
+	position: fixed;
+}
+
+.pos-ab {
+	position: absolute;
+}
+
+.t-0 {
+	top: 0;
+}
+
+.l-0 {
+	left: 0;
+}
+
+.r-0 {
+	right: 0;
+}
+
+.b-0 {
+	bottom: 0;
+}
+
+.b-70 {
+	bottom: 40px;
+}
+
+.z-99 {
+	z-index: 9999;
+}
+
+.noScroll {
+	overflow: hidden !important;
+}
+
+[v-cloak] {
+	display: none !important;
+}
+
+.mint-loadmore-top {
+	position: absolute !important;
+	width: 100%;
+}
+.mint-loadmore-bottom{
+	/* position: absolute !important; */
+	width: 100%;
+}
+.shaxinc {
+	display: block;
+	width: 100%;
+	text-align: center;
+	height: 50px;
+	line-height: 50px; 
+}
+
+.shaxinc img {
+	margin:auto;
+	width: 30px;
+	height: 30px;
+	margin-top:15px ;
+}
+.almosh {
+	animation: myfirst 2000ms;
+	-moz-animation: myfirst 2000ms;
+	/* Firefox */
+	-webkit-animation: myfirst 2000ms;
+	/* Safari å’Œ Chrome */
+	-o-animation: myfirst 2000ms;
+	/* Opera */
+	animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+}
+
+@keyframes myfirst {
+	0% {
+		-webkit-transform: rotate(0deg) translateZ(0);
+	}
+	10% {
+		-webkit-transform: rotate(36deg) translateZ(0);
+	}
+	20% {
+		-webkit-transform: rotate(72deg) translateZ(0);
+	}
+	30% {
+		-webkit-transform: rotate(108deg) translateZ(0);
+	}
+	40% {
+		-webkit-transform: rotate(144deg) translateZ(0);
+	}
+	50% {
+		-webkit-transform: rotate(180deg) translateZ(0);
+	}
+	60% {
+		-webkit-transform: rotate(216deg) translateZ(0);
+	}
+	70% {
+		-webkit-transform: rotate(252deg) translateZ(0);
+	}
+	80% {
+		-webkit-transform: rotate(288deg) translateZ(0);
+	}
+	90% {
+		-webkit-transform: rotate(324deg) translateZ(0);
+	}
+	100% {
+		-webkit-transform: rotate(360deg) translateZ(0);
+	}
+}
+.mintscrll{
+	overflow: scroll;
+	height: 100%;
+}
+.mint-msgbox-cancel{
+	border: 0;
+}
+.imgBox img{
+	width: 1.2rem;
+	height: 1.2rem;
+	display: block;
+	margin: 0 auto;
+}
+footer.footers{
+	height: 2.75rem;
+	overflow: hidden;
+	background: #fafafa;
+	z-index: 999;
+}
+.foot_li{
+	padding: .4rem 0;
+}
+.text_span{
+	margin-top:.1rem !important;
+	height: .95rem;
+	line-height: .95rem;
+
+	font-weight:400;
+}
+.mui-content {
+    background-color: #fff;
+}
+.mint-indicator-mask{
+	z-index: 999999;
+	}
+.mint-indicator-wrapper{
+	z-index: 999999;
+}

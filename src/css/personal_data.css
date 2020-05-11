@@ -1,0 +1,413 @@
+/*个人资料*/
+.userinfo_data{
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+	padding-top: 2.25rem;
+  background-color: #F4F4F4;
+}
+.userinfo_data .myInfo{
+  width: 100%;
+  height: 4.5rem;
+  background-color: #fff;
+  display: flex;
+  padding: 0 0.75rem;
+  align-items: center;
+}
+.userinfo_data .myInfo .myPortrait{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.userinfo_data .myInfo .myId{
+  margin-left: 1rem;
+  font-size: 0.8rem;
+  color: #334046;
+}
+.userinfo_data .myDataList{
+  width: 100%;
+  height: auto;
+}
+.userinfo_data .myDataList .li{
+  width: 100%;
+  height: 2.4rem;
+  background-color: #FFFFFF;
+  padding: 0 0 0 0.75rem;
+}
+.userinfo_data .myDataList .li .left{
+  width: 50%;
+  height: 2.4rem;
+  float: left;
+  border-bottom: 1px solid #F4F4F4;
+  font-size: 0.7rem;
+  font-family: PingFangSC;
+  color: #334046;
+  line-height: 2.4rem;
+}
+.userinfo_data .myDataList .li .value{
+  width: 50%;
+  float: right;
+  height: 2.4rem;
+  padding-right: 1.75rem;
+  background-image: url(../../static/userinfo/mod_fhyh.png);
+  background-repeat: no-repeat;
+  background-position: 92% 50%;
+  background-size: 0.3rem 0.6rem;
+  font-size: 0.65rem;
+  border-bottom: 1px solid #F4F4F4;
+  font-family: PingFangSC;
+  color: #999999;
+  line-height: 2.4rem;
+  text-align: right;
+}
+.userinfo_data .myDataList .li.QR_code .value img{
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+}
+.userinfo_data .myDataList .li:first-child .value{
+  padding-right: 0.75rem;
+  background: none;
+}
+.impWxPopup1{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.impWxPopup1 .cont{
+  margin-left: 1.125rem;
+  margin-right: 1.125rem;
+  height: 7rem;
+  background-color: #fff;
+  border-radius: 0.45rem;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  margin-top: -5rem;
+}
+.impWxPopup1 .cont .text{
+  height: 4.5rem;
+  border-bottom: 1px solid #C9C9C9;
+  padding: 0 3.85rem;
+  padding-top: 1.175rem;
+  text-align: center;
+  font-size: 0.8rem;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgb(51,64,70);
+  line-height: 1.125rem;
+}
+.impWxPopup1 .cont .but{
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+}
+.impWxPopup1 .cont .but>div{
+  flex: 1 1 auto;
+  height: 2.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgb(153,153,153);
+  line-height: 2.5rem;
+}
+.impWxPopup1 .cont .but>div.b1{
+  border-right: 1px solid #C9C9C9;
+}
+
+.impWxPopup2{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.impWxPopup2 .cont{
+  margin-left: 1.125rem;
+  margin-right: 1.125rem;
+  height: 7rem;
+  background-color: #fff;
+  border-radius: 0.45rem;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  margin-top: -5rem;
+  overflow: hidden;
+}
+.impWxPopup2 .cont .text{
+  height: 4.5rem;
+  border-bottom: 1px solid #C9C9C9;
+  padding: 0 3.85rem;
+  padding-top: 1.175rem;
+  text-align: center;
+  font-size: 0.8rem;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgb(51,64,70);
+  line-height: 1.125rem;
+}
+.impWxPopup2 .cont .but{
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+}
+.impWxPopup2 .cont .but>div{
+  flex: 1 1 auto;
+  height: 2.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: #0C83DF;
+  line-height: 2.5rem;
+}
+.impWxPopup2 .cont .but>div.b1{
+  border-right: 1px solid #C9C9C9;
+  color: #999999;
+}
+.impWxPopup2 .cont .but>div:active{
+  background-color: #f6f6f6;
+}
+.QR_codePopup{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 0;
+  transform: scale3d(0,0,1);
+  transition: 0.5s;
+}
+.QR_codePopup.on{
+  opacity: 1;
+  transform: scale3d(1,1,1);
+  display: block;
+}
+.QR_codePopup .main{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.QR_codePopup .main .cont{
+  width: 13.75rem;
+  height: 13.75rem;
+  padding: 1.25rem;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin-left: -6.875rem;
+  background-image: url(../../static/userinfo/qr_codepopup_bg.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+}
+.QR_codePopup .main .cont img{
+  width: 100%;
+  height: 100%;
+}
+.QR_codePopup .share{
+  width: 100%;
+  height: 6.5rem;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+}
+.QR_codePopup .share .top{
+  margin: 0 0.45rem;
+  height: 2rem;
+  border-bottom: 1px solid #E5E5E5;
+  text-align: center;
+  font-size: 0.7rem;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgb(153,153,153);
+  line-height: 2rem;
+}
+.QR_codePopup .share .imgbox{
+  width: 100%;
+  height: 4.5rem;
+  display: flex;
+}
+.QR_codePopup .share .imgbox>div{
+  flex: 1 0 auto;
+  width: 33.3%;
+  height: 4.5rem;
+  padding: 0.85rem 0;
+  text-align: center;
+}
+.QR_codePopup .share .imgbox>div>img{
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin: auto;
+}
+.QR_codePopup .share .imgbox>div>p{
+  text-align: center;
+  font-size:0.6rem;
+  font-family: PingFangSC;
+  color: rgb(255,116,21);
+  line-height: 1.75rem;
+}
+
+/*安全中心*/
+.safety_center{
+  width: 100%;
+  height: auto;
+	padding-top: 2.25rem;
+  min-height: 100vh;
+	background-color: #F4F4F4;
+}
+.safety_center .realInfo{
+  width: 100%;
+  height: auto;
+  padding-top: 0.5rem;
+}
+.safety_center .realInfo .top{
+  width: 100%;
+  height: 2.4rem;
+  padding-left: 2.15rem;
+  background-image: url(../../static/userinfo/safety_center_icon1.png);
+  background-repeat: no-repeat;
+  background-position: 0.75rem 50%;
+  background-size: 1rem auto;
+  font-size: 0.75rem;
+  font-family: PingFangSC;
+  color: rgb(153,153,153);
+  line-height: 2.4rem;
+}
+.safety_center .realInfo .list{
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+}
+.safety_center .realInfo .list li{
+  margin-left: 0.75rem;
+  margin-right: 0;
+  height: 2.4rem;
+  border-bottom: 1px solid #E5E5E5;
+  padding-right: 0.75rem;
+  display: flex;
+}
+.safety_center .realInfo .list li:last-of-type{
+  border: 0;
+}
+.safety_center .realInfo .list .left{
+  width: 50%;
+  height: 2.4rem;
+  font-size: 0.7rem;
+  font-family: PingFangSC;
+  color: rgb(51,64,70);
+  line-height: 2.4rem;
+}
+.safety_center .realInfo .list .value{
+  width: 50%;
+  height: 2.4rem;
+  font-size: 0.7rem;
+  font-family: PingFangSC;
+  color: #999999;
+  line-height: 2.4rem;
+  text-align: right;
+}
+.safety_center .realInfo .list .value.on{
+  color: #FF8100;
+}
+.safety_center .realInfo .realAut{
+  width: 100%;
+  height: 2.4rem;
+  border-top: 1px solid #F4F4F4;
+  background-color: #fff;
+  font-size: 0.7rem;
+  font-family: PingFangSC;
+  color: rgb(67,164,241);
+  line-height: 2.4rem;
+  text-align: center;
+}
+
+.safety_center .bankInfo{
+  width: 100%;
+  height: auto;
+  margin-top: 0.5rem;
+}
+.safety_center .bankInfo .top{
+  width: 100%;
+  height: 2.4rem;
+  padding-left: 2.15rem;
+  background-image: url(../../static/userinfo/safety_center_icon2.png);
+  background-repeat: no-repeat;
+  background-position: 0.75rem 50%;
+  background-size: 1rem auto;
+  font-size: 0.75rem;
+  font-family: PingFangSC;
+  color: rgb(153,153,153);
+  line-height: 2.4rem;
+}
+.safety_center .bankInfo .list{
+  width: 100%;
+  height: auto;
+}
+.safety_center .bankInfo .list>ul{
+  width: 100%;
+  height: auto;
+  padding-left: 0.75rem;
+  background-color: #fff;
+  margin-bottom: 0.5rem;
+}
+.safety_center .bankInfo .list>ul:last-of-type{
+  margin-bottom: 0;
+}
+.safety_center .bankInfo .list>ul>li{
+  width: 100%;
+  height: 2.4rem;
+  border-bottom: 1px solid #E5E5E5;
+  padding-right: 0.75rem;
+  display: flex;
+}
+.safety_center .bankInfo .list>ul>li:last-of-type{
+  border: 0;
+}
+.safety_center .bankInfo .list .left{
+  width: 50%;
+  height: 2.4rem;
+  font-size: 0.7rem;
+  font-family: PingFangSC;
+  color: rgb(51,64,70);
+  line-height: 2.4rem;
+}
+.safety_center .bankInfo .list .value{
+  width: 50%;
+  height: 2.4rem;
+  font-size: 0.7rem;
+  font-family: PingFangSC;
+  color: #999999;
+  line-height: 2.4rem;
+  text-align: right;
+}
+.safety_center .bankInfo .list .value.on{
+  color: #FF8100;
+}
+.safety_center .bankInfo .addBank{
+  width: 100%;
+  height: 2.4rem;
+  border-top: 1px solid #F4F4F4;
+  background-color: #fff;
+  font-size: 0.7rem;
+  font-family: PingFangSC;
+  color: rgb(67,164,241);
+  line-height: 2.4rem;
+  text-align: center;
+}

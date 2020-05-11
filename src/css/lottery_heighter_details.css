@@ -1,0 +1,343 @@
+
+.heighter_details{
+	font-size: 0.8rem;
+	font-family: 'Helvetica Neue';
+}
+.aui-refresh-content{
+	top:2.2rem
+	}
+.aui-bar-nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /*height: 3rem;
+  line-height: 3rem;*/
+}
+
+.aui-bar-nav{
+	background: #fff;
+	color: #333;
+}
+.aui-bar-nav .aui-btn .aui-iconfont{
+	color: #333;
+}
+.aui-bar-nav .aui-btn {
+  /*height: 3rem;
+  line-height: 3rem;*/
+}
+.aui-bar-nav .aui-title {
+  /*height: 3rem;
+  line-height: 3rem;*/
+}
+.aui-title {
+  overflow: visible !important;
+}
+
+#wrap {
+  margin-top: 0;
+  width: 100%;
+  margin-bottom: 3.5rem;
+	background: #F5F5F5;
+}
+
+.share_icon {
+  position: relative;
+  left: 0.5rem;
+  width: 60%;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  /* justify-content: space-between; */
+  background-color: #fff;
+  height: 4rem;
+  padding: 0 0.75rem;
+  /* margin: 0 0.5rem; */
+  margin-bottom: 0.5rem;
+  border-radius: 0.15rem;
+  box-shadow: 0 0 7px rgba(0,0,0,0.1);
+	height: 3.75rem;
+	overflow: hidden;
+}
+.list:last-child{
+  margin-bottom: 0;
+}
+i{
+	font-style: normal !important;
+}
+.title {
+  display: flex;
+  flex-direction: row;
+	margin-top: 0.75rem;
+	height: 0.75rem;
+  /*align-items: center;*/
+  justify-content: space-between;
+}
+
+.stage {
+  display:inline-flex;
+  margin-right: 0.2rem;
+  font-size: 0.55rem;
+}
+.week {
+  margin-left: 0.2rem;
+}
+.bottom  {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+	margin-top: .5rem;
+	height: 1.15rem;
+  width: 100%;
+}
+.title_left{
+	 color: #999;
+	font-size: 0.55rem;
+}
+.day {
+  color: #999;
+  font-size:0.55rem;
+}
+
+.redball_left{
+  display: flex;
+  align-items: center;
+}
+
+.redball_left .circle_ball {
+  height: 1.15rem;
+  width: 1.15rem;
+  line-height: 1.15rem;
+  margin-top: 0.1rem;
+  margin-right: 0.3rem;
+  color:#F82A5B;
+  font-size: 0.65rem;
+  text-align: center;
+}
+.content0ge .circle_ball{
+	 border-radius: 50%;
+	background-color: #F82A5B;
+	 color: #fff;
+}
+.redball_left .kuaisan {
+  width: 1.15rem;
+  height: 1.15rem;
+  line-height: 1.15rem;
+  background-color: #F82A5B;
+  border-radius: 0.2rem;
+  color: #fff;
+  font-size: 0.6rem;
+  text-align: center;
+  margin-top: 0.1rem;
+  margin-right: 0.3rem;
+}
+.redball_left .blue_ball{
+  color: #03A9F4;
+ }
+ .content0ge .blue_ball{
+	 color: #fff;
+	 background-color: #03A9F4;
+ }
+ .border_low {
+   margin: 0 0.2rem;
+ }
+ .redball_right {
+   /*width: 10%;*/
+	/* width: 0.55rem;
+	 height: 0.35rem; */
+   flex-shrink: 0;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   /*justify-content: flex-start;*/
+ }
+/* .laijia{
+	  width: 0.55rem;
+	 height: 0.35rem;
+ } */
+ .icon_right {
+   width: 0.55rem;
+  height: 0.35rem;
+   margin-left: 0.3rem;
+   /*background-image: url(../../../images/mqc/yellow_arr.png);*/
+   /*background-size: 100% 100%;*/
+
+ }
+ .laijia .icon_right{
+	 margin-left: 0rem;
+ }
+ .icon_right.rotate{
+   transform: rotate(180deg);
+ }
+
+
+ .sum {
+   /*font-weight: bolder;*/
+   /*margin-right: 0.7rem;*/
+   font-size: 0.7rem;
+ }
+.buttons_wrap {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3.5rem;
+  background-color: white;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  z-index: 8;
+  box-shadow: 0 -2px 4px 0 rgba(3,3,3,0.20);
+}
+.button {
+  position: absolute;
+  top: 0.5rem;
+  width: 90%;
+  margin-left: 5%;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  z-index: 100;
+  background: #F5A623;
+  border: 1px solid #D69120;
+  outline:0px;
+  -webkit-appearance:none;
+	color: #fff;
+	font-family: 'Helvetica Neue';
+	font-size: 0.8rem;
+	letter-spacing: 0.05rem;
+}
+
+/*缩放*/
+.scale {
+  /* margin: 5% 5%; */
+  /* border: 1px solid #e2e2e2; */
+  /* border-radius: 1rem; */
+  background-color: #fff;
+	border-top: 1px solid #f4f4f4;
+	margin-top: -.5rem;
+	margin-bottom: .5rem;
+  padding-bottom: 1%;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3% 0;
+}
+.sales, .lottery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.desc {
+  color: #999;
+	padding-top: 0.375rem;
+  font-size: 0.55rem;
+}
+.number {
+  color: #F82A5B;
+  font-size: 0.8rem;
+}
+
+.border {
+  width: 0.05rem;
+  height: 0.3rem;
+  border-top: 2rem solid #979797;
+}
+.contents .table{
+  width: 100%;
+  text-align: center;
+  padding: 1%;
+}
+.contents .table thead th{
+	height: 1.6rem;
+	background: #F4F4F4;
+	color: #999999;
+	font-size: 0.5rem;
+	font-weight: normal;
+}
+.contents .table th{
+  /* background-color: rgb(83, 97, 110); */
+  /* padding: 4% 0; */
+  /* color: #fff; */
+}
+.contents .table tr{
+  border-bottom: 1px solid #f4f4f4;
+}
+.contents .table td{
+  color: #565656;
+	background: #fff;
+		height: 1.6rem;
+		font-size: 0.55rem;
+  /* padding: 0.4rem 0; */
+}
+/*.contents .table td{
+  border-bottom: 1px solid #999;
+}
+.contents .table td:first-child{
+  margin-left: 2px;
+}
+.contents .table td:last-child{
+  margin-right: 2px;
+}*/
+.contents .table tr:last-child {
+  border: 0
+}
+.dis-no {
+  display: none;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+
+/* 分享 */
+.share_box {
+  width: 100%;
+  height: 100%;
+  background: url(../assets/goucai/sharepic1.png) 0 0 no-repeat;
+  background-size: 100% auto;
+  z-index: 99999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.8);
+  font-family: "微软雅黑", "黑体";
+}
+.share_box .share_cont{
+  position:fixed; 
+  bottom: 0.6rem;
+  width: 100%; 
+  display: flex;
+}
+.share_box .quxiao {
+  background-color: #fb6b63;
+  width: 42.5%;
+  height: 2rem;
+  line-height: 2rem;
+  color: #fff;
+  text-align: center;
+  font-size: 0.75rem;
+  margin-left: 5%;
+  border-radius: 0.3rem;
+}
+.share_box .down {
+  background-color: #f5a623;
+  width: 42.5%;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.75rem;
+  margin-left: 5%;
+  border-radius: 0.3rem;
+}
+/* 分享end */

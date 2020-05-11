@@ -1,0 +1,224 @@
+.get_invitation {
+    width: 100%;
+    height: auto;
+	margin-top: 2.25rem;
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgb(252, 155, 83) 0%, rgb(247, 84, 71) 100%);
+}
+
+.get_invitation .main {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding-top: 1.5rem;
+    background-image: url(../../static/userinfo/get_invitation_bg.png);
+    background-position: 50% 1.5rem;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.get_invitation .invitation-numder {
+    width: 57vw;
+    height: 11.87vw;
+    margin: auto;
+    margin-top: 18.13vw;
+    background-color: #FFFAF0;
+    text-align: center;
+    font-size: 1.25rem;
+    font-family: PingFangSC-Medium;
+    font-weight: 500;
+    color: rgba(219, 10, 32, 1);
+    line-height: 11.87vw;
+}
+
+.get_invitation .invitation-butt {
+    width: 25.3vw;
+    height: 9.33vw;
+    margin: auto;
+    margin-top: 10.8vw;
+    background: linear-gradient(180deg, rgba(254, 188, 64, 1) 0%, rgba(255, 139, 52, 1) 100%);
+    border-radius: 5.33vw;
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: PingFangSC;
+    color: #fff;
+    line-height: 9.33vw;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.get_invitation .invitation-QR {
+    width: 37.33vw;
+    height: 37.33vw;
+    margin: auto;
+    margin-top: 18vw;
+}
+
+.get_invitation .invitation-text {
+    width: auto;
+    height: auto;
+    margin-top: 3.47vw;
+}
+
+.get_invitation .invitation-text .p1 {
+    width: 100%;
+    height: 5.33vw;
+    text-align: center;
+    font-size: 0.7rem;
+    font-family: PingFangSC;
+    color: rgba(102, 102, 102, 1);
+    line-height: 5.33vw;
+}
+
+.get_invitation .invitation-text .p2 {
+    width: 60.93vw;
+    height: auto;
+    margin: auto;
+    margin-top: 2.13vw;
+    text-align: center;
+    font-size: 0.5rem;
+    font-family: PingFangSC;
+    color: rgba(153, 153, 153, 1);
+    line-height: 0.7rem;
+}
+
+.input_invitation {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+	margin-top: 2.25rem;
+    background-image: url(../../static/userinfo/input_invitation_bg.png);
+    background-repeat: no-repeat;
+    background-position: 50% top;
+    background-size: 100% auto;
+}
+
+.input_invitation .top {
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+}
+
+.input_invitation .main {
+    width: 100%;
+    height: 135.466vw;
+    background-image: url(../../static/userinfo/input_invitation_bbj.png);
+    background-repeat: no-repeat;
+    background-position: 50% top;
+    background-size: 100% 100%;
+	position: relative;
+}
+
+.input_invitation .input {
+    width: 69.33vw;
+    height: auto;
+    margin: auto;
+    padding-top: 10vw;
+}
+
+.input_invitation .input input {
+    display: block;
+    width: 100%;
+    height: 10.53vw;
+    padding: 0 0.45rem;
+    background: none;
+    border-radius: 0.15rem;
+    border: 1px solid rgba(84, 42, 6, 1);
+    font-size: 0.6rem;
+    font-family: PingFangSC;
+    color: #542A06;
+    line-height: 10.53vw;
+}
+
+.input_invitation .input p {
+    padding: 3.067vw 0.45rem;
+    font-size: 0.6rem;
+    font-family: PingFangSC;
+    color: #C1B7A3;
+    line-height: 4.4vw;
+}
+
+.input_invitation .qs {
+    width: 70.4vw;
+    height: 1px;
+    border-bottom: 1px dashed #D8CEC1;
+    margin: auto;
+    margin-top: 1.4vw;
+}
+
+.input_invitation .butt {
+    width: 69.333vw;
+    height: 10.533vw;
+    margin: auto;
+    margin-top: 5.2vw;
+    background: linear-gradient(180deg, rgb(254, 188, 64) 0%, rgb(255, 139, 52) 100%);
+    border-radius: 0.15rem;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: PingFangSC;
+    color: rgba(255, 255, 255, 1);
+    line-height: 10.533vw;
+}
+
+.input_invitation .explain-title {
+    width: 100%;
+    height: 5.6vw;
+    margin-top: 5.2vw;
+    background-image: url(../../static/userinfo/input_invitation_x.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 62.933vw;
+    text-align: center;
+    font-size: 0.75rem;
+    font-family: PingFangSC-Medium;
+    font-weight: 500;
+    color: #542A06;
+    line-height: 5.6vw;
+}
+
+.input_invitation .explain-ul {
+    width: 69.33vw;
+    height: auto;
+    margin: auto;
+    margin-top: 2.533vw;
+}
+
+.input_invitation .explain-ul .h1 {
+    width: auto;
+    height: auto;
+    font-size: 0.65rem;
+    font-family: PingFangSC-Medium;
+    font-weight: 500;
+    color: #542A06;
+    line-height: 4.933vw;
+}
+
+.input_invitation .explain-ul .explain-li {
+    width: 100%;
+    height: auto;
+    margin: 2vw auto;
+    padding-left: 0.9rem;
+    background-image: url(../../static/userinfo/input_invitation_xx.png);
+    background-repeat: no-repeat;
+    background-position: left 0.6vw;
+    background-size: 3vw 3vw;
+}
+
+.input_invitation .explain-ul .explain-li p {
+    font-size: 0.6rem;
+    font-family: PingFangSC;
+    color: #666666;
+    line-height: 4.8vw;
+}
+
+.input_invitation .explain-ul .explain-li span {
+    color: #FF2613;
+}
+.input_invitation .money-icon{
+  width: 5.1rem;
+  height: 3.05rem;
+  position: absolute;
+  bottom: -0.5rem;
+  right: 0;
+  z-index: 1;
+}

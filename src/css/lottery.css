@@ -1,0 +1,394 @@
+header{
+	position: fixed;
+}
+.aui-refresh-content{
+	top:2.25rem
+	}
+.lottery{
+	font-family:  Helvetica Neue, Helvetica, sans-serif;
+	font-size: 0.8rem;
+	background: #f5f5f5;
+    min-height: 100vh;
+}
+.top_header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 100%;
+	z-index: 1;
+	margin-top: 2.25rem;
+}
+
+#tab {
+	width: 100%;
+	display: flex;
+}
+
+#wrap {
+	width: 100%;
+}
+.mint-tabbar {
+	position: fixed;
+	height: 2.75rem;
+}
+.aui-tab {
+	background-color: #fff;
+}
+
+.aui-tab-item {
+	height: 1.8rem;
+	line-height: 1.5rem;
+	color: #333333;
+}
+
+.tab_icon {
+	width: 20px;
+	height: 20px;
+}
+
+.tab_item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 1rem;
+	border-bottom: 0.075rem solid #fff;
+}
+
+.aui-tab-item.aui-active {
+	color: #F82A5B;
+	border-bottom: 0.075rem solid #F82A5B;
+}
+
+.lists {
+	display: block;
+	background-color: #f5f5f5;
+}
+
+.list {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #fff;
+	height: 4rem;
+	padding: 3% 2%;
+	margin: 0 0.5rem;
+	margin-bottom: 0.5rem;
+	border-radius: 0.15rem;
+	box-shadow: 0 0 7px rgba(0,0,0,0.1);
+}
+
+
+.left_icon {
+	display: none;
+	width: 16%;
+	height: 16%;
+	padding-right: 3%;
+}
+
+.hot_right,
+.sports_right {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+
+}
+
+.five .heighter_right,
+.three .heighter_right {
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+}
+
+.eight .heighter_right,
+.math_three .right {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.title {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 1.2rem;
+}
+
+.title_left h3 {
+	height: 1.2rem;
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+	margin-right: 0.4rem;
+	font-size: 0.75rem;
+	color: #333333;
+}
+
+.title_left{
+	display: flex;
+	align-items: center;
+	flex: 0 0 auto;
+	width: auto;
+	height: 1.2rem;
+}
+
+.dates {
+	display: flex;
+	align-items: center;
+	height: 1.2rem;
+	font-size: 0.55rem;
+	color: #ABA6A7;
+}
+
+.dates.day{
+	flex: 0 0 auto;
+	width: auto;
+	height: 1.2rem;
+	font-size: 0.55rem;
+	color: #999;
+}
+
+.stage {
+}
+
+.week {
+	margin-left: 0.2rem;
+}
+
+.hot_date_num {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.redball_left{
+	display: flex;
+	align-items: center;
+}
+
+/*红色背景圆球*/
+.hot .redball_left span,
+.heighter .five .redball_left span,
+.circle_ball,
+.math .math_three .redball_left span {
+	height: 1.15rem;
+	width: 1.15rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background-color: #F82A5B;
+	margin-top: 0.1rem;
+	margin-right: 0.3rem;
+	color: #fff;
+	font-size: 0.65rem;
+	text-align: center;
+}
+
+.math .math_three .redball_left .blue_ball {
+	background-color: #03A9F4;
+
+}
+
+.circle_ball .kuaisan {
+	width: 1.15rem;
+	height: 1.15rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #F82A5B;
+	border-radius: 0.2rem;
+	color: #fff;
+	font-size: 0.6rem;
+	text-align: center;
+}
+
+.active {
+	color: red;
+}
+
+/*大|单*/
+.single {
+	display: flex;
+	align-items: center;
+	color: #666666;
+	font-size: 0.75rem;
+}
+
+.border {
+	margin: 0 0.2rem;
+}
+
+/*大|单*/
+
+/*年月日*/
+.ymr {
+	margin: 0 0.2rem;
+}
+
+.sports .date_num {
+	color: #fff;
+}
+
+.sports .date_num {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/*竞技彩的方形圆角*/
+.sports .lists .date_num .redball_left span {
+	width: 0.8rem;
+	height: 1.4rem;
+	line-height: 1.4rem;
+	background-color: rgb(55, 209, 111);
+	border-radius: 0.2rem;
+	color: #fff;
+	font-size: 0.6rem;
+	text-align: center;
+	margin-top: 0.1rem;
+	margin-right: 0.2rem;
+	display: inline-block;
+}
+
+.sports .lists .date_num .redball_left span:last-child {
+	margin-right: 0;
+}
+
+.sports .input_button {
+	border: 1px solid #38D06E;
+	border-radius: 1.2rem;
+	color: #38D068;
+	text-align: center;
+	width: 11rem;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	font-size: 0.6rem;
+	margin-top: 0.1rem;
+	outline: 0px;
+	-webkit-appearance: none;
+}
+
+.score {
+	margin: 0 0.5rem;
+}
+
+/*大单-右箭头*/
+.right_size {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	/*justify-content: space-between;*/
+	justify-content: flex-end;
+	margin-top: 0.2rem;
+}
+
+/*大单-右箭头*/
+.five .list {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #fff;
+	padding: 3% 3%;
+	margin-bottom: 0.5rem;
+}
+
+.hot .list:first-child .redball_left {
+	width: 90%;
+}
+
+.top,
+.bottom {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.eight .redball_left {
+	/*width: 90%;*/
+}
+
+.three .redball_left span,
+.kuaisan {
+	width: 1.15rem;
+	height: 1.15rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #F82A5B;
+	border-radius: 0.2rem;
+	color: #fff;
+	font-size: 0.6rem;
+	text-align: center;
+}
+
+.heighter_five_right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.dis_no {
+	display: none;
+}
+
+[v-cloak] {
+	display: none;
+}
+
+
+/* 分享 */
+.share_box {
+  width: 100%;
+  height: 100%;
+  background: url(../assets/goucai/sharepic1.png) 0 0 no-repeat;
+  background-size: 100% auto;
+  z-index: 99999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.8);
+  font-family: "微软雅黑", "黑体";
+}
+.share_box .share_cont{
+  position:fixed; 
+  bottom: 0.6rem;
+  width: 100%; 
+  display: flex;
+}
+.share_box .quxiao {
+  background-color: #fb6b63;
+  width: 42.5%;
+  height: 2rem;
+  line-height: 2rem;
+  color: #fff;
+  text-align: center;
+  font-size: 0.75rem;
+  margin-left: 5%;
+  border-radius: 0.3rem;
+}
+.share_box .down {
+  background-color: #f5a623;
+  width: 42.5%;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.75rem;
+  margin-left: 5%;
+  border-radius: 0.3rem;
+}
+/* 分享end */

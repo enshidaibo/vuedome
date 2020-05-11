@@ -1,0 +1,40 @@
+{
+  "presets": [
+    ["env", {
+      "modules": false,
+      "targets": {
+        "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
+      }
+    }],
+    // "es2015",
+    "stage-2"
+  ],
+  "plugins": ["transform-vue-jsx", "transform-runtime"],
+  "env": {
+    "test": {
+      "presets": ["env", "stage-2"],
+      "plugins": ["transform-vue-jsx", "transform-es2015-modules-commonjs", "dynamic-import-node"]
+    }
+  },
+	"ignore":[  './src/js/mui.min.js'],
+}
+// {
+//  "presets": [
+  
+//   ["env", {
+//    "modules": false,
+//    "targets": {
+//     "browsers": ["> 1%", "last 2 versions", "not ie <= 8"]
+//    }
+//   }],
+//   "stage-2"
+//  ],
+//  "plugins": ["transform-runtime"],
+//  "env": {
+//   "test": {
+//    "presets": ["env", "stage-2"],
+//    "plugins": ["istanbul"]
+//   }
+//  },
+//  "ignore":[  './src/js/mui.min.js'],
+// }

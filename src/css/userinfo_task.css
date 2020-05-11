@@ -1,0 +1,2061 @@
+* {
+    box-sizing: border-box;
+    margin: 0 0;
+    /* padding: 0 0; */
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+}
+
+/* body{
+  font-size: 12px !important;
+} */
+hr {
+    width: 100%;
+    height: 0.45rem;
+    border: none;
+}
+
+.mint-tabbar {
+    position: fixed;
+    height: 2.75rem;
+}
+.userinfo_task_content{
+  height: 100%;
+  /*position: absolute;*/
+  top: 0;
+  left: 0;
+  background-color: #f4f4f4;
+	padding-bottom: 2rem;
+}
+
+.userinfo_task_bottom {
+    width: 100%;
+    height: 1.5rem;
+    background-color: #f4f4f4;
+}
+
+
+.userinfo_task_name {
+    display: inline-block;
+    height: 2.34rem;
+    line-height: 2.34rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #4A4A4A;
+    position: absolute;
+    top: 0;
+    left: 4.125rem;
+}
+
+.userinfo_task_desc {
+    display: inline-block;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    font-size: 0.6rem;
+    color: #7a7a7a;
+    position: absolute;
+    top: 1.875rem;
+    left: 4.125rem;
+}
+
+.userinfo_task_desc>span {
+    color: #ff0000;
+    font-weight: 600;
+}
+
+.userinfo_task_start {
+    display: inline-block;
+    width: 2.9rem;
+    height: 1.17rem;
+    /* z-index: 3; */
+    position: absolute;
+    top: 1.01rem;
+    right: 0.9rem;
+    background: url(../assets/task/icon08.png) center center no-repeat;
+    background-size: 2.9rem 1.08rem;
+}
+
+.userinfo_task_complete {
+    display: none;
+    position: absolute;
+    width: 2.34rem;
+    height: 3.23rem;
+    right: 1.17rem;
+    top: 0;
+    background: url(../assets/task/icon09.png) center center no-repeat;
+    background-size: 2.3rem 2.3rem;
+}
+
+.task_complete_this>.userinfo_task_start {
+    display: none;
+}
+
+.task_complete_this>.userinfo_task_complete {
+    display: block;
+}
+
+/* 赚钱活动 */
+
+/* top */
+.mrg_top {
+	margin-top: 2.75rem;
+	width: 100%;
+	height: 3.75rem;
+	background-image: url(../../static/task/task-05.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% auto;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.mrg_top .li{
+	flex: 1 1 auto;
+	height: 2.5rem;
+	padding-left: 3.68rem;
+	padding-top: 0.4rem;
+	background-repeat: no-repeat;
+	background-position: 1.8rem 50%;
+	background-size: 1.35rem auto;
+}
+.mrg_top .li p{
+	font-size: 0.75rem;
+	color: #fff;
+	line-height: 1rem;
+}
+.mrg_top .li .p2{
+	opacity:0.7;
+}
+.mrg_top_left{
+	border-right: 1px solid #7AC1FF;
+	background-image: url(../../static/task/task-01.png);
+}
+.mrg_top .mrg_top_left p.p2{
+	width: 3rem;
+	text-align: center;
+}
+.mrg_top_rigth{
+	background-image: url(../../static/task/task-02.png);
+}
+.mrg_top .mrg_top_rigth p.p2{
+	width: 3rem;
+	text-align: center;
+}
+/* top end */
+
+/* 每日任务 */
+.userinfo_task_progress{
+	width: 100%;
+	height: 6rem;
+	margin-top: 0.575rem;
+	background-image: url(../../static/task/task-08.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	position: relative;
+}
+.userinfo_task_progress .h1{
+	width: 100%;
+	height: 1.2rem;
+	padding: 0.4rem 0.5rem;
+	font-size: 0.7rem;
+	color: #fff;
+	line-height: 1.2rem;
+	display: flex;
+    align-items: center;
+    position: relative;
+}
+.userinfo_task_progress .h1 span{
+	    position: absolute;
+    right: 0.5rem;
+    font-size: 0.55rem;
+    color: rgba(255,255,255,1);
+    opacity: 0.6;
+}
+.progress-line{
+	left: 1.2rem;
+	right: 1.2rem;
+	height: 0.5rem;
+	position: absolute;
+	top: 3rem;
+	background-image: url(../../static/task/task-07.png);
+	background-repeat: repeat-x;
+	background-size: auto 100%;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.progress-li{
+	left: 0.24rem;
+	right: 0.34rem;
+	height: auto;
+	position: absolute;
+	top: 1.72rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.progress-dome{
+	flex: 0 1 auto;
+	width: 2.6rem;
+	height: auto;
+}
+.progress-dome .icon{
+	width: 2.6rem;
+	height: 1.45rem;
+	margin-top: 0.8rem;
+	margin-bottom: 0.35rem;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+.progress-dome p{
+	margin-top: 0.2rem;
+	font-size: 0.55rem;
+	color: #fff;
+	line-height: 0.89rem;
+	text-align: center;
+}
+.progress-chest{
+	flex: 0 1 auto;
+	width: 2.6rem;
+	height: auto;
+}
+.progress-chest .icon{
+	width: 2.6rem;
+	height: 2.6rem;
+	background-repeat: no-repeat;
+	background-position: 50% 76%;
+	background-size: 80% auto;
+}
+.progress-chest p{
+	font-size: 0.55rem;
+	color: #fff;
+	line-height: 0.89rem;
+	text-align: center;
+}
+.progress-tips{
+	width: 3.43rem;
+	height: 0.8rem;
+	background-color: #FBC300;
+	border-radius: 0.2rem;
+	position: absolute;
+	top: 1.4rem;
+	right: 0.1rem;
+	font-size: 0.45rem;
+	line-height: 0.8rem;
+	color: rgba(255,255,255,1);
+	text-align: center;
+}
+.progress-tips span{
+	display: block;
+	width:0;
+  height:0;
+  border-width: 0.26rem 0.26rem 0;
+  border-style:solid;
+	border-style:solid;
+  border-color:#FBC300 transparent transparent;/*灰 透明 透明 */
+	position: absolute;
+	bottom: -0.24rem;
+	left: 50%;
+	margin-left: -0.26rem;
+}
+.progress-dome .task-03{
+	background-image: url(../../static/task/task-03.png);
+	background-size: 1.275rem 1.275rem;
+}
+.progress-dome .task-04{
+	background-image: url(../../static/task/task-04.png);
+	background-size: 1.45rem 1.45rem;
+}
+.progress-chest .task-06{
+	width: 2.6rem;
+	height: 2.6rem;
+	background-image: url(../../static/task/task-06.png);
+	background-repeat: no-repeat;
+	background-position: 50% 68%;
+	background-size: 80% auto;
+}
+.progress-chest .task-14{
+	/* background-image: url(../../static/task/task-14.png); */
+	width: 2.6rem;
+	height: 2.6rem;
+	background-image: url(../../static/task/task-14.png),url(../assets/task/clicktoreceive.png);
+	background-repeat: no-repeat,no-repeat;
+	background-position: 50% 79%,50% 0%;
+	background-size: 76% auto,2.4rem auto;
+}
+/* 每日任务end */
+
+/* 活动 */
+.userinfo_task_list{
+	width: 100%;
+	height: auto;
+	margin-top: 0.5rem;
+	display: flex;
+	justify-content: space-between;
+}
+.userinfo_task_list ul{
+	flex: 0 1 auto;
+	width: 49%;
+}
+.userinfo_task_list li{
+	width: 100%;
+	height: 4.5rem;
+	margin-bottom: 0.3rem;
+	background-color: #fff;
+	padding: 0.25rem;
+	background-repeat: no-repeat;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.userinfo_task_list li .p1{
+	font-size: 0.7rem;
+	font-family:PingFang-SC-Medium;
+	color: #333;
+	line-height: 1.1rem;
+}
+.userinfo_task_list li .p2{
+	font-size: 0.55rem;
+	font-family:PingFang-SC-Medium;
+	color: #666;
+	line-height: 0.76rem;
+}
+.userinfo_task_list li span{
+	color: #FF2323;
+}
+.userinfo_task_list li .but{
+	width: 3.2rem;
+	height: 1.05rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:linear-gradient(-90deg,rgba(21,122,232,1),rgba(22,157,252,1));
+	border-radius: 0.525rem;
+	margin-top: 0.6rem;
+	font-size: 0.55rem;
+	font-family:PingFang-SC-Medium;
+	color: #fff;
+}
+.task_list_sign{
+	background-image: url(../../static/task/task-10.png);
+	background-position: right bottom;
+	background-size: 3.075rem auto;
+}
+.task_list_sunbur{
+	background-image: url(../../static/task/task-13.png);
+	background-position: right bottom;
+	background-size: 3.075rem auto;
+}
+.task_list_goucai{
+	background-image: url(../../static/task/task-12.png);
+	background-position: right bottom;
+	background-size: 3.075rem auto;
+}
+
+.task_list_rigth li{
+	height: 6.9rem;
+	padding: 0.4rem 0.25rem;
+}
+.task_list_rigth li .but{
+	margin-top: 1.75rem;
+}
+.task_list_prize{
+	background-image: url(../../static/task/task-11.png);
+	background-position: right bottom;
+	background-size: 3.725rem auto;
+	position: relative;
+}
+.task_list_more{
+	background-image: url(../../static/task/task-09.png);
+	background-position: right bottom;
+	background-size: 3.725rem auto;
+	position: relative;
+}
+.task_list_more .popular{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 1.85rem;
+	height: 2.05rem;
+	background-image: url(../../static/task/task-15.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: 100% auto;
+}
+
+/* 活动end */
+
+/* .userinfo_task_sign{
+  width: 100%;
+  background-color: #FFF;
+  padding-bottom: 0.1rem;
+  margin-top: 2.25rem;
+} */
+
+.taskSign header {
+    position: fixed !important;
+}
+
+.taskSign .active {
+    color: #F38E0B;
+}
+
+.taskSign .aui-bar-nav {
+    background: #F38E0B;
+}
+
+.userinfo_task_sign {
+    width: 100%;
+    padding-bottom: 0.1rem;
+    margin-top: 2.25rem;
+    background: url(../assets/task/sign-bg.png) no-repeat;
+    background-size: contain;
+    overflow: hidden;
+	background-color: #F38E0B;
+
+}
+
+.userinfo_task_sign_content {
+    margin-top: 7.775rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.userinfo_task_sign_content .img1 {
+    width: 17.95rem;
+    height: 15.95rem;
+    margin: 0 auto;
+}
+
+.userinfo_task_sign_content h3 {
+    position: absolute;
+    font-size: 0.85rem;
+    color: #F38E0B;
+    line-height: 0.9rem;
+    top: 0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+.userinfo_task_sign_content .sp1 {
+    color: #E04B02;
+    font-size: 0.95rem;
+    line-height: 0.9rem;
+}
+
+.taskSignNav {
+    width: 17.075rem;
+    height: 8.725rem;
+    border-radius: 0.25rem;
+    background: #FFA530;
+    position: absolute;
+    top: 2.575rem;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    padding: 0.8rem 0 0.775rem 0.4rem;
+}
+
+.taskSignNav ul {
+    width: 11rem;
+    display: inline-block;
+    font-size: 0;
+}
+
+.taskSignNav li {
+    width: 3.475rem;
+    height: 3.475rem;
+    color: #fff;
+    text-align: center;
+    /* background: url(../assets/task/sign-dqd.png); */
+    /* background-size: cover; */
+    margin: 0 0.18rem 0.2rem 0;
+    display: inline-block;
+}
+
+.taskSignNav li>div{
+	height: 3.475rem;
+}
+
+.nav p {
+    color: #fff;
+    font-size: 0.55rem;
+}
+
+.nav .p1 {
+    line-height: 0.875rem;
+}
+
+.nav .p2 {
+   margin-top: 1.65rem;
+}
+
+.nav .active1{
+    background: url(../assets/task/sign-yqd.png);
+    background-size: cover;
+}
+
+.nav .active2 {
+     background: url(../assets/task/sign-dqd.png);
+    background-size: cover;
+}
+
+.taskSignNav .navRight {
+    width: 5.075rem;
+    height: 7.15rem;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.taskSignNav .active3 {
+    background: url(../assets/task/sign-dqd-07.png);
+    background-size: cover;
+}
+
+.taskSignNav .active4 {
+    background: url(../assets/task/sign-yqd-07.png) ;
+    background-size: cover;
+}
+
+.navRight p {
+    font-size: 0.65rem;
+    color: #fff;
+    line-height: 1.65rem;
+}
+
+.navRight .p2 {
+    margin-top: 4rem;
+}
+.taskSignFoot {
+    width: 13.55rem;
+    height: 2.375rem;
+    position: absolute;
+    bottom: 7.7%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+
+.taskSignFoot img {
+    width: 13.55rem;
+    height: 2.375rem;
+
+}
+
+.taskSignFoot p {
+    font-size: 0.85rem;
+    color: #FFF5F5;
+    position: absolute;
+    line-height: 2.375rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.userinfoTaskSignFooter {
+    margin-top: 1.325rem;
+    position: relative;
+}
+
+.userinfoTaskSignFooter .signFooterConent {
+        width: 86%;
+    /* height: 14.25rem; */
+    background: #fff;
+    border-radius: 0.75rem;
+    -webkit-box-shadow: 0 0 0.45rem #D3D9FD inset;
+    box-shadow: 0 0 0.45rem #D3D9FD inset;
+    margin: 0 auto;
+    padding: 0 1.05rem;
+    overflow: hidden;
+    margin-bottom: 1.425rem;
+    z-index: 11;
+    position: relative;
+}
+.after{
+  width: 94%;
+    height: 90%;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.7098039215686275);
+}
+
+/*.userinfoTaskSignFooter .signFooterConent:after {
+    content: '';
+    width: 17.7rem;
+    height: 16rem;
+    position: absolute;
+    top: 0.775rem;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    border: 2px solid #fff;
+    border-radius: 0.75rem;
+    box-sizing: border-box;
+}*/
+
+.signFooterConent h3 {
+    color: #FF6012;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 1.25rem;
+    margin-bottom: 1.2rem;
+    font-weight: bold;
+}
+
+.signFooterConent p {
+    font-size: 0.65rem;
+    line-height: 0.975rem;
+    color: #333333;
+    margin-bottom: 0.375rem;
+}
+
+.signFooterConent .p1{
+	margin-bottom: 1.3rem;
+}
+
+.signFooterConent span {
+    color: #FF2D2D;
+    font-weight: bold;
+}
+
+.userinfo_task_sign_content>table {
+    width: 100%;
+    height: 5.25rem;
+    margin: auto auto;
+    border-collapse: collapse;
+}
+
+/* .userinfo_task_sign_content .userinfo_task_sign_list>td {
+    width: 14%;
+    height: 5.25rem;
+    float: left;
+    position: relative;
+}
+
+.userinfo_task_sign_content .userinfo_task_sign_list>td>span:first-child {
+    height: 0.88rem;
+    color: #000;
+    text-align: center;
+    font-size: 0.64rem;
+    position: absolute;
+    bottom: 1.17rem;
+    width: 2.34rem;
+    display: block;
+}
+
+.userinfo_task_sign_content .userinfo_task_sign_list>td>span:last-child {
+    height: 2.04rem;
+    position: absolute;
+    top: 0.56rem;
+    left: 0;
+    background: url(../assets/task/dc_icon03.png) center center no-repeat;
+    background-size: 1.725rem 1.93rem;
+    text-align: center;
+    padding-top: 0.88rem;
+    line-height: 1.17rem;
+    color: #fff;
+    width: 2.34rem;
+    display: block;
+    font-size: 0.585rem;
+}
+
+.userinfo_task_sign_content .userinfo_task_sign_list>td>.sign_active {
+    background: url(../assets/task/dc_icon02.png) center center no-repeat !important;
+    background-size: 1.725rem 1.93rem !important;
+    color: #FFEB00 !important;
+}
+
+.userinfo_task_sign_btn {
+    text-align: center;
+    margin-top: 0.975rem;
+}
+
+.userinfo_task_sign_btn>span {
+    width: 15.53rem;
+    height: 2.34rem;
+    line-height: 2.34rem;
+    text-align: center;
+    font-size: 1.05rem;
+    color: #fff;
+    background-color: #FDC10A;
+    border-radius: 0.3rem;
+    display: inline-block;
+}
+
+.userinfo_task_sign_rule {
+    width: 100%;
+    height: 16.125rem;
+    background: url(../assets/task/dc_icon04.png) center center no-repeat #fff;
+    background-size: 93% 16.1rem;
+    padding: 0.58rem 0;
+    margin-top: 0.58rem;
+}
+
+.userinfo_task_sign_rule>p {
+    line-height: 0.88rem;
+    padding: 0 1.46rem;
+    font-size: 0.6rem;
+    margin-top: 1.5%;
+}
+
+.userinfo_task_sign_rule>p:first-child {
+    margin-top: 1.76rem;
+}
+
+.rule_p_bottom {
+    margin-bottom: 0.6rem;
+}
+
+.userinfo_task_sign_bottom {
+    width: 90%;
+    height: 5.325rem;
+    margin-left: 5%;
+    margin-top: 1.22rem;
+    background: url(../assets/task/dc_icon05.png) center center no-repeat;
+    background-size: 100% 5.325rem;
+    margin-bottom: 0.88rem;
+} */
+
+
+
+
+
+
+
+
+
+
+.userinfo_task_invitation {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    /* padding-bottom: 3.75rem; */
+    background: linear-gradient(#FF944A, #E85B3C);
+    margin-top: 2.25rem;
+}
+
+.userinfo_task_invitation_top {
+    width: 100%;
+    height: auto;
+}
+
+.userinfo_task_invitation_share {
+    margin-left: 0.94rem;
+    margin-right: 0.94rem;
+    height: auto;
+    border: 0.188rem solid #FFB139;
+    border-radius: 0.94rem;
+    background-color: #fff;
+    padding: 0.56rem 0 0.94rem 0;
+}
+
+.task_invitation_share_title {
+    width: 100%;
+    height: 2.25rem;
+    position: relative;
+}
+
+.task_invitation_share_title:after {
+    content: '';
+    width: 74%;
+    height: 0.375rem;
+    position: absolute;
+    background-color: #fff1e1;
+    border-radius: 0.188rem;
+    bottom: 0;
+    left: 13%;
+    z-index: 1;
+}
+
+.task_invitation_share_title p {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    text-align: center;
+    font-size: 0.94rem;
+    color: #FF7212;
+    line-height: 2.06rem;
+}
+
+.task_invitation_share_cont {
+    width: 74%;
+    height: auto;
+    margin: auto;
+    margin-top: 1.31rem;
+    text-align: center;
+    font-size: 0;
+}
+
+.task_invitation_wx_share {
+    display: inline-block;
+    width: 49%;
+    height: auto;
+    text-align: center;
+}
+
+.task_invitation_wx_share .wxlogo,
+.task_invitation_wx_share .pyqlogo {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.task_invitation_wx_share img {
+    width: 2.625rem;
+    height: auto;
+    margin: auto;
+}
+
+.task_invitation_wx_share .wxtitle {
+    width: 100%;
+    margin-top: 0.75rem;
+    text-align: center;
+    font-size: 0.84rem;
+    color: #757574;
+    line-height: 1.5rem;
+}
+
+.userinfo_task_invitation_liant {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.userinfo_task_invitation_liant img {
+    width: 9.375rem;
+    height: auto;
+    margin: auto;
+}
+
+.task_invitation_share_cont_lk {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 0.94rem;
+    text-align: center;
+}
+
+.othercontent {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 0.675rem;
+    color: #757574;
+    line-height: 1.125rem;
+}
+
+.task_invitation_copy_input {
+    width: 100%;
+    padding: 0.56rem;
+    background: #FEF5EE;
+    border: 1px solid #FFB139;
+    border-radius: 0.94rem;
+    margin-top: 0.94rem;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.75rem;
+    color: #757574;
+    line-height: 1.31rem;
+}
+
+.task_invitation_copy_btn {
+    width: 8.44rem;
+    height: 1.875rem;
+    margin: auto;
+    margin-top: 0.94rem;
+    text-align: center;
+    background: linear-gradient(#FF6F19, #FF3B0C);
+    border-radius: 0.375rem;
+    font-size: 0.84rem;
+    color: #FFF8AB;
+    line-height: 1.875rem;
+}
+
+.userinfo_task_invitation_sm {
+    width: 80%;
+    height: 2.25rem;
+    margin: auto;
+    margin-top: 1.875rem;
+    position: relative;
+    font-size: 0.86rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    line-height: 2.25rem;
+}
+
+.userinfo_task_invitation_sm span {
+    display: block;
+    width: 35%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    background-color: #fff1e1;
+}
+
+.task_invitation_sm_left {
+    left: 0;
+}
+
+.task_invitation_sm_right {
+    right: 0;
+}
+
+.userinfo_task_invitation_desc {
+    width: 84%;
+    padding: 1.09rem 0;
+    margin: auto;
+}
+
+.userinfo_task_invitation_desc>p {
+    width: 100%;
+    margin: auto;
+    margin-top: 0.56rem;
+    line-height: 1.46rem;
+    color: #fff;
+    font-size: 0.675rem;
+}
+
+
+.task_invitation_copy_link {
+    width: 15.23rem;
+    height: 1.17rem;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* 晒单 */
+.userinfo_task_sunburn {
+    background-color: #F3F8FD;
+    min-height: 100vh;
+    /* margin-top: 2.25rem; */
+}
+
+.userinfo_task_sunburn_tab {
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: nowrap;
+    align-self: center;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+	    top: 2.25rem;
+}
+
+.task_sunburn_tab_item {
+    width: 30%;
+    padding-top: 0.3rem;
+    line-height: 1.4rem;
+    font-size: 0.8rem;
+    position: relative;
+    text-align: center;
+    color: #999;
+    margin-left: -1px;
+    -webkit-box-flex: 1;
+    font-weight: bold;
+    height: auto;
+    margin: 0 auto;
+}
+
+.task_sunburn_tab_item>span {
+    display: block;
+    height: 1rem;
+    color: #9e9e9e;
+    font-size: 0.85rem;
+    margin-bottom: 0.675rem;
+}
+
+.userinfo_task_sunburn_tab .sunburn_tab_active {
+    border-bottom: 0.1rem solid #039be5;
+    color: #333 ;
+}
+
+.sunburn_tab_active span {
+    font-size: 0.85rem;
+    color: #FF515D;
+}
+.userinfo_task_sunburn_content {
+    position: absolute;
+    width: 100%;
+    border-top: 1px solid #e1e1e1;
+    margin-top: 3.45rem;
+}
+
+.userinfo_task_sunburn_list {
+    background-color: #fff;
+}
+
+.userinfo_task_sunburn_list .sb_list {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 0.25rem 0;
+}
+
+.sb_list div:first-child {
+    flex: 1;
+    height: 3.375rem;
+}
+
+.sb_list .sb_list_left {
+    display: flex;
+    height: 3.375rem;
+}
+
+.sb_list .sb_list_left img {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 0.91rem;
+    margin-left: 0.56rem;
+}
+
+.sb_list .sb_list_left p {
+    font-size: 0.7rem;
+    height: 1.68rem;
+    line-height: 2.81rem;
+    padding-left: 0.188rem;
+    color: #4A4A4A;
+}
+
+.sb_list .sb_list_left div>p:last-child {
+    font-size: 0.55rem;
+    line-height: 1.5rem;
+    color: #9B9B9B;
+}
+
+.sb_list .sb_list_right {
+    display: flex;
+    height: 3.375rem;
+    text-align: right;
+}
+
+
+.sb_list .sb_list_right div:first-child p:first-child {
+    font-size: 0.85rem;
+  /*  height: 1.68rem;
+    line-height: 2.81rem; */
+    padding-right: 0.75rem;
+    color: #FF8827;
+    font-weight: bold;
+	margin-top: 0.8rem;
+}
+
+.sb_list .sb_list_right div:first-child p:last-child {
+    font-size: 0.55rem;
+    /* line-height: 1.5rem; */
+    padding-right: 0.8rem;
+    color: #666666;
+}
+
+/* .sb_list_right .bs {
+   margin-right: 1.275rem;   
+} */
+
+.ss button {
+    width: 3.475rem;
+    height: 1.675rem;
+    background: #FF515D;
+    text-align: center;
+    color: #fff;
+    font-size: 0.6rem;
+    margin-top: 0.9rem;
+    margin-right: 0.625rem;
+    border-radius: 0.1rem;
+}
+
+.ss button:active{
+    background: #d88188;
+}
+
+.sunburn_list_item {
+    position: relative;
+    border-bottom: 1px solid #e1e1e1;
+    font-size: 0.79rem;
+    color: #212121;
+    min-height: 2.19rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.sunburn_list_left {
+    float: left;
+}
+
+.sunburn_list_img {
+    width: 2.14rem;
+    float: left;
+    margin-right: 0.62rem;
+}
+
+.sunburn_list_img>img {
+    width: 100%;
+    display: block;
+}
+
+.sunburn_list_info {
+    position: relative;
+    float: left;
+}
+
+.sunburn_list_info>div:first-child {
+    color: #212121;
+    font-size: 0.64rem;
+    height: 1.01rem;
+    line-height: 1.01rem;
+    margin-top: 0.06rem;
+}
+
+.sunburn_list_info>div:nth-child(2) {
+    font-size: 0.49rem;
+    color: #9B9B9B;
+    margin-top: 0.1875rem;
+}
+
+.sunburn_list_right {
+    float: right;
+    ;
+    margin-top: 0.11rem;
+    margin-left: 0.6rem;
+}
+
+.sunburn_list_right>img {
+    float: right;
+    width: 2.89rem;
+    margin-top: 0.24rem;
+}
+
+.sunburn_list_desc {
+    float: right;
+    margin-right: 0.94rem;
+}
+
+.sunburn_already .sunburn_list_desc {
+    margin-right: 1.8rem;
+}
+
+.sunburn_list_desc_main {
+    font-size: 0.6rem;
+    color: #4A4A4A;
+    margin-top: 0.04rem;
+}
+
+.sunburn_list_desc_main>img {
+    float: left;
+    width: 0.6rem;
+    height: auto;
+    margin-top: 0.1875rem;
+    margin-right: 0.1875rem;
+    max-width: 100%;
+    display: block;
+}
+
+.sunburn_list_money {
+    font-size: 0.6rem;
+    color: #87BAF0;
+    text-align: left;
+    margin-top: 0.15rem;
+}
+
+.sunburn_not .sunburn_list_money {
+    color: #E45869;
+}
+
+.sunburn_list_btn {
+    background: #E45869;
+    color: #FFFFFF;
+    padding: 0.45rem 0;
+    float: right;
+    margin-top: 0.188rem;
+    margin-left: 0.375rem;
+    font-size: 0.64rem;
+    width: 4.125rem;
+    text-align: center;
+}
+
+.no_ticket {
+    background: #9B9B9B;
+}
+
+.clear {
+    clear: both;
+}
+
+/* .active_sunburn_not .sunburn_not{
+  display: block ;
+}
+.active_sunburn_not .sunburn_already{
+  display: none ;
+} */
+/* .active_sunburn_already .sunburn_not{
+  display: none ;
+}
+.active_sunburn_already .sunburn_already{
+  display: block ;
+} */
+.not_info {
+    font-size: 0.69rem;
+    color: #9B9B9B;
+    text-align: center;
+    padding: 0.5rem 0;
+    background-color: #f7f7f7;
+    width: 100%;
+    /* padding-bottom: 0.94rem; */
+}
+
+.userinfo_task_prize {
+    padding-top: 0.94rem;
+    margin-top: 2.25rem;
+    min-height: 94vh;
+    position: relative;
+}
+
+.task_prize_hade {
+    position: absolute;
+    top: 1.02rem;
+    text-align: center;
+}
+
+.task_prize_hade img {
+    display: inline-block;
+    width: 55.5%;
+}
+
+.task_prize_top {
+    width: 100%;
+    height: auto;
+    padding-top: 1.46rem;
+    color: #FEB44D;
+    font-family: FZZZHONGJW--GB1-0;
+    font-size: 0.89rem;
+    font-weight: 600;
+    text-align: center;
+    margin: auto;
+}
+
+.task_prize_p1 {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #907149;
+    line-height: 1.5rem;
+}
+
+.task_prize_p2 {
+    font-family: PingFangSC;
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgb(255, 161, 23)), to(rgb(248, 84, 15)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2rem;
+    letter-spacing: 0.16rem;
+}
+
+.task_prize_time1 {
+    text-align: center;
+    font-size: 1.02rem;
+    color: #FF362A;
+    line-height: 1.89rem;
+}
+
+.task_prize_time2 {
+    height: 1.8rem;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.task_prize_time2 span {
+    display: block;
+    flex: 0 0 auto;
+    width: 0.5rem;
+    height: 1.8rem;
+    margin: 0 0.06rem;
+    font-size: 0.82rem;
+    text-align: center;
+    color: #503B20;
+    line-height: 1.8rem;
+    font-weight: 600;
+}
+
+.task_prize_time2 .ri {
+    width: 1.12rem;
+    background-image: url(../assets/task/djs.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    color: #fff;
+    font-weight: 500;
+}
+
+.task_prize_p3 {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #907149;
+    line-height: 1.8rem;
+}
+
+.task_prize_p4 {
+    text-align: center;
+    margin-top: 0.2rem;
+    padding-bottom: 1rem;
+}
+
+.task_prize_p4 img {
+    display: inline-block;
+    width: 82%;
+}
+
+.task_prize_banner {
+    display: block;
+    width: 82%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.task_prize_turnplate {
+    background-image: url(../assets/task/choujq.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    margin-top: 6%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 2%;
+}
+
+.task_prize_item {
+    width: 100%;
+}
+
+.task_prize_pointer {
+    position: absolute;
+    width: 28.6%;
+    height: auto;
+    left: 36.4%;
+    top: 25.5%;
+}
+
+.task_prize_invitation {
+    border: 1px solid #5fa3eb;
+    margin: 0.29rem auto 0;
+    width: 92%;
+    height: 2.625rem;
+    padding-left: 5%;
+    border-radius: 0.29rem;
+    background-color: #fff;
+}
+
+.task_prize_invitation_logo {
+    background: url(../assets/task/p10-01.png) left center no-repeat;
+    background-size: 1.575rem 1.84rem;
+    float: left;
+    width: 15%;
+    height: 2.44rem;
+}
+
+.task_prize_invitation_title {
+    color: #7a7a7a;
+    font-size: 0.825rem;
+    text-align: center;
+    height: 2.625rem;
+    line-height: 2.625rem;
+    font-weight: bold;
+    /* margin-right: 16%; */
+    float: left;
+}
+
+.task_prize_invitation_more {
+    height: 2.625rem;
+    line-height: 2.625rem;
+    display: inline-block;
+    width: 1.76rem;
+    z-index: 3;
+    text-align: center;
+    font-size: 0.88rem;
+    color: #7a7a7a;
+    font-weight: normal;
+}
+
+.task_prize_mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.85;
+    width: 100%;
+    height: 100%;
+    z-index: 300;
+    /* display: none; */
+}
+
+.task_prize_rule {
+    width: 94%;
+    height: 26rem;
+    background: url(../assets/task/bjt.png) center top no-repeat;
+    background-size: 100% 26rem;
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    margin-top: -13rem;
+    /* margin-left: -8.75rem; */
+    /* display: none; */
+    z-index: 500;
+}
+
+.task_prize_rule_poptop {
+    width: 14.64rem;
+    height: 2rem;
+    margin: 7.8rem auto 0;
+    text-align: center;
+}
+
+.task_prize_rule_poptop>p {
+    width: 14.64rem;
+    height: 1rem;
+    line-height: 1rem;
+    color: #E62432;
+    font-size: 0.7rem;
+}
+
+.task_prize_rule_popmain {
+    width: 71%;
+    font-size: 0.6rem;
+    line-height: 0.85rem;
+    color: #B5AC84;
+    margin: 1% auto;
+    padding: 0 0.2rem;
+    padding-bottom: 0.2rem;
+    margin-bottom: 0px;
+}
+
+.prize_rule_list {
+    width: 71%;
+    margin: auto;
+    border-bottom: 1px dashed #B5AC84;
+    padding-bottom: 0.4rem;
+}
+
+.prize_rule_list span {
+    display: inline-block;
+    margin: 0 0.2rem;
+    font-size: 0.58rem;
+    color: #E62432;
+    line-height: 0.88rem;
+}
+
+.task_prize_rule_popfoot {
+    width: 68%;
+    margin: 3% auto;
+}
+
+.task_prize_rule_popfoot>p {
+    /* width: 11.6rem; */
+    height: 1.05rem;
+    line-height: 1.05rem;
+    color: #4B4B4B;
+    font-size: 0.62rem;
+}
+
+.task_prize_rule_closebtn {
+    width: 9.08%;
+    height: 9.08%;
+    background: url(../assets/task/qxjhclose.png) left top no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0.73rem;
+    right: 0.58rem;
+}
+
+.task_prize_zhongjiang {
+    width: 100%;
+    height: 100%;
+    background: url(../assets/task/p11-05a.png) no-repeat center top/100% auto;
+    position: absolute;
+    top: 13%;
+    left: 0;
+    z-index: 500;
+}
+
+.task_prize_zhongjiang.active {
+    background: url(../assets/task/p11-05b.png) no-repeat center top/100% auto;
+}
+
+.task_prize_zjtext {
+    width: 100%;
+    height: 2.34rem;
+    line-height: 2.34rem;
+    text-align: center;
+    font-size: 1.76rem;
+    color: #e72432;
+    position: absolute;
+    top: 55vw;
+    left: 0;
+}
+
+.task_prize_continue {
+    width: 70%;
+    height: 3rem;
+    background-image: url(../assets/task/jixuchoujiang.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    top: 103vw;
+    left: 15%;
+}
+
+.task_prize_close_btn {
+    width: 1.3rem;
+    height: 1.3rem;
+    background: url(../assets/task/p11-04.png) left top no-repeat;
+    background-size: 1.3rem 1.3rem;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+.userinfo_task_real {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: #FFF;
+    padding: 0;
+    margin: auto;
+    padding-bottom: 1.5rem;
+    margin-top: 2.25rem;
+}
+
+.tthc {
+    width: 100%;
+    height: 0.6rem;
+    background-image: url(../assets/task/person_02.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bbhc {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 1px;
+    background-color: #eef6fa;
+}
+
+.task_real_banner {
+    width: 100%;
+    height: auto;
+}
+
+.task_real_banner img {
+    display: block;
+}
+
+.task_real_remind {
+    width: auto;
+    height: auto;
+    margin-top: 1rem;
+    box-sizing: border-box;
+    padding: 1.3% 0.94rem;
+}
+
+.task_real_remind .cont {
+    width: 100%;
+    height: auto;
+}
+
+.task_real_remind p {
+    text-align: center;
+    font-size: 0.6rem;
+    color: #B4B4B4;
+    line-height: 1.2rem;
+}
+
+.task_real_inp {
+    width: 100%;
+    height: auto;
+}
+
+.task_real_inp_p1 {
+    width: 100%;
+    height: 3.9rem;
+    padding: 1rem 0;
+}
+
+.iwdgipha {
+    background-image: url(../assets/task/addbank-copy2.png);
+    background-repeat: no-repeat;
+    background-position: 94% 50%;
+    background-size: 0.8rem auto;
+}
+
+.task_real_inp_p1 label {
+    display: block;
+    width: 30%;
+    height: 1.9rem;
+    float: left;
+    margin-left: 5%;
+    font-size: 0.78rem;
+    color: #4D4D4D;
+    line-height: 1.9rem;
+}
+
+.task_real_inp_p1 input {
+    width: 60%;
+    height: 1.9rem;
+    line-height: 1.9rem;
+    border: 0;
+    background: none;
+    float: left;
+    font-size: 0.8rem;
+    color: #4D4D4D;
+}
+
+.task_real_inp_p2 {
+    width: 100%;
+    height: 3.9rem;
+    padding: 1rem 0;
+}
+
+.task_real_inp_p2 label {
+    display: block;
+    width: 30%;
+    height: 1.9rem;
+    float: left;
+    margin-left: 5%;
+    font-size: 0.78rem;
+    color: #4D4D4D;
+    line-height: 1.9rem;
+}
+
+.task_real_inp_p2 input {
+    width: 60%;
+    height: 1.9rem;
+    line-height: 1.9rem;
+    border: 0;
+    background: none;
+    float: left;
+    font-size: 0.8rem;
+    color: #4D4D4D;
+}
+
+.task_real_Submis {
+    height: auto;
+    margin-top: 1.2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.task_real_Submis button {
+    display: block;
+    width: 100%;
+    height: 2.2rem;
+    background: #B5BABE;
+    border-radius: 0.3rem;
+    margin: auto;
+    font-size: 1rem;
+    color: #fff;
+    line-height: 2.2rem;
+}
+.task_real_Submis.allow button{
+  background: #43A4F1;
+}
+.task_real_Submis.allow button:active{
+  background: #1A87F3;
+}
+.task_real_Submis.prohibit button{
+  background: #B5BABE;
+}
+.task_real_Submis.prohibit button:active{
+  background: #B5BABE;
+}
+#cardnameback {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 200;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.cardbg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.cardnamemain {
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 5rem;
+    overflow: scroll;
+}
+
+#cardnamemainmain {
+    width: 100%;
+    height: auto;
+    background: #f2f2f2;
+}
+
+#cardnamemainmain>p {
+    width: 100%;
+    height: 2.2rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #000;
+    font-weight: 500;
+    border-bottom: 1px solid #cccccc;
+    line-height: 2.2rem;
+}
+
+/*未实名弹窗*/
+#logok {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    background: rgba(0, 0, 0, .75);
+}
+
+#logok .qux_btn {
+    width: 8%;
+    position: absolute;
+    bottom: -2rem;
+    left: 46%;
+}
+
+#logok .qux_btn img {
+    width: 100%;
+}
+
+#logok>div.renzcont {
+    width: 85%;
+    height: 17.5rem;
+    position: absolute;
+    top: 50%;
+    left: 7.5%;
+	margin-top:-8.75rem ;
+    z-index: 2;
+    border-radius: 0.56rem;
+    background-color: #fff;
+}
+
+#logok>div p.text {
+	text-align: center;
+	line-height: 1.2rem;
+	padding: 5% 0;
+	font-size: 1.2rem;
+	color: #363636;
+	font-weight: bold;
+}
+
+#logok>div p.renz_text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 1.8rem;
+	font-size: 0.8rem;
+	text-align: center;
+	color: #43A4F1;
+	font-weight: bold;
+}
+
+#logok>div p.renz_text span {
+	display: inline-block;
+	margin-top: -0.2rem;
+	font-size: 1.75rem;
+	color: #FF2323;
+}
+
+#logok>div>div {
+    width: 100%;
+}
+
+#logok>div>div>img {
+    display: block;
+    width: 100%;
+    /*height: 3.2rem;*/
+    margin: 0 auto 0.188rem;
+}
+
+#logok>div>div>.title2 {
+    width: 100%;
+    height: 1.125rem;
+    line-height: 1.125rem;
+    font-size: 0.66rem;
+    text-align: center;
+    color: #7a7a7a;
+}
+
+#logok>div>div>.content {
+    /* width: 91%; */
+    line-height: 1.125rem;
+    font-size: 0.66rem;
+    text-align: center;
+    color: #7a7a7a;
+    margin: 0 auto;
+}
+
+#logokbtn1,
+#logokbtn2 {
+    width: 85%;
+    /* height: 2.2rem; */
+    line-height: 1.2rem;
+    padding: 3% 0;
+    border-radius: 0.2rem;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+#logokbtn1 {
+    margin-right: 0.34rem;
+    background-color: #5fa3eb;
+    color: #fff;
+}
+
+#logokbtn2 {
+    margin-left: 0.34rem;
+    background-color: #9b9b9b;
+    color: #fff;
+}
+
+#logok .logokbtn {
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+    margin-bottom: 8%;
+    display: flex;
+    justify-content: center;
+}
+
+#logok2 .logokbtn {
+    width: 100%;
+    height: auto;
+    margin-top: 0.94rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* 签到 */
+.userinfo_task_bonus {
+    display: none;
+    width: auto;
+    height: 78%;
+    z-index: 8;
+    position: absolute;
+    top: 14%;
+    right: 0.9rem;
+    align-items: center;
+}
+
+.userinfo_task_bonus .cont {
+    width: auto;
+    height: 1.2rem;
+    padding: 0 0.4rem;
+    border: 1px solid #fda900;
+    background: #fda900;
+    border-radius: 0.6rem;
+    font-size: 0.6rem;
+    color: #fff;
+    line-height: 1.1rem;
+}
+
+.task_complete_this>.userinfo_task_start {
+    display: none;
+}
+
+.task_complete_this>.userinfo_task_complete {
+    display: block;
+}
+
+.task_complete_bonu>.userinfo_task_start {
+    display: none;
+}
+
+.task_complete_bonu>.userinfo_task_bonus {
+    display: flex;
+}
+
+.task_complete_vrlc>.userinfo_task_bonus {
+    display: flex;
+    right: 4.1rem;
+}
+
+/* 签到end */
+
+/* 弹窗 */
+.dowPopup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.dowPopup .cont {
+    width: 78%;
+    height: 20rem;
+    background-image: url(../assets/task/task-popup-bj.png);
+    background-repeat: no-repeat;
+    background-position: 50% top;
+    background-size: 100% 100%;
+    padding-top: 7.3rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.dowPopup .cont .money {
+    width: 100%;
+    height: 1.5rem;
+    overflow: hidden;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #fff;
+    line-height: 1.5rem;
+}
+
+.dowPopup .cont .money span {
+    font-size: 1.05rem;
+    color: #fff;
+    line-height: 1.48rem;
+    margin-right: 0.15rem;
+}
+
+.dowPopup .cont .h1 {
+    width: 100%;
+    height: auto;
+    margin-top: 6%;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #FA485D;
+    letter-spacing: 2px;
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+
+.dowPopup .cont .text {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    font-size: 0.75rem;
+    color: #9C9C9C;
+    text-align: center;
+    line-height: 1.1rem;
+    margin-top: 6%;
+}
+
+.dowPopup .cont .butt {
+    width: 100%;
+    height: auto;
+    margin-top: 7%;
+    text-align: center;
+}
+
+.dowPopup .cont .butt img {
+    width: 80%;
+    height: auto;
+    display: inline-block;
+}
+
+.dowPopup .cont .close {
+    width: 1.1rem;
+    height: 1.1rem;
+    position: absolute;
+    top: 3.8rem;
+    right: 1rem;
+    background-image: url(../assets/task/task-popup-cor.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+/* 微信分享 */
+.WXshare_box {
+    width: 100%;
+    height: 100%;
+    background: url(../assets/task/sharepic.png)0 0 no-repeat;
+    background-size: 100% 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+/* 浏览器分享 */
+.share_box {
+    width: 100%;
+    height: 100%;
+    background: url(../assets/goucai/sharepic1.png) 0 0 no-repeat;
+    background-size: 100% auto;
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: "微软雅黑", "黑体";
+}
+
+.share_box .share_cont {
+    position: fixed;
+    bottom: 0.6rem;
+    width: 100%;
+    display: flex;
+}
+
+.share_box .quxiao {
+    background-color: #fb6b63;
+    width: 42.5%;
+    height: 2rem;
+    line-height: 2rem;
+    color: #fff;
+    text-align: center;
+    font-size: 0.75rem;
+    margin-left: 5%;
+    border-radius: 0.3rem;
+}
+
+.share_box .down {
+    background-color: #f5a623;
+    width: 42.5%;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    color: #fff;
+    font-size: 0.75rem;
+    margin-left: 5%;
+    border-radius: 0.3rem;
+}
+
+/* 分享end */

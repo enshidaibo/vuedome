@@ -1,0 +1,1313 @@
+html {
+	background: #f2f2f2;
+	height: 100%;
+}
+	#mc_ssqpay {
+		overflow: hidden;
+	}
+	#mc_qlcpay,#mc_dltpay,#mc_ssqpay,#mc_plspay,#mc_fcsdpay,#mc_ssqpay,#mc_plwpay{
+		overflow: hidden;
+	}
+html body {
+	height: 100%;
+}
+
+.flr {
+	float: left;
+}
+
+.fgr {
+	float: right;
+}
+
+/*头部start*/
+header {
+	overflow: hidden;
+	position: fixed;
+}
+
+header .top-more span {
+	display: inline-block;
+	width: 0.25rem;
+	height: 0.25rem;
+	margin-left: 0.2rem;
+	background: #626262;
+	border-radius: 50%;
+	color: #666666;
+}
+header .top-more {
+	color: #666666;
+}
+header .share_btn span {}
+
+header {
+	z-index: 1000 !important;
+	position: fixed;
+}
+
+header .aui-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	line-height: 2.25rem;
+}
+
+header .aui-title span:first-child {
+	padding-right: 0.2rem;
+}
+
+header .aui-title>img {
+	display: block;
+	/*margin-left: 0.1rem;*/
+	width: 0.55rem;
+	height: auto;
+}
+header .type{
+  padding-left: 0.2rem;
+}
+.aui-bar-nav .aui-title {
+	left: 2rem;
+	right: 2rem;
+	font-size: 0.9rem;
+	font-weight: 400;
+}
+
+.aui-bar-nav {
+	background: #fff;
+	color: #333333;
+}
+
+.aui-bar-nav .aui-btn .aui-iconfont {
+	color: #333333;
+}
+
+.aui-bar-nav .aui-pull-right {
+	padding-right: 0.75rem;
+}
+
+.aui-bar-nav .aui-pull-left {
+	padding-left: 0.75rem;
+}
+
+.share_btn {
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	right: 20px;
+	bottom: 12px;
+
+}
+
+.aui-bar-nav .aui-iconfont {
+	color: #333333;
+}
+
+.share_btn img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+/*头部end*/
+/*底部start*/
+/* footer {
+	width: 100%;
+	height: 3.5rem;
+	padding: 0 4%;
+	background-color: #fff;
+	border-top: 1px solid #f0f0f0;
+	overflow: hidden;
+}
+
+footer .delete {
+	line-height: 3.5rem;
+	width: 11%;
+	height: 1.5rem;
+	margin: 1rem 0;
+	padding-right: 2rem;
+	border-right: 1px solid #c8c8c8;
+	background: url(../assets/goucai/jjc/close.png) no-repeat 0 center/55%;
+}
+
+footer .total {
+	width: 55%;
+	padding: 0.55rem 0;
+	margin-left: 1rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+footer .total p {
+	color: #828282;
+	font-size: 0.85rem;
+	line-height: 1.2rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+footer .total p.p2 {
+	font-size: 0.7rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+footer .total p span {
+	color: #d0021b;
+}
+
+footer .pay {
+	width: 23.19%;
+	height: 2.3rem;
+	margin: 0.6rem 0;
+	background: #FB6B63;
+	border: 1px solid #E65C54;
+	border-radius: 0.25rem;
+	color: #fff;
+	font-size: 1rem;
+	line-height: 2.3rem;
+	text-align: center;
+} */
+footer {
+
+	width: 100%;
+	height: 3rem;
+	padding: 0.05rem 0rem 0 0.75rem;
+	background-color: #fff;
+	border-top: 1px solid #f0f0f0;
+	overflow: hidden;
+
+}
+
+footer .ft_money {
+	max-width: 50%;
+
+	color: #333333;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-top: 0.2rem;
+	font-weight: 300;
+}
+
+footer .ft_money p {
+	line-height: 1.2rem;
+	font-size: 0.7rem;
+	color: #333333;
+}
+
+footer .ft_money span {
+	color: #F82A5B;
+	font-weight: 500;
+}
+
+footer .ft_btn {
+	overflow: hidden;
+
+}
+
+footer .ft_btn div {
+
+	text-align: center;
+
+	color: #fff;
+	font-size: 0.7rem;
+}
+
+footer .ft_btn div:first-child {
+	margin-right: 0.5rem;
+	display: flex;
+	line-height: 3rem;
+	align-items: center;
+}
+
+footer .ft_btn div:first-child img {
+	width: 0.75rem;
+	height: 0.9rem;
+}
+
+footer .ft_btn div:first-child span {
+	color: #8F8E94;
+	padding-left: 0.1rem;
+}
+
+footer .ft_btn div:last-child {
+	font-size: 0.85rem;
+	width: 4.5rem;
+	height: 2.4rem;
+	line-height: 2.4rem;
+	margin-top: 0.3rem;
+	background: #03A9F4;
+	border-radius: 4px;
+	position: relative;
+}
+
+/*底部end*/
+/* 顶部红包预测 */
+.szchn_head {
+	width: 100%;
+	height: 1.6rem;
+	line-height: 1.6rem;
+	background: #FFFFFF;
+	padding: 0 0.75rem;
+	margin-top: 1px;
+}
+
+.szchn_head div {
+	height: 1.6rem;
+	line-height: 1.6rem;
+	float: left;
+	font-size: 0.6rem;
+	color: #666666;
+}
+
+.szchn_head img {
+	float: right;
+	width: 0.8rem;
+	height: 0.8rem;
+	margin-top: 0.4rem;
+}
+.szchn_head div i:first-child{
+	color: #FFC32A;
+	
+}
+.szchn_head div i:last-child{
+	color: #F82A5B;
+}
+/* 分享 */
+.share_box {
+	width: 100%;
+	height: 100%;
+	background: url(../assets/goucai/sharepic1.png) 0 0 no-repeat;
+	background-size: 100% auto;
+	z-index: 99999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	font-family: "微软雅黑", "黑体";
+}
+
+.share_box .share_cont {
+	position: fixed;
+	bottom: 0.6rem;
+	width: 100%;
+	display: flex;
+}
+
+.share_box .quxiao {
+	background-color: #fb6b63;
+	width: 42.5%;
+	height: 2rem;
+	line-height: 2rem;
+	color: #fff;
+	text-align: center;
+	font-size: 0.75rem;
+	margin-left: 5%;
+	border-radius: 0.3rem;
+}
+
+.share_box .down {
+	background-color: #f5a623;
+	width: 42.5%;
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	color: #fff;
+	font-size: 0.75rem;
+	margin-left: 5%;
+	border-radius: 0.3rem;
+}
+
+/* 分享end */
+
+/*底部倍数*/
+.bottom {
+	width: 100%;
+	height: auto;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+
+.bottom .agree {
+	background: #fff;
+	overflow: hidden;
+}
+
+.bottom .agree .check {
+	height: 1.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: center;
+	padding-left: 0.75rem;
+}
+
+.bottom .agree .check p {
+	display: inline-block;
+	height: 0.75rem;
+	font-size: 0.6rem;
+	line-height: 0.75rem;
+}
+
+.bottom .agree .check p span {
+	color: #3F93F5;
+}
+
+.bottom .agree .check i {
+	width: 0.75rem;
+	height: 0.75rem;
+	display: inline-block;
+	border: 1px solid #4A4A4A;
+	border-radius: 0.1rem;
+	margin-right: 0.5rem;
+}
+
+.bottom .agree .check i.active {
+	background: url("../assets/goucai/jjc/checkedre.png") no-repeat center center/90% auto;
+}
+
+.bottom .agreedlt {
+	background: #fff;
+	overflow: hidden;
+	
+}
+
+.bottom .zhuijia {
+	background: #FFFFFF;
+	border-top: 1px solid #F4F4F4;
+}
+
+.bottom .agreedlt .check {
+	height: 1.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: center;
+	padding-left: 0.75rem;
+}
+
+.bottom .agreedlt .check p {
+		display: inline-block;
+	height: 0.75rem;
+	font-size: 0.6rem;
+	line-height: 0.75rem;
+}
+
+.bottom .agreedlt .check p span {
+	color: #3F93F5;
+}
+
+.bottom .zhuijia .check p span {
+	color: #999;
+	font-size: 0.6rem;
+	padding-left: 0.5rem;
+
+}
+
+.bottom .agreedlt .check i {
+	width: 0.75rem;
+	height: 0.75rem;
+	display: inline-block;
+	border: 1px solid #4A4A4A;
+	border-radius: 0.1rem;
+	margin-right: 0.5rem;
+}
+
+.bottom .agreedlt .check i.active {
+	background: url("../assets/goucai/jjc/checkedre.png") no-repeat center center/90% auto;
+}
+
+.bottom .bt_text {
+	padding: 0rem 0.75rem;
+	overflow: hidden;
+	font-size: 0.8rem;
+	background: #FFFFFF;
+	border-top:1px solid #F4F4F4 ;
+}
+
+.bottom .bt_text .data {
+	text-align: center;
+	width: 40.5%;
+	line-height: 1.75rem;
+	color: #4A4A4A;
+	border: 1px solid #E0E0E0;
+	border-radius: 0.15rem;
+	padding-right: 1rem;
+	background: url("../assets/goucai/jjc/down_jt.png") no-repeat 95% 47%/15% auto #fff;
+}
+
+
+.bottom .bt_text .zhuiq {
+	line-height: 2.8rem;
+	width: 50%;
+}
+
+.bottom .bt_text .zhuiq .word_z {
+	font-size: 0.9rem;
+	color: #8F8E94;
+	margin-right: 0.2rem;
+}
+
+.bottom .bt_text .zhuiq .word_q {
+	font-size: 0.9rem;
+	color: #8F8E94;
+	margin-left: 0.2rem;
+}
+
+.bottom .bt_text .toub {
+	line-height:  2.8rem;
+	width: 50%;
+}
+
+.bottom .bt_text .toub .word_t {
+	font-size: 0.9rem;
+	color: #8F8E94;
+	margin-right: 0.2rem;
+}
+
+.bottom .bt_text .toub .word_b {
+	font-size: 0.9rem;
+	color: #8F8E94;
+	margin-left: 0.2rem;
+}
+
+.bottom .bt_text .multiple {
+	width: 72%;
+	height: 1.6rem;
+	margin-top: 0.525rem;
+	background: #FFFFFF;
+	border: 1px solid #E0E0E0;
+	border-radius: 0.15rem;
+	line-height: 1.6rem;
+	overflow: hidden;
+}
+
+.bottom .bt_text .multiple .jian {
+	width: 28%;
+	height: 1.6rem;
+	background-image: url("../assets/goucai/jjc/icon_jianre.png");
+	background-repeat: no-repeat;
+	background-size:40% 5%;
+	background-position: center;
+	border-right: 1px solid #E0E0E0;
+	
+}
+
+.bottom .bt_text .multiple .beishu {
+	width: 44%;
+	text-align: center;
+}
+
+.bottom .bt_text .multiple .jia {
+	width: 28%;
+	height: 1.6rem;
+	background-image: url("../assets/goucai/jjc/icon_jiare.png");
+	background-repeat: no-repeat;
+	background-size:35% 35%;
+	background-position: center;
+	border-left: 1px solid #E0E0E0;
+}
+
+.bottom .tingz {
+	background-color: #fff;
+	line-height: 1.3rem;
+	text-align: center;
+	font-size: 0.6rem;
+	color: #666666;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	border-top: 1px solid #F4F4F4;
+}
+
+.bottom .tingz span {
+	width: 0.75rem;
+	height: 0.75rem;
+	border: 1px solid #4A4A4A;
+	border-radius: 0.1rem;
+	margin-right: 0.3rem;
+}
+
+.bottom .tingz span.active {
+	background: url("../assets/goucai/jjc/checkedre.png") no-repeat center center/0.6rem 0.5rem ;
+}
+
+/*底部倍数end*/
+
+
+
+/*模拟数字键盘*/
+.keyboard {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 99;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.keyboard .hidekey {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.keyboard .cont-f {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 2
+}
+
+.keyboard .bt_text {
+	padding: 0rem 0.75rem;
+	overflow: hidden;
+	font-size: 0.8rem;
+	background: #FFFFFF;
+	border-top:1px solid #F4F4F4 ;
+}
+
+.keyboard .bt_text .data {
+	text-align: center;
+	width: 40.5%;
+	line-height: 1.75rem;
+	color: #4A4A4A;
+	border: 1px solid #E0E0E0;
+	border-radius: 0.15rem;
+	padding-right: 1rem;
+	background: url("../assets/goucai/jjc/down_jt.png") no-repeat 95% 47%/15% auto #fff;
+}
+
+.keyboard .bt_text .zhuiq {
+	line-height: 2.8rem;
+	width: 50%;
+}
+
+.keyboard .bt_text .zhuiq .word_z {
+	font-size: 0.9rem;
+	color: #8F8E94;
+	margin-right: 0.2rem;
+}
+
+.keyboard .bt_text .zhuiq .word_q {
+	font-size: 0.9rem;
+	color: #8F8E94;
+	margin-left: 0.2rem;
+}
+
+.keyboard .bt_text .toub {
+	line-height:  2.8rem;
+	width: 50%;
+}
+
+.keyboard .bt_text .toub .word_t {
+	font-size: 0.9rem;
+	color: #8F8E94;
+	margin-right: 0.2rem;
+}
+
+.keyboard .bt_text .toub .word_b {
+	font-size: 0.9rem;
+	color: #8F8E94;
+	margin-left: 0.2rem;
+}
+
+.keyboard .bt_text .multiple {
+	width: 72%;
+	height: 1.6rem;
+	margin-top: 0.525rem;
+	background: #FFFFFF;
+	border: 1px solid #E0E0E0;
+	border-radius: 0.15rem;
+	line-height: 1.6rem;
+	overflow: hidden;
+}
+
+.keyboard .bt_text .multiple .jian {
+	width: 28%;
+	height: 1.6rem;
+	background-image: url("../assets/goucai/jjc/icon_jianre.png");
+	background-repeat: no-repeat;
+	background-size:40% 5%;
+	background-position: center;
+	border-right: 1px solid #E0E0E0;
+	
+}
+
+.keyboard .bt_text .multiple .beishu {
+	width: 44%;
+	text-align: center;
+}
+
+.keyboard .bt_text .multiple .jia {
+	width: 28%;
+	height: 1.6rem;
+	background-image: url("../assets/goucai/jjc/icon_jiare.png");
+	background-repeat: no-repeat;
+	background-size:35% 35%;
+	background-position: center;
+	border-left: 1px solid #E0E0E0;
+}
+.keyboard .bt_text .multiple .beishu.selec{
+  background-color: #95d8ff;
+  color: #fff;
+}
+.keyboard .sc_multiple {
+	margin: 0 auto;
+}
+
+.keyboard .Key_li {
+	width: 100%;
+	height: auto;
+	background-color: rgba(210, 213, 219, 1);
+	box-sizing: border-box;
+	padding: 0.3rem 0.2rem;
+}
+
+.keyboard .Key_li ul {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+}
+
+.keyboard .Key_li ul li {
+	flex: 0 0 auto;
+	width: 31%;
+	height: 2.4rem;
+	border-radius: 0.2rem;
+	background-color: #fff;
+	box-shadow: 0 1px 0 0 #848688;
+	margin-top: 0.3rem;
+	text-align: center;
+	font-size: 1.1rem;
+	color: #000;
+	line-height: 2.4rem;
+}
+
+.keyboard .Key_li ul li.del {
+	text-align: center;
+	border: 0;
+	align-items: center;
+	background: none;
+	box-shadow: none;
+}
+
+.keyboard .Key_li ul li.del>img {
+	display: inline-block;
+	width: 1.2rem;
+	height: auto;
+	vertical-align: middle;
+}
+
+/*2串1弹出框*/
+.mask {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.mask .popup_chuan {
+	width: 100%;
+	height: 13rem;
+	background: #fff;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.mask .popup_chuan .title {
+	line-height: 2rem;
+	color: #4A4A4A;
+	font-size: 0.7rem;
+	padding: 0 0.75rem;
+}
+
+.mask .popup_chuan .text {
+	padding-left: 0.75rem;
+}
+
+.mask .popup_chuan .text ul {
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.mask .popup_chuan .text ul li {
+	float: left;
+	width: 30.5%;
+	height: 1.75rem;
+	line-height: 1.75rem;
+	border: 1px solid #F0F0F0;
+	border-radius: 0.15rem;
+	text-align: center;
+	color: #4A4A4A;
+	font-size: 0.65rem;
+	margin-bottom: 0.5rem;
+	margin-right: 2%;
+}
+
+.mask .popup_chuan .text ul li.active {
+	color: #F5A623;
+	height: 1.75rem;
+	background: url("../assets/goucai/jjc/chuan_bg.png") no-repeat center center/100% 100%;
+	border: 1px solid transparent;
+}
+
+.mask .popup_chuan .qued_btn {
+	width: 95%;
+	line-height: 2.3rem;
+	font-size: 0.85rem;
+	color: #fff;
+	background: #FB6B63;
+	border: 1px solid #E65C54;
+	border-radius: 0.25rem;
+	position: fixed;
+	bottom: 0.5rem;
+	text-align: center;
+	margin-left: 2.5%;
+}
+
+.bt_pay {
+	width: 100%;
+	height: 3.5rem;
+	z-index: 100;
+	bottom: 0;
+	padding: 0 0.75rem;
+	background-color: #fff;
+	border-top: 1px solid #f0f0f0;
+	overflow: hidden;
+	z-index: 10;
+}
+
+.bt_pay .delete {
+	line-height: 3.5rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 1rem 0;
+	padding-right: 2rem;
+	border-right: 1px solid #c8c8c8;
+	background: url(../assets/goucai/jjc/close.png) no-repeat 0 center/55%;
+}
+
+.bt_pay .total {
+	padding: 0.55rem 0;
+	/*margin-left: 1rem;*/
+}
+
+.bt_pay .total p {
+	color: #828282;
+	font-size: 0.85rem;
+	line-height: 1.2rem;
+}
+
+.bt_pay .total p.p2 {
+	font-size: 0.7rem;
+}
+
+.bt_pay .total p span {
+	color: #d0021b;
+}
+
+.bt_pay .pay {
+	width: 4rem;
+	height: 2.3rem;
+	margin: 0.6rem 0;
+	background: #FB6B63;
+	border: 1px solid #E65C54;
+	border-radius: 0.25rem;
+	color: #fff;
+	font-size: 1rem;
+	line-height: 2.3rem;
+	text-align: center;
+}
+
+
+/*头部期数*/
+.szcpay_head {
+	line-height: 1.6rem;
+	font-size: 0.6rem;
+	text-align: center;
+	background: rgba(248, 49, 96, 1);
+	color: #FFFFFF;
+	width: 100%;
+    position: fixed;
+}
+
+.szcpay_head p {
+	color: #FFFFFF;
+	display: flex;
+}
+
+.szcpay_head p span {
+	flex: 1;
+	color: #FFFFFF;
+	text-align: left;
+	padding-left: 0.75rem;
+}
+
+.szcpay_head p span.jiez {
+	padding-right: 0.75rem;
+	text-align: right;
+}
+
+/*注数导航*/
+.zhus_nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0.4rem 0;
+	background: #fff;
+	margin-top: 1.6rem;
+}
+
+.zhus_nav div {
+	width: 30%;
+	border: 1px solid #02A9F4;
+	line-height: 1.8rem;
+	border-radius: 0.2rem;
+	color: #02A9F4;
+	text-align: center;
+}
+
+/*内容*/
+.ssqpay {
+	min-height: 65vh;
+	padding-bottom: 10.2rem;
+}
+
+.ssqpay .cont {
+	display: flex;
+	margin: auto;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5rem 0rem;
+	background: #fff;
+	margin-top: 0.3rem;
+	width: 96%;
+
+}
+
+.ssqpay .cont .shanc {
+	width: 0.8rem;
+	margin-right: 2%;
+	margin-left: 1%;
+}
+
+.ssqpay .cont .xuanh {
+	width: 86%;
+}
+
+.ssqpay .cont .jiant {
+	width: 0.4rem;
+	height: 0.65rem;
+	background-image: url('../assets/goucai/jjc/jiantou.png');
+	background-repeat: no-repeat;
+	/* background-position: 50% 50%; */
+	background-size: 100% 100%;
+}
+
+.ssqpay .cont .xuanh .hao {
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.ssqpay .cont .xuanh .hao span {
+	width: auto;
+	margin-right: 0.3rem;
+	margin-left: 0.3rem;
+	text-align: center;
+	font-size: 0.75rem;
+	line-height: 0.9rem;
+	color: rgba(248, 42, 91, 1);
+
+}
+
+.ssqpay .cont .xuanh .hao span:last-child {
+	margin-right: 0;
+}
+
+.ssqpay .cont .xuanh .hao span.blue {
+	color: #03A9F4;
+}
+
+.ssqpay .cont .xuanh .hao span.mgr-lf {
+	/* margin-left: 10%; */
+}
+
+.ssqpay .cont .xuanh p {
+	padding-left: 0.3rem;
+}
+
+.ssqpay .cont .xuanh p span {
+	color: #828282;
+	margin-right: 0.3rem;
+}
+
+.ssqpay .cont .xuanh p span i {
+	font-style: normal;
+	color: #f83e41;
+}
+
+/************排列三************/
+.plspay .cont .xuanh .hao {
+	width: 70%;
+	align-items: flex-start;
+	font-size: 0.75rem;
+	line-height: 0.75rem;
+}
+
+.plspay .cont .xuanh .hao i {
+	font-style: normal;
+	color: #828282;
+	margin-left: -2%;
+	margin-right: 3%;
+}
+
+[v-cloak] {
+	display: none !important;
+}
+
+/*投注弹窗star*/
+.paybgBoxx {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	z-index: 1001;
+	background: rgba(0, 0, 0, 0.75);
+	top: 0;
+	left: 0;
+}
+
+.paybgBox .payBox {
+	width: 100%;
+	height: 19.5rem;
+	position: fixed;
+	bottom: -19.5rem;
+	background: #fff;
+	overflow: hidden;
+	z-index: 1002;
+
+
+}
+
+.paybgBox .payBox .sloganBox {
+	width: 100%;
+	height: 2.25rem;
+	line-height: 2.25rem;
+	background: #fff;
+	text-align: center;
+	font-size: 0.75rem;
+	color: #333;
+	position: relative;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.paybgBox .payBox .sloganBox div {
+	width: 0.7rem;
+	height: 0.7rem;
+	position: absolute;
+	left: 0.75rem;
+	top: 0.775rem;
+}
+
+.paybgBox .payBox .paytabtitle {
+	width: 100%;
+	height: 6rem;
+	background: #FFFFFF;
+	color: #333333;
+}
+
+.paybgBox .payBox .paytabtitle .payMoney {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	color: #333;
+	font-size: 1rem;
+	padding-top: 1.3rem;
+}
+
+.paybgBox .payBox .paytabtitle .paytype {
+	text-align: center;
+	color: #999;
+	font-size: 0.7rem;
+}
+
+.paybgBox .payBox .paytabtitle .payMoney span {
+	font-size: 2rem;
+	height: 2.35rem;
+	line-height: 2.35rem;
+	font-weight: bold;
+}
+
+.paybgBox .payBox .paytab {
+	width: 100%;
+	height: 3.6rem;
+	background-color: #fff;
+	display: flex;
+	display: -webkit-flex;
+	position: relative;
+}
+
+.paybgBox .payBox .paytab:active {
+	background-color: #FaFaFa;
+}
+
+.paybgBox .payBox .greybg {
+	background-color: #F4F4F4;
+}
+
+.paybgBox .payBox .paytab .payiconimage {
+	width: 2.775rem;
+	height: 100%;
+	padding-left: 0.9rem;
+	padding-top: 1.1rem;
+}
+
+.paybgBox .payBox .paytab .payiconimage img {
+	width: 1.4rem;
+	height: 1.4rem;
+	display: block;
+}
+
+.paybgBox .payBox .xianboxs {
+	width: 100%;
+	background-color: #fff;
+
+}
+
+.paybgBox .payBox .xianboxsgreybg {
+	background-color: #F4F4F4;
+}
+
+.paybgBox .payBox .xian {
+	width: 92%;
+	height: 1px;
+	background-color: #E5E5E5;
+	margin: 0 auto;
+}
+
+.paybgBox .payBox .paytab .paytextbox {
+	width: 65%;
+	height: 100%;
+	/* background-color: #fff; */
+	padding-top: .8875rem;
+}
+
+.paybgBox .payBox .greybg .paytextbox {
+	/* background-color:#F4F4F4; */
+}
+
+.paybgBox .payBox .paytab .paytextbox .paytextup {
+	font-size: 0.7rem;
+	color: #333;
+	height: 1rem;
+	line-height: 1rem;
+}
+
+.paybgBox .payBox .paytab .paytextbox .paytextup img {
+	display: inline-block;
+	width: 1.8rem;
+	height: 0.75rem;
+	margin-top: -.25rem;
+}
+
+.paybgBox .payBox .paytab .paytextbox .paytextdown {
+	font-size: 0.6rem;
+	color: #999;
+	height: 0.825rem;
+	line-height: .825rem;
+}
+
+/* 	.paybgBox .payBox .paytab .greyText div{
+		color:#9E9E9E !important;
+	} */
+.paybgBox .payBox .paytab .paytextbox .paytextdown i {
+	color: #F82A5B !important;
+	font-size: 0.65rem;
+}
+
+.paybgBox .payBox .paytab .choseType {
+	width: 0.8rem;
+	height: 0.8rem;
+	position: absolute;
+	top: 1.4rem;
+	right: 1rem;
+	/* background-image:url(../assets/goucai/weixuanzhong.png) ; */
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.paybgBox .payBox .paytab .choseTypeyes {
+	background-image: url(../assets/goucai/duigou.png);
+}
+
+.paybgBox .payBox .paytab .notxuan {
+	/* background-image:url(../assets/goucai/notxuan.png) ; */
+}
+
+.paybgBox .payBox .paybtn {
+	width: 92%;
+	height: 2.25rem;
+	line-height: 2.25rem;
+	text-align: center;
+	color: #fff;
+	border-radius: 0.275rem;
+	background: #05A9F5;
+	font-size: 0.9rem;
+	margin: 0 auto;
+	margin-top: 0.9rem;
+}
+
+.paybgBox .payBox .paybtn:active {
+	width: 90%;
+	height: 2rem;
+	line-height: 2rem;
+	margin-top: 1.025rem;
+}
+
+/*投注弹窗end*/
+/*去充值star*/
+.goRechargeBox {
+	width: 100%;
+	height: 19.5rem;
+	position: fixed;
+	left: 100%;
+	bottom: 0;
+	background: #fff;
+	overflow: hidden;
+	z-index: 1003;
+
+}
+
+.goRechargeBox .goRechargeTitle {
+	width: 100%;
+	height: 2.25rem;
+	line-height: 2.25rem;
+	background: #fff;
+	text-align: center;
+	font-size: 0.75rem;
+	color: #333;
+	position: relative;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.goRechargeBox .goRechargeTitle div {
+	width: 0.45rem;
+	height: 0.8rem;
+	position: absolute;
+	left: 0.8rem;
+	top: 0.75rem;
+}
+
+.goRechargeBox .goRechargeBanner {
+	width: 100%;
+	height: 6rem;
+}
+
+.goRechargeBox .goRechargeBanner img {
+	height: 100%;
+	width: 100%;
+}
+
+.goRechargeBox .goRechargeTab {
+	width: 100%;
+	height: 3.6rem;
+	background-color: #fff;
+	display: flex;
+	display: -webkit-flex;
+	background-image: url(../assets/goucai/gotorechrge.png);
+	background-repeat: no-repeat;
+	background-size: 0.225rem 0.45rem;
+	background-position: 17.3rem 1.575rem;
+	/* position: relative; */
+}
+
+.goRechargeBox .goRechargeTab .tabIcon {
+	width: 4.025rem;
+	height: 100%;
+	padding-left: 0.75rem;
+	padding-top: 0.675rem;
+}
+
+.goRechargeBox .goRechargeTab .tabIcon img {
+	width: 2.25rem;
+	height: 2.25rem;
+	display: block;
+}
+
+.goRechargeBox .goRechargeTab .tabText {
+	width: 60%;
+	height: 100%;
+	background: #fff;
+	padding-top: 0.425rem;
+}
+
+.goRechargeBox .goRechargeTab .tabText1 {
+	padding-top: 0.825rem;
+}
+
+.goRechargeBox .goRechargeTab .tabText .tabTextTitle {
+	color: #2F2F2F;
+	font-size: 0.7rem;
+}
+
+.goRechargeBox .goRechargeTab .tabText .tabTextContent {
+	color: #999;
+	font-size: 0.6rem;
+}
+
+.goRechargeBox .xianboxs {
+	width: 100%;
+	background: #fff;
+
+}
+
+.goRechargeBox .xianboxsgreybg {
+	background: #F4F4F4;
+}
+
+.goRechargeBox .xian {
+	width: 92%;
+	height: 1px;
+	background: #E5E5E5;
+	margin: 0 auto;
+}
+
+.goRechargeBox .closeWeixin {
+	background-color: #F4F4F4;
+}
+
+.goRechargeBox .closeWeixin .tabText {
+	background-color: #F4F4F4;
+}
+
+/*去充值end*/

@@ -1,0 +1,176 @@
+.about_us{
+	font-family: "Helvetica Neue";
+	font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.header {
+  width: 100%;
+  height: 30%;
+  background-image: url("../assets/userinfo/tu1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 5% 0;
+	padding-bottom: 25%;
+  opacity: 0.95;
+	margin-top: 2.25rem;
+}
+.header .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 0.9rem;
+}
+.header .content img {
+  width: 20%;
+  height: 40%;
+  margin-bottom: 0.2rem;
+}
+.header .content span:last-child{
+  font-size: 0.7rem;
+}
+.introduce {
+  /*background-color: #e2e2e2;*/
+  color: #36A3F9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6% 0;
+}
+.introduce .fold_line {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.introduce .fold_line .first_line{
+  width: 0.6rem;
+  height: 0.6rem;
+  border-top: 2px solid #36A3F9;
+  border-left: 2px solid #36A3F9;
+  position: relative;
+  bottom: 0.5rem;
+  left: 0.4rem;
+	display: inline-block;
+}
+.introduce .fold_line .second_line {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-bottom: 2px solid #36A3F9;
+  border-right: 2px solid #36A3F9;
+  position: relative;
+  top: 0.4rem;
+  right: 0.4rem;
+	display: inline-block;
+}
+.introduce .english {
+  font-size: 0.6rem;
+  margin-bottom: 0.2rem;
+	margin-top: 0.2rem;
+}
+.introduce .orange_line {
+  border-top: 3px solid orange;
+  width: 2rem;
+}
+
+.word {
+  margin: 0 4%;
+  background-image: url("../assets/userinfo/bj1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* height: 48rem; */
+  padding: 5% 6%;
+}
+.word img {
+  margin: 4% 0;
+}
+.word span{
+   text-indent: 1rem;
+   color: #6c6c6c;
+   line-height: 1.5rem;
+   width: 100%;
+   /*font-size: 0.7rem;*/
+}
+@media screen and (max-width:414px) {
+
+  .word span{
+     text-indent: 1rem;
+     color: #6c6c6c;
+     line-height: 1.5rem;
+     width: 100%;
+     /*font-size: 0.7rem;*/
+  }
+
+}
+@media screen and (max-width:375px) {
+
+  .word span{
+     text-indent: 1rem;
+     color: #6c6c6c;
+     line-height: 1.5rem;
+     width: 15rem;
+     /*font-size: 0.7rem;*/
+  }
+
+}
+.team_word {
+  margin: 0 4%;
+  background-image: url("../assets/userinfo/bj2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* height: 15.5rem; */
+  padding: 5% 6%;
+}
+.commitment_word {
+  margin: 0 4%;
+  background-image: url("../assets/userinfo/bj3.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* height: 32rem; */
+  padding: 5% 6%;
+}
+.commitment_word span{
+  color: #6c6c6c;
+  line-height: 1.5rem;
+  width: 100%;
+  /*font-size: 0.7rem;*/
+}
+@media screen and (max-width:414px) {
+
+  .commitment_word span{
+    color: #6c6c6c;
+    line-height: 1.5rem;
+    width: 100%;
+    /*font-size: 0.7rem;*/
+  }
+}
+@media screen and (max-width:375px) {
+
+  .commitment_word span{
+    color: #6c6c6c;
+    line-height: 1.5rem;
+    width: 15rem;
+    /*font-size: 0.7rem;*/
+  }
+
+}
+.commitment_word .lists {
+  margin-bottom: 1.5rem;
+}
+.commitment_word .lists:last-child {
+  margin-bottom: 0;
+}
+.commitment_word .lists .list_math {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+.commitment_word .lists .list_math img{
+  width: 2rem;
+  margin-right: 0.6rem;
+}
+.commitment_word .lists .list_math h3{
+  color: #525252;
+  font-size: 0.9rem;
+  font-weight: bolder;
+}

@@ -1,0 +1,2175 @@
+html {
+	height: 100%;
+	/* background: #f2f2f2; */
+
+}
+
+body {
+	/* background: #f2f2f2; */
+	height: 100%;
+
+}
+
+[v-cloak] {
+	display: none;
+}
+
+/*头部start*/
+
+header {
+	position: fixed;
+	height: 2.25rem !important;
+}
+
+header .top-more span {
+	display: inline-block;
+	width: 0.25rem;
+	height: 0.25rem;
+	margin-left: 0.2rem;
+	background: #626262;
+	border-radius: 50%;
+}
+
+header {
+	position: relative;
+	/*height: 50px !important;*/
+}
+
+header .aui-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	line-height: 2.25rem;
+}
+
+header .aui-title span:first-child {
+	padding-right: 0.1rem;
+}
+
+header .aui-title>img {
+	display: block;
+	/*margin-left: 0.1rem;*/
+	width: 0.75rem;
+	height: auto;
+	padding-left: 0.2rem;
+}
+
+.aui-bar-nav .aui-title {
+	left: 2rem;
+	right: 2rem;
+	font-size: 0.9rem;
+	font-weight: 400;
+}
+
+.aui-bar-nav {
+	background: #fff;
+	color: #333333;
+}
+
+.aui-bar-nav .aui-btn .aui-iconfont {
+	color: #333333;
+}
+
+.aui-bar-nav .aui-pull-right {
+	padding-right: 0.75rem;
+}
+
+.aui-bar-nav .aui-pull-left {
+	padding-left: 0.75rem;
+}
+
+.aui-bar-nav .aui-pull-right img {
+	width: 0.85rem;
+	height: 0.9rem;
+	margin-right: 0.2rem;
+}
+
+.jjc_head {
+	width: 100%;
+	padding: 0.64rem 0.8rem 0.64rem 1rem;
+	background: #fff;
+	overflow: hidden;
+	border-bottom: 1px solid #F0F0F0;
+}
+
+.jjc_head p {
+	font-size: 0.7rem;
+	float: left;
+}
+
+.jjc_head p span {
+	color: #d0021b;
+	padding: 0 0.1rem;
+}
+
+.jjc_head .down_icon {
+	float: right;
+	margin-top: 0.45rem;
+	display: inline-block;
+	width: 0.45rem;
+	height: 0.45rem;
+	border-bottom: 1px solid #656565;
+	border-left: 1px solid #656565;
+	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+}
+
+.jjc_head .up_icon {
+	float: right;
+	margin-top: 0.2rem;
+	display: inline-block;
+	width: 0.45rem;
+	height: 0.45rem;
+	border-bottom: 1px solid #656565;
+	border-left: 1px solid #656565;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+}
+
+
+/*头部end*/
+.main {
+	/*padding-bottom: 3.5rem;*/
+	min-height: 1px;
+}
+
+/* 分享 */
+.share_box {
+	width: 100%;
+	height: 100%;
+	background: url(../assets/goucai/sharepic1.png) 0 0 no-repeat;
+	background-size: 100% auto;
+	z-index: 99999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	font-family: "微软雅黑", "黑体";
+}
+
+.share_box .share_cont {
+	position: fixed;
+	bottom: 0.6rem;
+	width: 100%;
+	display: flex;
+}
+
+.share_box .quxiao {
+	background-color: #fb6b63;
+	width: 42.5%;
+	height: 2rem;
+	line-height: 2rem;
+	color: #fff;
+	text-align: center;
+	font-size: 0.75rem;
+	margin-left: 5%;
+	border-radius: 0.3rem;
+}
+
+.share_box .down {
+	background-color: #f5a623;
+	width: 42.5%;
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	color: #fff;
+	font-size: 0.75rem;
+	margin-left: 5%;
+	border-radius: 0.3rem;
+}
+
+/* 分享end */
+
+
+/*底部start*/
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+	padding: 0.05rem 0rem 0 0.75rem;
+	box-shadow: 0 -0.05rem 0.2rem 0 rgba(3, 3, 3, 0.10);
+	background: #fff;
+	height: 3rem;
+
+}
+
+footer .ft_money {
+	max-width: 50%;
+
+	color: #333333;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-top: 0.2rem;
+	font-weight: 300;
+}
+
+footer .ft_money p {
+	line-height: 1.2rem;
+	font-size: 0.7rem;
+
+}
+
+footer .ft_money p:first-child {
+	color: #333333;
+}
+
+footer .ft_money p:last-child {
+	color: #999999;
+}
+
+footer .ft_money span {
+	color: #F82A5B;
+	font-weight: 500;
+}
+
+footer .ft_btn {
+	overflow: hidden;
+	padding-right: 0.75rem;
+}
+
+footer .ft_btn div {
+
+	text-align: center;
+
+	color: #fff;
+	font-size: 0.7rem;
+}
+
+footer .ft_btn div:first-child {
+	margin-right: 0.5rem;
+	display: flex;
+	line-height: 3rem;
+	align-items: center;
+}
+
+footer .ft_btn div:first-child img {
+	width: 0.75rem;
+	height: 0.9rem;
+}
+
+footer .ft_btn div:first-child span {
+	color: #8F8E94;
+	padding-left: 0.1rem;
+}
+
+footer .ft_btn div:last-child {
+	font-size: 0.85rem;
+	width: 4.5rem;
+	height: 2.4rem;
+	line-height: 2.4rem;
+	margin-top: 0.2rem;
+	background: #03A9F4;
+	border-radius: 4px;
+	position: relative;
+}
+
+footer .pay {
+	width: 4rem;
+	height: 2.3rem;
+	margin: 0.6rem 0;
+	background: #F5A623;
+	border: 1px solid #D69120;
+	border-radius: 0.25rem;
+	color: #fff;
+	font-size: 1rem;
+	line-height: 2.3rem;
+	text-align: center;
+}
+
+/*底部end*/
+
+.routerView {
+	height: 100%;
+}
+
+/**************购彩成功页面**************/
+.jjc_success_top {
+	line-height: 2.5rem;
+	position: relative;
+	background: #E45869;
+}
+
+.jjc_success_top i {
+	width: 0.8rem;
+	height: 0.8rem;
+	position: absolute;
+	top: 0.8rem;
+	right: 0.8rem;
+	transition: all 0.2s;
+}
+
+.jjc_success_top i.active {
+	transform: rotate(180deg);
+	transition: all 0.2s;
+}
+
+.jjc_success_top i img {
+	width: 100%;
+}
+
+.jjc_success_top .p1 {
+	font-size: 0.9rem;
+	width: 57%;
+	margin: 0 auto;
+	text-align: center;
+	color: #fff;
+	background: url('../assets/goucai/jjc/cash_icon.png') no-repeat 0% center/20% auto;
+}
+
+.jjc_success_content {
+	position: absolute;
+	background: #FFFFFF;
+	border: 1px solid #5FA3EB;
+	width: 96%;
+	margin: 2%;
+	padding: 3%;
+}
+
+.jjc_success_content p {
+	line-height: 1rem;
+	margin-bottom: 1rem;
+	color: #9B9B9B;
+	font-size: 0.8rem;
+}
+
+.jjc_success_content p span {
+	color: #E45869;
+	display: inline;
+}
+
+.jjc_success_text {
+	text-align: center;
+	margin-top: 7rem;
+}
+
+.jjc_success_text img {
+	width: 5rem;
+	display: inline-block;
+}
+
+.jjc_success_text p {
+	font-size: 1.2rem;
+	color: #5FA3EB;
+	margin-top: 2rem;
+}
+
+.jjc_success_btn {
+	margin-top: 1.8rem;
+}
+
+.jjc_success_btn div {
+	width: 83%;
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 0.2rem;
+	font-size: 0.9rem;
+	line-height: 2.3rem;
+	color: #fff;
+	margin-bottom: 0.6rem;
+}
+
+.jjc_success_btn .btn1 {
+	background: #E45869;
+}
+
+.jjc_success_btn .btn2 {
+	background: #5FA3EB;
+}
+
+.jjc_success_btn .btn3 {
+	background: #FFFFFF;
+	border: 1px solid #5FA3EB;
+	color: #5FA3EB;
+}
+
+
+/*缺省页*/
+.goucai_quesheng {
+	width: 100%;
+	height: 85vh;
+	background: #f8f8f8;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.goucai_quesheng .ques_cont {
+	width: 100%;
+	height: 10rem;
+	position: absolute;
+	top: 45%;
+	left: 0;
+	margin-top: -5rem;
+	text-align: center;
+}
+
+.goucai_quesheng .ques_cont img {
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.goucai_quesheng .ques_cont .p1 {
+	font-size: 1rem;
+	line-height: 1.4rem;
+	color: #8F8E94;
+	margin-bottom: 0.25rem;
+}
+
+.goucai_quesheng .ques_cont .p2 {
+	font-size: 0.7rem;
+	line-height: 1rem;
+	color: #3F93F5;
+}
+
+
+/*头部模态框start*/
+.tb_mtk {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	display: none;
+}
+
+.jjc_mtk {
+	width: 100%;
+	height: 6rem;
+	position: absolute;
+	top: 0;
+	background-color: #fff;
+	border-bottom: 0.01rem solid #666;
+}
+
+.jjc_mtk ul {
+	overflow: hidden;
+	padding: 0.25rem 0.5rem;
+}
+
+.jjc_mtk ul li {
+	float: left;
+	width: 30%;
+	line-height: 2rem;
+	height: 2rem;
+	margin-bottom: 0.5rem;
+	text-align: center;
+	border: 1px solid #F0F0F0;
+	border-radius: 0.15rem;
+	margin: 0.25rem;
+	font-size: 0.65rem;
+}
+
+.jjc_mtk ul li.active {
+	color: #f73f3f;
+	background: url('../assets/goucai/jjc/Groupgs5@2x.png') no-repeat 0 0/100% 100%;
+	border: none;
+	border-radius: 0;
+}
+
+.nav-Tab {
+	/* display: none; */
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 2.25rem;
+	left: 0;
+	z-index: 99;
+}
+
+.nav-Tab .list {
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 20;
+	background-color: #fff;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	box-sizing: border-box;
+	padding: 0 0 0.5rem 0.5rem;
+}
+
+.nav-Tab .list>li {
+	flex: 0 0 auto;
+	width: 31%;
+	height: 2rem;
+	border: 1px solid #F0F0F0;
+	box-sizing: border-box;
+	margin-top: 0.5rem;
+	margin-right: 2.3%;
+	border-radius: 3px;
+	font-size: 0.7rem;
+	color: #4A4A4A;
+	text-align: center;
+	line-height: 2rem;
+}
+
+.nav-Tab .list>li.select {
+	color: #FB6B63;
+	border: 1px solid #fff;
+	background-image: url('../assets/goucai/jjc/Groupgs5@2x.png');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: 100% 100%;
+}
+
+
+/*头部模态框end*/
+
+.el-yellow {
+	background-color: #F5A623 !important;
+	/*border: 1px solid #D89320 !important;*/
+	color: #fff !important;
+}
+
+.el-yellow>span {
+	color: #fff !important;
+}
+
+.el-yellow>p {
+	color: #fff !important;
+}
+
+/*筛选*/
+
+.shaixuan {
+	z-index: 3000;
+	position: fixed;
+	top: 2.25rem;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	overflow-y: scroll;
+	padding-bottom: 3rem;
+	background-color: #f2f2f2;
+}
+
+.shaixuan .title {
+	width: 100%;
+	height: 2.4rem;
+	line-height: 2.4rem;
+	text-align: center;
+	color: ##778290;
+	border-bottom: 1px dashed #AEB8BC;
+	font-size: 0.8rem;
+}
+
+.shaixuan .title span {
+	color: #f73f3f;
+}
+
+.shaixuan .wrap {
+	width: 100%;
+	padding: 0.5rem 0.8rem 0;
+}
+
+.shaixuan .wrap .biaoti {
+	width: 100%;
+	height: 2rem;
+	line-height: 2rem;
+	font-size: 0.7rem;
+	color: #606975;
+}
+
+.shaixuan .nav,
+.nav ul {
+	width: 100%;
+	height: 2.5rem;
+	display: flex;
+	justify-content: center;
+}
+
+.shaixuan .nav {
+	margin-bottom: 0.8rem;
+}
+
+.shaixuan .nav ul li:first-child {
+	border-bottom-left-radius: 0.2rem;
+	border-top-left-radius: 0.2rem;
+	border-right: 0;
+}
+
+.shaixuan .lq_nav ul li:first-child {
+	border-right: 1px solid #EBEBEB;
+}
+
+.shaixuan .nav ul li {
+	flex: 1 1 33.33%;
+	height: 2.4rem;
+	font-size: 0.8rem;
+	line-height: 2.4rem;
+	background-color: #fff;
+	border: 1px solid #EBEBEB;
+	text-align: center;
+}
+
+.shaixuan .nav ul li:last-child {
+	border-bottom-right-radius: 0.2rem;
+	border-top-right-radius: 0.2rem;
+	border-left: 0;
+}
+
+.shaixuan .nav ul li.active {
+	background-color: #FC2F2F;
+	color: #fff;
+}
+
+.shaixuan .wrap .box {
+	width: 100%;
+	height: auto;
+}
+
+.shaixuan .wrap .box ul {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+}
+
+.shaixuan .wrap .box ul li {
+	display: block;
+	flex: 0 0 auto;
+	width: 31%;
+	height: 2rem;
+	font-size: 0.7rem;
+	line-height: 2rem;
+	text-align: center;
+	color: #778290;
+	margin-bottom: 0.6rem;
+	background: #FFFFFF;
+	border: 1px solid #EBEBEB;
+	border-radius: 0.2rem;
+	box-sizing: border-box;
+}
+
+.shaixuan .wrap .box ul li.active {
+	background: url('../assets/goucai/jjc/dui_copy_2.png') no-repeat 0% 0%/100% 100%;
+	color: #f73f3f;
+	border: 1px solid transparent;
+}
+
+.Determine {
+	/* width: 8rem; */
+	height: 2rem;
+	margin: auto;
+	margin-top: 2rem;
+	/* border-radius: 0.3rem; */
+	background-color: #f73f3f;
+	font-size: 0.8rem;
+	color: #fff;
+	line-height: 2rem;
+	font-size: 0.7rem;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.topMenu {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.5);
+	top: 2.25rem;
+	left: 0;
+	z-index: 999;
+	/* display: none; */
+}
+
+.topMenu ul {
+	width: 6rem;
+	height: auto;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-bottom-left-radius: 0.3rem;
+	border-bottom-right-radius: 0.3rem;
+	background-color: #fff;
+}
+
+.topMenu ul li {
+	display: block;
+	width: 100%;
+	height: 2.4rem;
+	border-bottom: 1px solid #c3c3c3;
+	font-size: 0.8rem;
+	color: #666;
+	text-align: center;
+	line-height: 2.4rem;
+}
+
+/*四场进球*/
+
+.flr {
+	float: left;
+}
+
+.fgr {
+	float: right;
+}
+
+.jjc_sc_cont {}
+
+.jjc_sc_cont .con {
+	overflow: hidden;
+	padding-right: 0.5rem;
+	border-bottom: 1px dashed #e4e4e4;
+}
+
+.jjc_sc_cont .con:last-child {
+	border: 0;
+}
+
+.jjc_sc_cont .con .titl {
+	width: 22%;
+	padding: 1.8rem 0;
+	text-align: left;
+	padding-left: 0.2rem;
+}
+
+.jjc_sc_cont .con .battle {
+	width: 78%;
+}
+
+.jjc_sc_cont .con .titl p {
+	color: #8F8E94;
+	font-size: 0.5rem;
+	line-height: 0.9rem;
+	display: flex;
+	box-sizing: border-box;
+	padding-left: 0.5rem;
+	align-items: center;
+	justify-content: left;
+}
+
+.jjc_sc_cont .con .titl p.ts_p {
+	/* margin-left: 30%; */
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	padding-left: 0;
+
+}
+
+.jjc_sc_cont .con .titl .p1 span {
+	display: block;
+	width: auto;
+	line-height: 1rem;
+	height: 0.9rem;
+}
+
+.jjc_sc_cont .con .titl .p1 .sq_icon {
+	/*display: block;*/
+	width: 0.3rem;
+	height: 0.3rem;
+	background: #F5A623;
+	/*border: 1px solid #E3981E;*/
+	margin-right: 0.3rem;
+}
+
+.jjc_sc_cont .con .battle {
+	padding: 0.5rem 0 0.75rem 0;
+}
+
+.jjc_sc_cont .con .battle_name {
+	overflow: hidden;
+	margin-bottom: 0.3rem;
+}
+
+.jjc_sc_cont .con .battle_name span {
+	font-size: 0.7rem;
+	color: #000000;
+	float: left;
+	height: 0.85rem;
+	width: 40%;
+	line-height: 0.85rem;
+}
+
+.jjc_sc_cont .con .battle_name span:nth-child(1) {
+	text-align: right;
+}
+
+.jjc_sc_cont .con .battle_name span:nth-child(2) {
+	width: 20%;
+	text-align: center;
+}
+
+.jjc_sc_cont .con .battle_name .zkdui {
+	font-style: normal;
+	color: #c4c4c4;
+	font-size: 0.6rem;
+}
+
+
+.jjc_sc_cont .con .battle_shel table {
+	height: 4rem;
+	margin: 0 auto;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.jjc_sc_cont .con .battle_shel table tr {
+	height: 2rem;
+}
+
+.jjc_sc_cont .con .battle_shel table tr td {
+	height: 2rem;
+	line-height: 2rem;
+	font-size: 0.65rem;
+	width: 3.25rem;
+	text-align: center;
+	background-color: #fff;
+	border: 1px solid #e4e4e4;
+	font-weight: bold;
+}
+
+.jjc_sc_cont .con .battle_shel table tr td:first-child {
+	width: 0.8rem;
+	background: #69BC14;
+	color: #fff;
+	font-size: 0.6rem;
+	border: 1px solid #5DA711;
+	font-weight: normal;
+}
+
+.jjc_sc_cont .con .battle_shel table tr:last-child td:first-child {
+	background: #3F93F5;
+	border: 1px solid #3382DE;
+}
+
+.jjc_sc_cont .el-yellow {
+	background-color: #F5A623 !important;
+	/*border: 1px solid #D89320 !important;*/
+	color: #fff !important;
+}
+
+.jjc_sc_cont .el-yellow>span {
+	color: #fff !important;
+}
+
+.jjc_sc_cont .el-yellow>span>span {
+	color: #fff !important;
+}
+
+.cg_icon {
+	transform: rotate(-45deg) !important;
+	-webkit-transform: rotate(-45deg) !important;
+}
+
+
+/*六场半全场*/
+
+.jjc_lcb_cont .con .battle_shel table tr td {
+	width: 4.3rem;
+}
+
+.jjc_lcb_cont .con .battle_shel table tr td span {
+	color: #8F8E94;
+	font-weight: normal;
+}
+
+
+/*任选九场*/
+
+.jjc_rxjc_cont .con .titl {
+	padding: 0.5rem 0;
+	padding-left: 0.2rem;
+}
+
+.jjc_rxjc_cont .con .battle_shel ul {
+	overflow: hidden;
+}
+
+.jjc_rxjc_cont .con .battle_shel ul li {
+	float: left;
+	background: #fff;
+	border: 1px solid #e4e4e4;
+	color: #4A4A4A;
+	text-align: center;
+	line-height: 1rem;
+	padding: 0.3rem 0;
+}
+
+.jjc_rxjc_cont .con .battle_shel ul li:first-child {
+	width: 37%;
+}
+
+.jjc_rxjc_cont .con .battle_shel ul li:nth-child(2) {
+	width: 22%;
+	margin: 0 2%;
+}
+
+.jjc_rxjc_cont .con .battle_shel ul li:last-child {
+	width: 37%;
+}
+
+.jjc_rxjc_cont .con .battle_shel ul li span:first-child {
+	font-size: 0.65rem;
+	font-weight: bold;
+}
+
+.jjc_rxjc_cont .con .battle_shel ul li span:last-child {
+	font-size: 0.6rem;
+	color: #8F8E94;
+}
+
+.jjc_rxjc_cont .con .battle_shel ul li.active {
+	color: #fff;
+	background: #F5A623;
+}
+
+.jjc_rxjc_cont .con .battle_shel ul li.active span {
+	color: #fff;
+}
+
+
+/*竞猜足球*/
+
+.jjc_zq {
+	width: 100%;
+	height: auto;
+}
+
+.countime {
+	width: 100%;
+	height: 2.5rem;
+	box-sizing: border-box;
+	padding-left: 0.8rem;
+	border-bottom: 1px solid #F0F0F0;
+	background-color: #fff;
+}
+
+.countime .date_fleft {
+	width: 90%;
+	height: 2.5rem;
+	float: left;
+	font-size: 0.6rem;
+	color: #555555;
+	line-height: 2.5rem;
+	letter-spacing: -0.34px;
+}
+
+.countime .date_fleft span {
+	color: #999999;
+	padding-left: 5px;
+}
+
+.countime .date_fleft span i {
+	font-style: normal;
+	color: #F82A5B;
+
+}
+
+.countime .scjqbtl span {
+	padding: 0 5px;
+	color: #F82A5B;
+}
+
+.countime .fright {
+	width: 8%;
+	height: 2.5rem;
+	float: right;
+	font-size: 1rem;
+	text-align: center;
+	line-height: 2.5rem;
+	color: #D1D1D6;
+	font-weight: bold;
+}
+
+/*让球胜负平*/
+
+.cont_rqspf {
+	width: 100%;
+	height: auto;
+}
+
+.cont_rqspf .rqspf_time {
+	width: 100%;
+	height: auto;
+}
+
+.cont_rqspf .rqspf_time .rqspf_list {
+	height: auto;
+	border-bottom: 1px solid #F0F0F0;
+}
+
+.cont_rqspf .rqspf_time .rqspf_list .wraper {
+	height: 4.1rem;
+	padding: 0.7rem 0.5rem 0.7rem 0;
+	border-bottom: 1px dashed #E2E2E2;
+}
+
+.cont_rqspf .rqspf_time .rqspf_list .wraper:last-of-type {
+	border: 0;
+}
+
+.cont_rqspf .rqspf_time .rqspf_list .wraper .title_fleft {
+	width: 22%;
+	height: auto;
+	float: left;
+	box-sizing: border-box;
+	padding-left: 5%;
+}
+
+.cont_rqspf .rqspf_time .rqspf_list .wraper .title_fleft>p {
+	/*display: flex;*/
+	align-items: center;
+	font-size: 0.5rem;
+	color: #8F8E94;
+	line-height: 0.8rem;
+	text-align: left;
+}
+
+.cont_rqspf .rqspf_time .rqspf_list .wraper .title_fleft .xby_fleft {
+	/*display: block;*/
+	width: 0.3rem;
+	height: 0.3rem;
+	background: #F5A623;
+	/*border: 1px solid #E3981E;*/
+	margin-right: 0.3rem;
+}
+
+.cont_rqspf .rqspf_time .rqspf_list .wraper .title_fleft .fleft {
+	font-size: 0.5rem;
+	color: #8F8E94;
+}
+
+.cont_rqspf .rqspf_time .rqspf_list .wraper .battle_fright {
+	width: 78%;
+	float: right;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.cont_rqspf .rqspf_time .rqspf_list .wraper .battle_fright>div {
+	padding: 0.25rem 0;
+}
+
+.cont_rqspf .rqspf_time .rqspf_list .wraper .battle_fright>div p {
+	line-height: 1rem;
+}
+
+.cont_rqspf .rqspf_time .rqspf_list .wraper .battle_fright div:first-child p:last-child {
+	color: #fff;
+}
+
+.cont_rqspf .rqspf_time .rqspf_list .wraper .battle_fright>div p:last-child {
+	color: #8F8E94;
+}
+
+.cont_rqspf .rqspf_time .rqspf_list .wraper .battle_fright .p1 {
+	flex: 0 0 auto;
+	width: 6%;
+	background: #69BC14;
+	box-sizing: border-box;
+	border: 1px solid #5EAB10;
+	padding: 0.4rem 0;
+	text-align: center;
+}
+
+.cont_rqspf .rqspf_time .rqspf_list .wraper .battle_fright .p1>p {
+	font-size: 0.6rem;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 0.8rem;
+}
+
+.cont_rqspf .rqspf_time .rqspf_list .wraper .battle_fright .p2 {
+	flex: 0 0 auto;
+	width: 34%;
+	background: #FFFFFF;
+	box-sizing: border-box;
+	border: 1px solid #F0F0F0;
+}
+
+.cont_rqspf .rqspf_time .rqspf_list .wraper .battle_fright .p2>p {
+	font-size: 0.7rem;
+	color: #4A4A4A;
+	text-align: center;
+}
+
+.cont_rqspf .rqspf_time .rqspf_list .wraper .battle_fright .p3 {
+	flex: 0 0 auto;
+	width: 21%;
+	margin: 0 2%;
+	background: #fff;
+	box-sizing: border-box;
+	border: 1px solid #F0F0F0;
+}
+
+.cont_rqspf .rqspf_time .rqspf_list .wraper .battle_fright .p3>p {
+	font-size: 0.7rem;
+	color: #4A4A4A;
+	text-align: center;
+}
+
+.cont_rqspf .rqspf_time .rqspf_list .wraper .battle_fright .p4 {
+	flex: 0 0 auto;
+	width: 35%;
+	background: #fff;
+	box-sizing: border-box;
+	border: 1px solid #F0F0F0;
+}
+
+.cont_rqspf .rqspf_time .rqspf_list .wraper .battle_fright .p4>p {
+	font-size: 0.7rem;
+	color: #4A4A4A;
+	text-align: center;
+}
+
+.jjc_zq .el-gules {
+	background-color: #FB6B63 !important;
+	border: 1px solid #E45B54 !important;
+}
+
+
+/*足球---进球数*/
+.jjc_jqs_cont .con .titl {
+	width: 20%;
+	padding-left: 0;
+}
+
+.jjc_jqs_cont .con .battle {
+	width: 80%;
+}
+
+.jjc_jqs_cont .con .battle_shel table {
+	width: 100%;
+}
+
+.jjc_jqs_cont .con .battle_shel table tr td {
+	width: 26%;
+}
+
+.jjc_jqs_cont .con .battle_shel table tr td:first-child {
+	background: #fff;
+	color: #4A4A4A;
+	border: 1px solid #e4e4e4;
+	font-weight: bold;
+}
+
+.jjc_jqs_cont .con .battle_shel table tr td:last-child {
+	width: 27%;
+}
+
+.jjc_jqs_cont .con .battle_shel table tr td span {
+	color: #8F8E94;
+	font-size: 0.6rem;
+	font-weight: normal;
+}
+
+.jjc_jqs_cont .con .battle_shel table tr:last-child td:first-child {
+	background: #fff;
+	border: 1px solid #e4e4e4;
+}
+
+
+/*足球---半全场*/
+.jjc_bqc_cont .con {
+	padding-right: 0.5rem;
+}
+
+.jjc_bqc_cont .con .titl {
+	padding: 0.5rem 0;
+	width: 20%;
+}
+
+.jjc_bqc_cont .con .titl p {
+	padding-left: 0.5rem;
+}
+
+.jjc_bqc_cont .con .battle {
+	width: 80%;
+}
+
+.jjc_bqc_cont .con .battle_shel {
+	overflow: hidden;
+	height: 1.75rem;
+}
+
+.jjc_bqc_cont .con .battle_shel .tzxx {
+	text-align: center;
+	background: #FFFFFF;
+	border: 1px solid #F0F0F0;
+	line-height: 1.65rem;
+	font-size: 0.65rem;
+	color: #4A4A4A;
+}
+
+
+/*足球---混合过关*/
+.jjc_hhgg_cont .con .battle_shel table tr td {
+	width: 3.7rem;
+	font-weight: bold;
+}
+
+.jjc_hhgg_cont .con .battle_shel table tr td:first-child {
+	width: 0.75rem;
+	background: #C9C9C9;
+	border: 1px solid #BFBFBF;
+	font-weight: normal;
+}
+
+.jjc_hhgg_cont .con .battle_shel table tr:last-child td:first-child {
+	background: #69BC14;
+	border: 1px solid #5EAB10;
+	line-height: 0.8rem;
+}
+
+.jjc_hhgg_cont .con .battle_shel table tr td.tdlast {
+	width: 1.9rem;
+	line-height: 1rem;
+	font-weight: normal;
+}
+
+.jjc_hhgg_cont .con .battle_shel table tr:last-child td.tdft_red {
+	background: #FB6B63;
+	border: 1px solid #E55D55;
+}
+
+.jjc_hhgg_cont .con .battle_shel table tr td span {
+	color: #8F8E94;
+	font-size: 0.6rem;
+	font-weight: normal;
+}
+
+
+/*足球---一场制胜*/
+
+.jjc_yczs_cont .con .battle_shel table tr td {
+	width: 4.3rem;
+}
+
+
+/*足球---单关固赔*/
+.jjc_dggp_cont .con .battle_shel table {
+	width: 100%;
+}
+
+.jjc_dggp_cont .con .battle_shel table tr td.zwkf {
+	width: 11rem;
+}
+
+.w-100 {
+	font-weight: normal !important;
+}
+
+.jjc_dggp_cont .zanweikf {
+	font-weight: normal !important;
+}
+
+/*足球---二选一*/
+.jjc_exy_cont .con .titl {
+	text-align: center;
+}
+
+.jjc_exy_cont .con .battle_shel ul.exy_ul li {
+	width: 48%;
+	margin: 0;
+}
+
+.jjc_exy_cont .con .battle_shel ul.exy_ul li:first-child {
+	margin-right: 3%;
+}
+
+
+/************足球---弹出框************/
+
+
+/*半全场---弹出框*/
+.mainzq {
+	/* display: none; */
+}
+
+.dis-bl {
+	display: block !important;
+}
+
+.mask {
+	width: 100%;
+	height: 100vh;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 12;
+}
+
+.banqc_cont {
+	width: 100%;
+	height: 22.925rem;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	z-index: 200;
+	border-radius: 0.55rem 0.55rem 0px 0px;
+	overflow: hidden;
+}
+
+.bqc_con {
+	height: 9.65rem;
+	bottom: -9.66rem;
+}
+
+.bqc_con .con table td.td1 {
+	width: .8rem !important;
+	font-size: 0.6rem;
+	/* line-height: .5rem; */
+}
+
+.banqc_cont .title {
+	width: 100%;
+	height: 1.85rem;
+	border-radius: 0.55rem 0.55rem 0px 0px;
+	position: absolute;
+	top: 0;
+	border-bottom: 1px solid #e4e4e4;
+	background: #fff;
+	text-align: center;
+}
+
+.banqc_cont .title span {
+	line-height: 2rem;
+	font-size: 0.6rem;
+	color: #333;
+	text-align: center;
+	font-weight: bold;
+}
+
+.banqc_cont .title span:nth-child(2) {
+	margin: 0 1rem;
+	color: #777;
+	font-weight: normal;
+}
+
+.banqc_cont .con {
+	background: #f2f2f2;
+	padding: 0.5rem 0.75rem;
+	margin-top: 1.85rem;
+}
+
+.banqc_cont .con table {
+	width: 100%;
+	border: 1px solid #EFEFEF;
+	border-collapse: collapse;
+	background: #fff;
+
+}
+
+.banqc_cont .con table td {
+	line-height: 1.6rem;
+	/* padding: 0.3rem 0; */
+	height: 1.6rem;
+	width: 4.1rem;
+	border: 1px solid #EFEFEF;
+	border-collapse: collapse;
+	text-align: center;
+	color: #333;
+	font-size: 0.55rem;
+	font-weight: bold;
+}
+
+.banqc_cont .con table td:first-child {
+
+	font-weight: normal;
+}
+
+.banqc_cont .con table td:first-child.fs-we {
+
+	font-weight: bold;
+}
+
+.banqc_cont .con table td.td1 {
+	width: 1.05rem;
+	background: #784FEF;
+	border: 1px solid #6E48DD;
+	color: #fff;
+}
+
+.banqc_cont .con table td span {
+	color: #888;
+
+	font-size: 0.55rem;
+	font-weight: normal;
+}
+
+.banqc_cont .con table.jqs td span {
+	display: inline-block;
+	width: 1.5rem;
+	margin-left: 0.5rem;
+}
+
+.banqc_cont .con table.bqc td span {
+	display: inline-block;
+	width: 1.5rem;
+	margin-left: 0.5rem;
+}
+
+.banqc_cont .con table.bf td {
+	height: 1.7rem;
+	line-height: normal;
+}
+
+.banqc_cont .con table.bf td span {
+	display: block;
+	width: 0 auto;
+
+}
+
+.banqc_cont .foot {
+	overflow: hidden;
+	height: 2rem;
+	width: 100%;
+	line-height: 2rem;
+	border-top: 1px solid #e4e4e4;
+	background: #fff;
+	position: absolute;
+	bottom: 0;
+}
+
+.banqc_cont .foot div {
+	float: left;
+	width: 50%;
+	color: #3F93F5;
+	text-align: center;
+	font-size: 0.65rem;
+	height: auto;
+	line-height: 2rem;
+}
+
+.banqc_cont .foot div:first-child {
+	border-right: 1px solid #F0F0F0;
+	color: #333;
+}
+
+
+/*比分---弹出框*/
+
+.bifen_cont {
+	height: 14.35rem;
+	bottom: -14.35rem;
+}
+
+.bifen_cont .con table td span {
+	display: block;
+	width: 0 auto;
+
+}
+
+.bifen_cont .con table.table2 {
+	border: 0;
+}
+
+.bifen_cont .con table {
+	width: 100%;
+}
+
+.bifen_cont .con table td {
+	width: 13.57%;
+	line-height: normal;
+	height: 1.7rem;
+}
+
+.bifen_cont .con table.table2 td:last-child {
+	width: 41.25%;
+}
+
+.bifen_cont .con table.table2 td {
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+}
+
+.bifen_cont .con table td.td1 {
+	width: 5%;
+	line-height: 1.6rem;
+	background: #FF811F;
+	border: 1px solid #FF811F;
+	color: #fff;
+}
+
+.bifen_cont .con table td.td2 {
+	width: 5%;
+	background: #3F93F5;
+	border: 1px solid #327ACD;
+	color: #fff;
+	/*border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;*/
+}
+
+.bifen_cont .con table.bf td.td2 {
+	width: 5%;
+	background: #FF811F;
+	border: 1px solid #FF811F;
+	color: #fff;
+	/*border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;*/
+}
+
+.bifen_cont .con table td.td3 {
+	width: 5%;
+	background: #FF811F;
+	border: 1px solid #FF811F;
+	color: #fff;
+}
+
+.bifen_cont .con table.bf_con td.td1 {
+	background: #FF811F;
+	border: 0;
+}
+
+.bifen_cont .con table.bf_con td.td2 {
+	background: #4094F6;
+	border: 0;
+}
+
+.bifen_cont .con table.bf_con td.td3 {
+	background: #69BB18;
+	border: 0;
+	line-height: 1.6rem;
+}
+
+.bifen_cont .con table.bf_con tr.jianju {
+
+	width: 100%;
+	background-color: #F4F4F4 !important;
+	border: 0;
+
+}
+
+.bifen_cont .con table.bf_con tr.jianju td {
+	width: 5%;
+	height: .5rem;
+	background-color: #F4F4F4 !important;
+	border: 0;
+
+}
+
+/*混合过关---弹出框*/
+
+.hunhgg_cont {
+	height: 22.275rem;
+	overflow: hidden;
+	/* top: 2.25rem; */
+	/* margin-top: 0; */
+	bottom: -22.275rem;
+}
+
+.hunhgg_cont .con {
+	/* height: 18.4rem; */
+	overflow: scroll;
+	margin-top: 1.85rem;
+	padding: 0.5rem 0.75rem;
+}
+
+.hunhgg_cont .con .biaoti {
+	font-size: 0.6rem;
+	height: 0.25rem;
+	color: #4A4A4A;
+}
+
+.hunhgg_cont .con table.jqs td {
+	width: 0;
+}
+
+.hunhgg_cont .con table.bqc td {
+	width: 0;
+}
+
+.hunhgg_cont .con table.jqs .td2 {
+	width: 5%;
+	line-height: 1rem;
+	border: 1px solid #327ACD;
+}
+
+.hunhgg_cont .con table.bqc .td2 {
+	width: 5%;
+	line-height: 1.2rem;
+	background: #784FEF;
+	border: 1px solid #6B45DC;
+}
+
+
+/*************篮球*************/
+
+
+/*头部模态框start*/
+
+.lqtb_mtk {
+	position: fixed;
+	display: none;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}
+
+.jjclq_mtk {
+	width: 100%;
+	height: 6rem;
+	position: absolute;
+	top: 0;
+	background-color: #fff;
+	border-bottom: 0.01rem solid #666;
+}
+
+.jjclq_mtk ul {
+	overflow: hidden;
+	padding: 0.25rem 0.5rem;
+}
+
+.jjclq_mtk ul li {
+	float: left;
+	width: 30%;
+	line-height: 1.65rem;
+	margin-bottom: 0.5rem;
+	text-align: center;
+	border: 1px solid #F0F0F0;
+	border-radius: 0.15rem;
+	margin: 0.25rem;
+	font-size: 0.65rem;
+}
+
+.jjclq_mtk ul li.active {
+	height: 1.75rem;
+	color: #f73f3f;
+	background: url(../assets/goucai/jjc/red_duihao.png) no-repeat 0% 0%/100% 100%;
+	border: none;
+	border-radius: 0;
+}
+
+
+/*头部模态框end*/
+
+
+/*篮球---头部*/
+.jjc_lq,
+.jjc_zq,
+.jjc_sc {
+	height: 100%;
+}
+
+.jjc_lq .jjc_head {
+	width: 100%;
+	padding: 0.64rem 0.8rem 0.64rem 0.8rem;
+	background: #fff;
+	overflow: hidden;
+	position: relative;
+}
+
+.jjc_lq .jjc_sc_cont {
+	margin-top: 0;
+}
+
+
+/*篮球---让分胜负*/
+
+.jjc_rfsf_cont .con .battle_shel ul li:nth-child(2) {
+	width: 22%;
+	line-height: 2.1rem;
+	font-size: 0.6rem;
+	color: #FB6B63;
+}
+
+.jjc_rfsf_cont .con .battle_shel ul li.green {
+	color: #69BC14;
+}
+
+
+/*篮球---大小分*/
+
+.jjc_dxf_cont .con .battle_name span {
+	width: 36%;
+}
+
+.jjc_dxf_cont .con .battle_name span:nth-child(2) {
+	width: 28%;
+}
+
+.jjc_dxf_cont .con .titl {
+	padding-top: 1.3rem;
+}
+
+.jjc_dxf_cont .con .battle_shel ul li:nth-child(2) span:last-child {
+	color: #f73f3f;
+}
+
+
+/*篮球---胜分差*/
+.jjc_sfcl_cont .con {
+	padding-right: 0.5rem;
+}
+
+.jjc_sfcl_cont .con .titl {
+	padding: 0.5rem 0;
+	width: 22%;
+	padding-left: 0.2rem;
+}
+
+.jjc_sfcl_cont .con .titl p {
+	padding-left: 0.5rem;
+}
+
+.jjc_sfcl_cont .con .battle {
+	width: 74%;
+}
+
+.jjc_sfcl_cont .con .battle_name span {
+	width: 36%;
+}
+
+.jjc_sfcl_cont .con .battle_name span:nth-child(2) {
+	width: 28%;
+}
+
+.jjc_sfcl_cont .con .battle_name span i {
+	font-style: normal;
+	color: #8F8E94;
+	font-size: 0.6rem;
+}
+
+.jjc_sfcl_cont .con .battle_shel .tzxx span {
+	color: red;
+	padding: 0 0.2rem;
+}
+
+
+/*混合过关*/
+.jjc_hhggl_cont .con .battle_name span {
+	width: 36%;
+}
+
+.jjc_hhggl_cont .con .battle_name span:nth-child(2) {
+	width: 22%;
+}
+
+.jjc_hhggl_cont .con .battle_name span i {
+	font-style: normal;
+	color: #8F8E94;
+	font-size: 0.6rem;
+}
+
+.jjc_hhggl_cont .con .battle_shel {
+	background: #fff;
+	overflow: hidden;
+	border: 1px solid #e4e4e4;
+}
+
+.jjc_hhggl_cont .con .battle_shel ul {
+	overflow: hidden;
+	width: 86%;
+	float: left;
+}
+
+.jjc_hhggl_cont .con .battle_shel ul li {
+	width: 34.8%;
+	height: 2.5rem;
+	padding: 0.3rem 0;
+	float: left;
+	border-left: 1px solid #e4e4e4;
+	text-align: center;
+	font-size: 0.65rem;
+	font-weight: bold;
+}
+
+.jjc_hhggl_cont .con .battle_shel .last {
+	width: 14%;
+	height: 7.5rem;
+	float: right;
+	font-size: 0.6rem;
+	text-align: center;
+	border-left: 1px solid #e4e4e4;
+	padding: 3.2rem 0;
+	font-weight: normal;
+}
+
+.jjc_hhggl_cont .con .battle_shel ul li span {
+	font-size: 0.6rem;
+	color: #8F8E94;
+	font-weight: normal;
+}
+
+.jjc_hhggl_cont .con .battle_shel ul li.td_red {
+	font-size: 0.6rem;
+	color: #FB6B63;
+	line-height: 2rem;
+}
+
+.jjc_hhggl_cont .con .battle_shel ul li.td_wd {
+	width: 24.3%;
+}
+
+.jjc_hhggl_cont .con .battle_shel ul li.td_ts {
+	width: 47%;
+}
+
+.jjc_hhggl_cont .con .battle_shel ul li.zwkf {
+	width: 94%;
+	line-height: 2.5rem;
+	text-align: center;
+	padding: 0;
+	font-weight: normal;
+}
+
+.jjc_hhggl_cont .con .battle_shel ul li:first-child {
+	font-size: 0.5rem;
+	line-height: 0.8rem;
+	color: #fff;
+	width: 6%;
+}
+
+.jjc_hhggl_cont .con .battle_shel ul.ul1 li:first-child {
+	background: #FB6B63;
+	border: 1px solid #E96058;
+}
+
+.jjc_hhggl_cont .con .battle_shel ul.ul2 li {
+	border-top: 1px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+.jjc_hhggl_cont .con .battle_shel ul.ul2 li:first-child {
+	background: #3F93F5;
+	border: 1px solid #3989E7;
+	line-height: 0.65rem;
+}
+
+.jjc_hhggl_cont .con .battle_shel ul.ul3 li:first-child {
+	background: #21CFB4;
+	border: 1px solid #25B7A1;
+	line-height: 0.65rem;
+}
+
+
+/**********篮球弹出框************/
+
+
+/*胜分差弹出框*/
+
+.shengfc_cont {
+	height: 11.575rem;
+	bottom: -11.575rem;
+}
+
+.shengfc_cont .title span:nth-child(2) {
+	margin: 0;
+	width: 23%;
+	text-align: center;
+}
+
+.shengfc_cont .title span i {
+	font-style: normal;
+	color: #8F8E94;
+	font-size: 0.6rem;
+}
+
+.shengfc_cont .con table td {
+	width: 0;
+}
+
+.shengfc_cont .con table td span {
+	display: inline-block;
+	width: 2.1rem;
+	text-align: left;
+}
+
+.shengfc_cont .con table td span:nth-child(1) {
+	font-weight: bold;
+	color: #333;
+
+}
+
+.shengfc_cont .con table td span:nth-child(2) {
+	width: 1.4rem;
+	/* margin-left: .5rem; */
+
+}
+
+.shengfc_cont .con table td:last-child {
+	width: 0;
+}
+
+.shengfc_cont .con table td.td1 {
+	width: 1.05rem;
+	background: #784FEF;
+	border: 1px solid #6A43DB;
+	line-height: 1.2rem;
+	font-size: 0.5rem;
+}
+
+.shengfc_cont .con table td.td2 {
+	width: 1.05rem;
+	background: #69BC14;
+	border: 1px solid #69BC14;
+	line-height: 1.2rem;
+	font-size: 0.5rem;
+}
+
+
+/***************北京单场***************/
+
+
+/*让球胜平负*/
+.jjc_rqspf_cont .con {
+	padding: 0.3rem 0.5rem 0.25rem 0;
+}
+
+.jjc_rqspf_cont .con .battle_shel ul li {
+
+	height: 2.85rem;
+}
+
+.jjc_rqspf_cont .con .battle_shel ul li:first-child {
+	width: 6%;
+	background: #69BC14;
+	border: 1px solid #5EAB10;
+	color: #fff;
+	font-size: 0.5rem;
+	line-height: 0.8rem;
+	padding: 0.6rem 0;
+}
+
+.jjc_rqspf_cont .con .battle_shel ul li:first-child.active {
+	background: #FB6B63;
+	border: 1px solid #E45B54;
+}
+
+.jjc_rqspf_cont .con .battle_shel ul li:first-child span:last-child {
+	color: #fff;
+}
+
+.jjc_rqspf_cont .con .battle_shel ul li:nth-child(2) {
+	width: 35%;
+	margin: 0;
+}
+
+.jjc_rqspf_cont .con .battle_shel ul li:nth-child(3) {
+	width: 20%;
+	margin: 0 2%;
+}
+
+.jjc_rqspf_cont .con .battle_shel ul li:last-child {
+	width: 35%;
+}
+
+
+/*上下单双*/
+
+.jjc_sxds_cont .con .battle_shel ul li {
+	width: 23.5%;
+	margin-right: 2%;
+}
+
+.jjc_sxds_cont .con .battle_shel ul li:nth-child(2) {
+	margin: 0;
+	margin-right: 2%;
+}
+
+.jjc_sxds_cont .con .battle_shel ul li:first-child {
+	width: 23.5%;
+}
+
+.jjc_sxds_cont .con .battle_shel ul li:last-child {
+	width: 23.5%;
+	margin: 0;
+}
+
+.jjc_sxds_cont .con .battle_shel ul li:nth-child(2) span:last-child {
+	color: #8F8E94;
+}
+
+/*比分弹出窗*/
+.bjdc_bifen_cont {
+	/* height: auto;
+	margin-top: -7.75rem; */
+}
+
+.bjdc_bifen_cont .con table.table2 td:last-child {
+	width: 13.57%;
+}
+
+.bjdc_bifen_cont .con table td.td3 {
+	width: 4%;
+	background: #69BB18;
+	border: 1px solid #69BB18;
+}
+
+.bjdc_bifen_cont .con table {
+	margin-top: .5rem;
+}
+
+.bjdc_bifen_cont .con table:first-child {
+	margin-top: 0;
+}
+
+.bjdc_bifen_cont .con table td.td1 {
+	width: 4%;
+}
+
+.bjdc_bifen_cont .con table td.td2 {
+	width: 4%;
+}
+
+.c-red {
+	background-color: #fb6b63 !important;
+	border: 1px solid #E45B54 !important;
+}
+
+.c-hui {
+	background-color: #c4c4c4 !important;
+}
+
+.dis-no {
+	display: none !important;
+}
+
+
+/*未实名弹窗*/
+#logok {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+	background: rgba(0, 0, 0, .75);
+}
+
+#logok .qux_btn {
+	width: 8%;
+	position: absolute;
+	bottom: -2rem;
+	left: 46%;
+}
+
+#logok .qux_btn img {
+	width: 100%;
+}
+
+#logok>div.renzcont {
+	width: 85%;
+	/* height: 17.2rem; */
+	position: absolute;
+	top: 20%;
+	left: 7.5%;
+	z-index: 2;
+	border-radius: 0.6rem;
+	background-color: #fff;
+}
+
+#logok>div p.text {
+	text-align: center;
+	line-height: 1.2rem;
+	padding: 5% 0;
+	font-size: 1.2rem;
+	color: #363636;
+	font-weight: bold;
+}
+
+#logok>div p.renz_text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 1.8rem;
+	font-size: 0.8rem;
+	text-align: center;
+	color: #43A4F1;
+	font-weight: bold;
+}
+
+#logok>div p.renz_text span {
+	display: inline-block;
+	margin-top: -0.2rem;
+	font-size: 1.75rem;
+	color: #FF2323;
+}
+
+#logok>div>div {
+	width: 100%;
+
+}
+
+#logok>div>div>img {
+	display: block;
+	width: 100%;
+	/*height: 3.2rem;*/
+	margin: 0 auto 0.2rem;
+}
+
+#logok>div>div>.title2 {
+	width: 100%;
+	height: 1rem;
+	line-height: 1rem;
+	font-size: 0.65rem;
+	text-align: center;
+	color: #7a7a7a;
+}
+
+#logok>div>div>.content {
+	width: 100%;
+	line-height: 1rem;
+	font-size: 0.65rem;
+	text-align: center;
+	color: #7a7a7a;
+	margin: 0 auto;
+}
+
+#logokbtn1,
+#logokbtn2 {
+	width: 85%;
+	/* height: 2.2rem; */
+	line-height: 1.2rem;
+	padding: 3% 0;
+	border-radius: 0.2rem;
+	text-align: center;
+	font-size: 0.7rem;
+}
+
+#logokbtn1 {
+	margin-right: 0.3rem;
+	background-color: #5fa3eb;
+	color: #fff;
+}
+
+#logokbtn2 {
+	margin-left: 0.3rem;
+	background-color: #9b9b9b;
+	color: #fff;
+}
+
+#logok .logokbtn {
+	width: 100%;
+	height: auto;
+	margin-top: 3%;
+	margin-bottom: 8%;
+	display: flex;
+	justify-content: center;
+}
+
+#logok2 .logokbtn {
+	width: 100%;
+	height: auto;
+	margin-top: 0.5rem;
+	display: flex;
+	justify-content: center;
+}

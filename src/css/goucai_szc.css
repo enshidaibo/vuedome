@@ -1,0 +1,975 @@
+body{
+  background: #fff;
+  height: 100%;
+}
+.flr{
+  float: left;
+}
+.fgr{
+  float: right;
+}
+/*头部*/
+header .top-more span{
+  display: inline-block;
+  width: 0.25rem;
+  height: 0.25rem;
+  margin-left: 0.2rem;
+  background:#626262;
+  border-radius: 50%;
+}
+header {
+     z-index: 1000 !important;
+   position: fixed;
+}
+header .aui-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 2.25rem;
+}
+header .aui-title span:first-child{
+  padding-right: 0.2rem;
+}
+header .aui-title>img{
+  display: block;
+  /*margin-left: 0.1rem;*/
+  width: 0.55rem;
+  height: auto;
+	padding-left: 0.2rem;
+}
+.aui-bar-nav .aui-title{
+  left: 2rem;
+  right: 2rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.aui-bar-nav {
+  background: #fff;
+  color: #333333;
+}
+.aui-bar-nav .aui-btn .aui-iconfont {
+  color: #333333;
+}
+.aui-bar-nav .aui-pull-right {
+  padding-right: 0.75rem;
+}
+.aui-bar-nav .aui-pull-left{
+  padding-left: 0.75rem;
+}
+
+/*头部end*/
+/*底部*/
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  padding: 0.05rem 0rem 0 0.75rem;
+  box-shadow: 0 -0.05rem 0.2rem 0 rgba(3,3,3,0.10);
+  background: #fff;
+  height: 3rem;
+
+}
+footer .ft_money{
+  max-width: 50%;
+
+  color: #333333;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  margin-top: 0.2rem;
+  font-weight: 300;
+}
+footer .ft_money p{
+  line-height: 1.2rem;
+    font-size: 0.7rem;
+}
+footer .ft_money span{
+  color: #F82A5B;
+  font-weight: 500;
+}
+footer .ft_btn{
+  overflow: hidden;
+  padding-right: 0.75rem;
+}
+footer .ft_btn div{
+
+  text-align: center;
+
+  color: #fff;
+  font-size: 0.7rem;
+}
+footer .ft_btn div:first-child{
+  margin-right: 0.5rem;
+  display: flex;
+  line-height: 3rem;
+  align-items: center;
+}
+footer .ft_btn div:first-child img{
+  width: 0.75rem;
+  height: 0.9rem;
+}
+footer .ft_btn div:first-child span{
+  color: #8F8E94;
+  padding-left: 0.1rem;
+}
+footer .ft_btn div:last-child{
+    font-size: 0.85rem;
+    width: 4.5rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    margin-top: 0.3rem;
+  background: #03A9F4;
+  border-radius: 4px;
+  position: relative;
+}
+.pay_b{
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+  position: absolute;
+  top: -0.3rem;
+  right: -0.3rem;
+  background-color: #FB6B63;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 0.4rem;
+  color: #fff;
+  line-height: 0.9rem;
+}
+
+/*底部end*/
+
+/* 分享 */
+.share_box {
+  width: 100%;
+  height: 100%;
+  background: url(../assets/goucai/sharepic1.png) 0 0 no-repeat;
+  background-size: 100% auto;
+  z-index: 99999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.8);
+  font-family: "微软雅黑", "黑体";
+}
+.share_box .share_cont{
+  position:fixed; 
+  bottom: 0.6rem;
+  width: 100%; 
+  display: flex;
+}
+.share_box .quxiao {
+  background-color: #fb6b63;
+  width: 42.5%;
+  height: 2rem;
+  line-height: 2rem;
+  color: #fff;
+  text-align: center;
+  font-size: 0.75rem;
+  margin-left: 5%;
+  border-radius: 0.3rem;
+}
+.share_box .down {
+  background-color: #f5a623;
+  width: 42.5%;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.75rem;
+  margin-left: 5%;
+  border-radius: 0.3rem;
+}
+/* 分享end */
+
+/*往期开奖*/
+.last_ten{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    /* border-bottom: 1px solid #c3c3c3; */
+    transition: 0.5s;
+}
+.last_ten table {
+    width: 100%;
+}
+.last_ten table tr {
+    width: 100%;
+    height: 1.6rem;
+}
+.last_ten table tr td:first-child {
+    width: 36%;
+    height: 1.6rem;
+    border-right: 1px solid #D9DEE2;
+    text-align: center;
+    position: relative;
+    font-size: 0.6rem;
+    color: #545454;
+    line-height: 1.6rem;
+}
+.last_ten table tr td:first-child span {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    border: 1px solid #D9DEE2;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.25rem;
+    right: -0.26rem;
+}
+.last_ten table tr td:last-child {
+    width: 64%;
+    box-sizing: border-box;
+    padding-left: 1.5rem;
+    height: 1.6rem;
+    text-align: left;
+}
+.last_ten table tr td:last-child span {
+    display: inline-block;
+    width: 1.2rem;
+    text-align: left;
+    font-size: 0.7rem;
+    color: #D81D36;
+    line-height: 1.6rem;
+}
+.last_ten table tr td:last-child span:last-child {
+    color: #2c6acd;
+}
+
+.last_ten_bjk8{
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  /* border-bottom: 1px solid #c3c3c3; */
+  transition: 0.5s;
+}
+.last_ten_bjk8 table {
+    width: 100%;
+}
+.last_ten_bjk8 table tr {
+    width: 100%;
+    height: 1.6rem;
+}
+.last_ten_bjk8 table tr td:first-child {
+    width: 32%;
+    height: 1.6rem;
+    border-right: 1px solid #D9DEE2;
+    text-align: center;
+    position: relative;
+    font-size: 0.6rem;
+    color: #545454;
+    line-height: 1.6rem;
+}
+.last_ten_bjk8 table tr td:first-child span {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    border: 1px solid #D9DEE2;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.25rem;
+    right: -0.26rem;
+}
+.last_ten_bjk8 table tr td:last-child {
+    width: 68%;
+    box-sizing: border-box;
+    padding-left: 0.5rem;
+    height: 1.6rem;
+    text-align: left;
+}
+.last_ten_bjk8 table tr td:last-child span {
+    display: inline-block;
+    width: 1rem;
+    text-align: left;
+    font-size: 0.7rem;
+    color: #D81D36;
+    line-height: 1.2rem;
+}
+.last_ten_bjk8 table tr td:last-child span:last-child {
+    color: #2c6acd;
+}
+
+#mc_ssq,#mc_dlt,#mc_qlc,#mc_pls,#mc_plw,#mc_fcsd,#mc_bjk8,#gpc_cqssc,#gpc_xjssc,#gpc_hbks,#gpc_sd11ydj{
+  /* height: 100vh; */
+  /* overflow: scroll; */
+}
+
+/*玩法选择*/
+.nav-Tab {
+    /* display: none; */
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.nav-Tab .title {
+    width: 100%;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    height: 1.7rem;
+    line-height: 1.7rem;
+    border-bottom: 1px solid #c3c3c3;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.nav-Tab .list {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 2.25rem;
+    left: 0;
+    z-index: 20;
+    background-color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 0 0 0.5rem 0.5rem;
+}
+
+.nav-Tab .list>li {
+    flex: 0 0 auto;
+    width: 31%;
+    height: 2rem;
+    border: 1px solid #F0F0F0;
+    box-sizing: border-box;
+    margin-top: 0.5rem;
+    margin-right: 2.3%;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    color: #4A4A4A;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.nav-Tab .list>li.select {
+    color: #FB6B63;
+    border: 1px solid #fff;
+    background-image: url('../assets/goucai/jjc/Groupgs5@2x.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+
+/*右上角弹出菜单*/
+.topMenu{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 999;
+  /* display: none; */
+}
+.topMenu ul{
+  width: 6rem;
+  height: auto;
+  overflow: hidden;
+  position: absolute;
+  top: 2.25rem;
+  right: 0;
+  border-bottom-left-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  background-color: #fff;
+}
+.topMenu ul li{
+  display: block;
+  width: 100%;
+  height: 2.4rem;
+  border-bottom: 1px solid #c3c3c3;
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+  line-height: 2.4rem;
+}
+
+/*顶部*/
+.top_mc{
+  overflow: hidden;
+  line-height: 2.2rem;
+  padding: 0 0.75rem;
+  border-bottom: 1px solid #F0F0F0;
+  position: relative;
+}
+.top_mc div:nth-child(1){
+  color: #4B4B4B;
+  font-size: 0.7rem;
+}
+.top_mc div:nth-child(2){
+  color: #828282;
+  font-size: 0.7rem;
+	/* padding-right: 1rem; */
+}
+.top_mc div:nth-child(2) span{
+  color:  #FB6B63;
+}
+.top_mc div:nth-child(2) i{
+  position: absolute;
+  top: 32%;
+  right: 0.75rem;
+  display: inline-block;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-bottom: 1px solid #D1D1D6;
+  border-left: 1px solid #D1D1D6;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.top_mc div:nth-child(2) i.active{
+  top: 45%;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+/*顶部end*/
+/*内容*/
+.mc_cont{
+  padding: 0.75rem;
+  /*border-bottom: 1px solid #F0F0F0;*/
+}
+.mc_content{
+  margin-bottom: 2.5rem;
+}
+.last_cont{
+  border-bottom: 0;
+}
+.mc_cont2{
+  padding: 0.75rem 0 0 0;
+}
+
+.yaoyiyao {
+	  display: inline-block;
+}
+
+.yaoyiyao p{
+  color: #60A2EB;
+  font-size: 0.7rem;
+  background: url(../assets/goucai/jjc/shake.png) no-repeat 0 center/1.1rem;
+  padding-left: 1.3rem;
+	display: inline-block;
+}
+.mc_cont2 .yaoyiyao{
+  padding: 0 0.75rem;
+}
+.jieshao{
+  line-height: 1.8rem;
+  font-size: 0.7rem;
+  color: #828282;
+}
+.mc_cont2 .jieshao{
+  padding: 0 0.75rem;
+}
+.mc_cont .titl{
+  line-height: 1.8rem;
+  overflow: hidden;
+  font-size: 0.7rem;
+  color: #828282;
+}
+.mc_cont2 .titl{
+  padding: 0 0.75rem;
+  line-height: 1.5rem;
+  font-size: 0.7rem;
+}
+.mc_cont .titl .red{
+  color: #FB6B63;
+}
+.mc_cont .titl .blue{
+  color: #60A2EB;
+}
+.mc_cont .battle{
+  overflow: hidden;
+}
+.mc_cont2 .battle{
+  padding-top: 0.3rem;
+}
+.mc_cont .battle ul{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+	padding-top: 0.2rem;
+}
+
+.mc_cont .battle ul li{
+  flex: 0 0 auto;
+  width: 2.35rem;
+  height: 2.46rem;
+}
+.mc_cont .battle ul li .sp1{
+  display: block;
+  width:  1.75rem;
+  height: 1.75rem;
+	margin: auto;
+  line-height: 1.75rem;
+  color: #666666;
+  font-size: 0.8rem;
+  text-align: center;
+  border: 1px solid #cccccc;
+  border-radius: 50%;
+	animation: myfirstsp 0.3s;
+}
+@keyframes myfirstsp {
+  0% {
+    transform:scale(1.3);
+  }
+
+  100% {
+
+  transform:scale(1);
+  }
+}
+/* .mc_cont .battle ul li .sp1:active{
+animation: myfirst 0.3s;
+
+} */
+
+.mc_cont .battle ul li .sp2{
+  display: block;
+  width: 100%;
+  height: 0.7rem;
+  line-height: 0.7rem;
+  text-align: center;
+  color: #666;
+  font-size: 0.5rem;
+  font-weight: 200;
+}
+.mc_cont .battle_red ul li.active .sp1{
+  background: #F82A5B;
+  border: 1px solid #F82A5B;
+  color: #fff;
+	animation: myfirst 0.3s;
+}
+.mc_cont .battle_blue ul li.active .sp1{
+  background: #03A9F4;
+  border: 1px solid #03A9F4;
+  color: #fff;
+	animation: myfirst 0.3s;
+}
+.mc_cont .battle_red ul li.active .sp1{
+  background: #FB6B63;
+  border: 1px solid #FB6B63;
+  color: #fff;
+   animation: myfirst 0.3s;
+
+}
+@keyframes myfirst {
+    0% {
+      transform:scale(1.3);
+    }
+
+    100% {
+
+    transform:scale(1);
+    }
+}
+/* .mc_cont .battle_blue ul li.active:active{
+  width: 1.75rem;
+  height: 2.46rem;
+} */
+.mc_cont2 .battle ul{
+  justify-content: flex-start;
+}
+.mc_cont2 .battle ul li{
+  margin: 0 2.5%;
+}
+/*.mc_cont .wanwei,.mc_cont  .qianwei,.mc_cont  .baiwei,.mc_cont  .shiwei,.mc_cont  .gewei {
+  height: 7.5rem;
+}*/
+.battle_icon{
+  width: 10%;
+  line-height:1.2rem;
+  text-align: center;
+  font-size: 0.75rem;
+  background-color: #debd8a;
+  color: #707070;
+  position: relative;
+  margin: 1.5% 5% 0 0;
+}
+.battle_icon .right_arror {
+  width: 0;
+  height: 0;
+  border-top: 0.6rem solid transparent;
+  border-bottom: 0.6rem solid transparent;
+  border-left: 0.6rem solid #debd8a;
+  position: absolute;
+  top: 0rem;
+  left: 100%;
+}
+.battle_shuz{
+  width: 84%;
+}
+
+
+/************快三************/
+/*湖北快三*/
+.ks_content .battle{
+  margin-top: 0.5rem;
+}
+.ks_cont .battle_ks ul{
+  justify-content: space-between;
+}
+.ks_cont .battle_ks ul li.active{
+  background: #f73f3f;
+  color: #fff;
+  border: 1px solid #f73f3f;
+}
+.ks_cont .battle_ks ul.xuanh li.active{
+  background: #f73f3f;
+  color: #fff;
+}
+/*和值*/
+.ks_cont .battle_ks ul li{
+  width: 18%;
+  border: 1px solid #c4c4c4;
+  border-radius: 0.25rem;
+  margin: 1%;
+  font-size: 0.55rem;
+  height: 2.2rem;
+  line-height: 0.8rem;
+  padding: 0.2rem 0;
+  overflow: hidden;
+  text-align: center;
+  color: #707070;
+}
+.ks_cont .xuan_h ul li{
+  height: auto;
+  width: 23%;
+}
+.ks_cont .battle_ks ul li span{
+  font-size: 0.5rem;
+}
+/*三同号通选*/
+.ks_cont .battle_sthtx ul li{
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 0.7rem;
+  padding: 0.5rem 0;
+}
+.ks_cont .battle_sthtx ul li span{
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+/*三同号单选*/
+.ks_cont .battle_sthdx ul{
+  width: 85%;
+  margin: 0 auto;
+}
+.ks_cont .battle_sthdx ul li{
+  width: 30%;
+}
+/*三不同号*/
+.ks_cont .battle_sbth ul li{
+  width: 14%;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  height: auto;
+}
+.ks_cont .battle_sbth ul li span{
+  font-size: 0.7rem;
+}
+/*三连号通选*/
+.ks_cont .slhtx_tit{
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+.ks_cont .battle_slhtx ul li{
+  width: 70%;
+  font-size: 0.7rem;
+  line-height: 1.4rem;
+  height: auto;
+  margin:  0 auto;
+}
+.ks_cont .battle_slhtx ul li span{
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+/*二同号复选*/
+.ks_cont .battle_ethfx ul{
+  width: 85%;
+  margin: 0 auto;
+}
+.ks_cont .battle_ethfx ul li{
+  width: 27%;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  height: auto;
+  margin: 2%;
+}
+.ks_cont .battle_ethfx ul li span{
+  font-size: 0.8rem;
+}
+/*二同号单选*/
+.ks_cont .tit_ethdx{
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+.ks_cont .battle_ethdx ul{
+  width: 93%;
+  margin: 0 auto;
+}
+.ks_cont .battle_ethdx ul li{
+  width: 12%;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  height: auto;
+}
+.ks_cont .battle_ethdx ul li span{
+  font-size: 0.8rem;
+}
+/*二不同号*/
+.ks_cont .battle_ebth ul{
+  width: 85%;
+  margin: 0 auto;
+}
+.ks_cont .battle_ebth ul li{
+  width: 27%;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  height: auto;
+  margin: 2%;
+}
+.ks_cont .battle_ebth ul li span{
+  font-size: 0.8rem;
+}
+/*三不同号胆拖*/
+.ks_dan_cont{
+  padding: 0.75rem 0;
+}
+.ks_dan_cont .yaoyiyao{
+  padding: 0 0.75rem;
+}
+.ks_dan_cont .jieshao{
+  padding: 0 0.75rem;
+}
+.ks_dan_cont .battle_ntop{
+  margin-top: 0;
+}
+.ks_cont .battle{
+  padding-top: 0;
+}
+.ks_cont .battle_icon {
+  width: 10%;
+  line-height: 1.2rem;
+  text-align: center;
+  font-size: 0.75rem;
+  background-color: #debd8a;
+  color: #707070;
+  position: relative;
+  margin: 1% 0;
+}
+.ks_cont .battle_sbthdt ul{
+  width: 85%;
+  margin: 0 auto;
+}
+.ks_cont .battle_sbthdt ul li{
+  width: 12%;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  height: auto;
+  margin: 2%;
+}
+.ks_cont .battle_sbthdt ul li span{
+  font-size: 0.8rem;
+}
+[v-cloak] {
+display: none !important;
+}
+#gpc_hbks .battle_ks ul li.active {
+  background-color: #FB6B63 !important;
+  color: #fff !important;
+}
+#gpc_hbks .battle_ks ul li.active span{
+  color: #fff !important;
+}
+
+
+
+/*未实名弹窗*/
+	#logok {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 2000;
+		background: rgba(0, 0, 0, .75);
+	}
+  #logok .qux_btn{  
+      width: 8%;
+      position: absolute;
+      bottom: -2rem;
+      left: 46%;
+  }
+  #logok .qux_btn img{
+      width: 100%;
+  }
+	#logok>div.renzcont {
+		width: 85%;
+		/* height: 17.2rem; */
+		position: absolute;
+		top: 20%;
+		left: 7.5%;
+		z-index: 2;
+		border-radius: 0.6rem;
+		background-color: #fff;
+	}
+	#logok>div p.text {
+		text-align: center;
+		line-height: 1.2rem;
+		padding: 5% 0;
+		font-size: 1.2rem;
+		color: #363636;
+		font-weight: bold;
+	}
+
+	#logok>div p.renz_text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 1.8rem;
+		font-size: 0.8rem;
+		text-align: center;
+		color: #43A4F1;
+		font-weight: bold;
+	}
+
+	#logok>div p.renz_text span {
+		display: inline-block;
+		margin-top: -0.2rem;
+		font-size: 1.75rem;
+		color: #FF2323;
+	}
+	#logok>div>div {
+		width: 100%;
+
+	}
+
+	#logok>div>div>img {
+		display: block;
+		width: 100%;
+		/*height: 3.2rem;*/
+		margin: 0 auto 0.2rem;
+	}
+
+	#logok>div>div>.title2 {
+		width: 100%;
+		height: 1rem;
+		line-height: 1rem;
+		font-size: 0.65rem;
+		text-align: center;
+		color: #7a7a7a;
+	}
+
+	#logok>div>div>.content {
+		width: 100%;
+		line-height: 1rem;
+		font-size: 0.65rem;
+		text-align: center;
+		color: #7a7a7a;
+		margin: 0 auto;
+	}
+  #logokbtn1,
+	#logokbtn2 {
+		width: 85%;
+		/* height: 2.2rem; */
+		line-height: 1.2rem;
+		padding: 3% 0;
+		border-radius: 0.2rem;
+		text-align: center;
+		font-size: 0.7rem;
+	}
+
+	#logokbtn1 {
+		margin-right: 0.3rem;
+		background-color: #5fa3eb;
+		color: #fff;
+	}
+
+	#logokbtn2 {
+		margin-left: 0.3rem;
+		background-color: #9b9b9b;
+		color: #fff;
+	}
+  #logok .logokbtn {
+  	width: 100%;
+  	height: auto;
+  	margin-top: 3%;
+  	margin-bottom: 8%;
+  	display: flex;
+  	justify-content: center;
+  }
+  
+  #logok2 .logokbtn {
+  	width: 100%;
+  	height: auto;
+  	margin-top: 0.5rem;
+  	display: flex;
+  	justify-content: center;
+  }
+	 span.icon_up{
+		width: .5rem;
+		height: .5rem;
+		border-left: transparent;
+		border-bottom: transparent;
+		border-right: 1px solid #A7A7A7;
+		position: absolute;
+		border-top: 1px solid #A7A7A7;
+		right: .85rem;
+		-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+		/* margin: auto; */
+		top:.7rem;
+		
+	}
+	 span.icon_down{
+		 display: none;
+		/* width: .5rem;
+		height: .5rem;
+		border-right: transparent;
+		border-top: transparent;
+		border-left: 1px solid #A7A7A7;
+		position: absolute;
+		border-bottom: 1px solid #A7A7A7;
+		right: .85rem;
+
+		-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg); */
+		/* margin: auto; */
+		/* top:.7rem; */
+	}  
+	span.iconbg_down{
+		display: block;
+		/* position: absolute; */
+		width: 1.8rem;
+		height: 0.6rem;
+		background-image: url('../assets/goucai/iconbg_down.png');
+		background-size:100% 100% ;
+		margin: 0 auto;
+		margin-top: -.75rem;
+	}
+	span.iconbg_up{
+		display: block;
+		/* position: absolute; */
+		width: 1.8rem;
+		height: 0.6rem;
+		background-image: url('../assets/goucai/iconbg_up.png');
+		background-size:100% 100% ;
+		margin: 0 auto;
+		margin-top: -.75rem;
+	}

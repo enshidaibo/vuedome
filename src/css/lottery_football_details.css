@@ -1,0 +1,280 @@
+.football_details{
+	font-family: "Helvetica Neue";
+	font-size: 0.8rem;
+	background-color: #f2f2f2;
+	min-height: 100vh;
+}
+.aui-refresh-content{
+	top:2.2rem
+	}
+	header {
+		position: fixed !important;
+		background-color: #FFFFFF;
+	}
+
+	.aui-bar-nav .aui-btn .aui-iconfont {
+		color: #333333;
+	}
+
+	.aui-bar-nav .aui-title {
+		color: #333333;
+		font-weight: 500;
+	}
+#app {
+  /* margin-top: 2.25rem; */
+  width: 100%;
+  margin-bottom: 3.5rem;
+}
+
+.share_icon {
+  position: relative;
+  left: 0.5rem;
+  width: 60%;
+}
+
+.buttons_wrap {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  background-color: white;
+  color: white;
+  font-size: 1rem;
+ 
+  z-index: 8;
+  box-shadow: 0 -2px 4px 0 rgba(3,3,3,0.20);
+}
+.button {
+  position: absolute;
+  bottom: 0.5rem;
+  width: 90%;
+  margin-left: 5%;
+  height: 2rem;
+  border-radius: 5px;
+  z-index: 100;
+  background-color: #FFA001;
+  border: 1px solid #FFA001;
+  outline:0px;
+  -webkit-appearance:none;
+	color: #fff;
+
+	font-size: 0.85rem;
+}
+
+
+/*竞技彩*/
+.sports_lottery {
+width: 100%;
+padding-bottom: 3.3rem;
+}
+
+.lottery_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin-bottom: 0.4rem;
+  height: 2rem;
+}
+.date {
+  margin-right: 0.2rem;
+}
+.list_content {
+  display: flex;
+  flex-direction: column;
+}
+.football_content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 5% 2%;
+  margin-bottom: 0.4rem;
+}
+.football_content:last-child{
+  margin-bottom: 0;
+}
+.left {
+  width: 20%;
+  /*background: #eee;*/
+
+}
+.right {
+  width: 66%;
+  /*margin: 0 2%;*/
+  /*background: #eee;*/
+}
+.icon_down {
+  width: 10%;
+  text-align: center;
+  /*background: #eee;*/
+}
+.icon_down.rotate {
+  transform: rotate(0deg);
+}
+
+.left, .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.match_type {
+  background-color: green;
+  font-size: 0.6rem;
+  color: white;
+  padding: 0.1rem 0.5rem;
+  margin-bottom: 0.2rem;
+}
+.black {
+  background-color: #4a4a4a;
+}
+.number {
+  font-size: 0.6rem;
+  color: #999;
+}
+.right .top {
+  width: 100%;
+  display: flex;
+  flex-direction: row ;
+  align-items: center;
+  justify-content: space-between;
+}
+.name {
+  /*width: 35%;*/
+  width: 31%;
+  color:#999;
+  font-weight: bolder;
+  font-size: 0.7rem;
+  /*white-space: nowrap;*/
+  text-align: right;
+  /*background-color: #eee;*/
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.name:last-child{
+  text-align: left;
+}
+.score {
+  width: 38%;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  display: inline-flex;
+  justify-content: center;
+  margin-left: 0.05rem;
+  letter-spacing: 0.05rem;
+  /*background-color: red;*/
+}
+.score i{
+  font-style: normal;
+}
+.score .dd{
+  margin: 0 0.1rem;
+}
+.half {
+  font-size: 0.6rem;
+  color: #3F93F5;
+}
+/*scale*/
+.scale {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3% 6%;
+  border-bottom: 1px solid #e2e2e2;
+}
+.columns {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.7rem;
+}
+.item:last-child{
+  margin-right: 0;
+}
+.ball_score {
+  color: #999;
+}
+
+
+.border {
+  width: 0.1rem;
+  height: 0.2rem;
+  border-top: 1.5rem solid #e2e2e2;
+  /*margin: 0 0.8rem;*/
+}
+.numbers {
+  color: #999;
+  font-size: 0.7rem;
+}
+.dis-no{
+  display: none;
+}
+
+[v-cloak] {
+  display: none ;
+}
+
+
+/* 分享 */
+.share_box {
+  width: 100%;
+  height: 100%;
+  background: url(../assets/goucai/sharepic1.png) 0 0 no-repeat;
+  background-size: 100% auto;
+  z-index: 99999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.8);
+  font-family: "微软雅黑", "黑体";
+}
+.share_box .share_cont{
+  position:fixed; 
+  bottom: 0.6rem;
+  width: 100%; 
+  display: flex;
+}
+.share_box .quxiao {
+  background-color: #fb6b63;
+  width: 42.5%;
+  height: 2rem;
+  line-height: 2rem;
+  color: #fff;
+  text-align: center;
+  font-size: 0.75rem;
+  margin-left: 5%;
+  border-radius: 0.3rem;
+}
+.share_box .down {
+  background-color: #f5a623;
+  width: 42.5%;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.75rem;
+  margin-left: 5%;
+  border-radius: 0.3rem;
+}
+/* 分享end */

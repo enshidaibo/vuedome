@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone = no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title>美奇彩</title>
+	</head>
+	<body>
+		<div id="app"></div>
+		<!-- built files will be auto injected -->
+	</body>
+	<script src="http://pv.sohu.com/cityjson ie=utf-8"></script> <!-- 获取本机的IP地址 -->
+	<script src="https://cdn.bootcss.com/mobile-detect/1.4.3/mobile-detect.js"></script>
+	<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
+	<script src="http://res2.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+
+	<script type="text/javascript">
+	
+		Array.prototype.contains = function(needle) {
+			for (i in this) {
+				if (this[i].indexOf(needle) > 0)
+					return i;
+			}
+			return -1;
+		}
+
+		var device_type = navigator.userAgent; //获取userAgent信息  
+		// document.write(device_type);//打印到页面  
+		var md = new MobileDetect(device_type); //初始化mobile-detect  
+		var os = md.os(); //获取系统  
+		var model = "";
+		if (os == "iOS") { //ios系统的处理  
+			os = md.os().toLowerCase() + md.version("iPhone");
+			model = md.mobile();
+		} else if (os == "AndroidOS") { //Android系统的处理 
+			var mds;
+			var tos = md.version('Android').toString().split('.');
+			if (tos.length == 3) {
+				// alert(1)
+				mds = md.version("Android")
+			} else if (tos.length == 2) {
+				if (tos[1].length == 2) {
+					var box = tos[1].split('');
+					mds = tos[0] + '.' + box[0] + '.' + box[1]
+				}
+			} else {
+				mds = md.version("Android") + '.0.0';
+			}
+			os = 'Android ' + mds;
+			var sss = device_type.split(";");
+			var i = sss.contains("Build/");
+			if (i > -1) {
+				model = sss[i].substring(0, sss[i].indexOf("Build/"));
+			}
+		}
+		// alert(os + "---" + model);//打印系统版本和手机型号  
+
+		localStorage.setItem('os', os)
+		localStorage.setItem('model', model)
+
+	</script>
+</html>

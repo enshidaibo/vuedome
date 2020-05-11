@@ -1,0 +1,122 @@
+.bindingVerif {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+}
+
+.paymentVerif {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.bindingVerif .verifBanner {
+    width: 100%;
+    height: 6.25rem;
+}
+
+.verifText1 {
+    width: 100%;
+    height: auto;
+    padding: 0 1rem;
+    padding-top: 1.375rem;
+    font-size: 0.75rem;
+    font-family: PingFangSC;
+    color: #666666;
+    line-height: 1.2rem;
+}
+
+.verifText2 {
+    width: 100%;
+    height: auto;
+    margin-top: 0.45rem;
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: PingFangSC;
+    color: #333333;
+    line-height: 1.25rem;
+}
+
+.write-input {
+    margin-top: 3.35rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-bottom: 1px solid #666666;
+    list-style-type: none;
+    line-height: 1 !important;
+    min-height: 1.85rem !important;
+    margin: 0 0.4rem;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    resize: none;
+    outline: none;
+    border: 0;
+    width: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    background: none !important;
+}
+
+.realInput {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    resize: none;
+    outline: none;
+    border: 0;
+    z-index: 50;
+    position: absolute;
+    padding: .61rem 0;
+    background: none;
+    display: block;
+    margin-left: -30%;
+    top: 34px;
+    opacity: 0;
+    caret-color: #fff;
+    color: #000;
+    text-indent: -5rem;
+    font-size: .63rem;
+    width: 150%;
+    top: 1px;
+}
+
+.write-text {
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 0.7rem;
+    font-family: PingFangSC;
+    color: #999999;
+    line-height: 1rem;
+}
+
+.verifSubmis {
+    width: auto;
+    height: 2.25rem;
+    margin: 0 0.75rem;
+    margin-top: 1.65rem;
+    background: rgba(181, 186, 190, 1);
+    border-radius: 0.25rem;
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: PingFangSC;
+    color: rgba(252, 252, 252, 1);
+    line-height: 2.25rem;
+}
+
+.verifSubmis.adopt {
+    background-color: #05A9F5;
+}
